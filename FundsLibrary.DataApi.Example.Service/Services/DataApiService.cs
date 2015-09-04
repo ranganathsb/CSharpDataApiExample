@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FundsLibrary.DataApi.Example.Service.Domain;
@@ -64,16 +65,21 @@ namespace FundsLibrary.DataApi.Example.Service.Services
 				.Top(take));
 		}
 
-		public async Task<IPageResult<FundUnit>> GetUnitsWithLotsOfFilters(decimal charge, string sector, bool charged, int page, int take)
+		public async Task<IEnumerable<FundUnit>> GetUnitsWithLotsOfFilters(decimal? initialCharge, string sector, bool? chargesToCapital)
 		{
-			return await GetPagedResponse(() => client
-				.For<FundUnit>()
-				.Filter(unit =>
-					unit.StaticData.Charges.Initial > charge &&
-					unit.StaticData.Essentials.IaSector == sector &&
-					unit.StaticData.Risks.ChargesToCapital == charged)
-				.Skip((page - 1) * take)
-				.Top(take));
+			var query = client.For<FundUnit>();
+
+			if (initialCharge.HasValue)
+				query.Filter(unit => unit.StaticData.Charges.Initial > initialCharge);
+
+			if (!string.IsNullOrWhiteSpace(sector))
+				query.Filter(unit => unit.StaticData.Essentials.IaSector == sector);
+
+			if (chargesToCapital.HasValue)
+				query.Filter(unit => unit.StaticData.Risks.ChargesToCapital == chargesToCapital);
+
+			return await query
+				.FindEntriesAsync();
 		}
 
 		private async Task<IPageResult<FundUnit>> GetPagedResponse(Func<IBoundClient<FundUnit>> request)

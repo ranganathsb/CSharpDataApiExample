@@ -1,4 +1,4 @@
-﻿@model FundsLibrary.DataApi.Example.WebUI.Models.PagedResultViewModel<FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FundUnit>
+﻿@model PagedResultViewModel<FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FundUnit>
 
 @{
 	ViewBag.Title = "Fund Units";
@@ -10,7 +10,7 @@
 
 		<table class="table table-striped table-hover">
 			<thead>
-				<th>Name</th>
+			<th>Name</th>
 			</thead>
 			<tbody>
 				@foreach (var unit in Model.Items)

@@ -26,6 +26,25 @@ namespace FundsLibrary.DataApi.Example.WebUI.Controllers
 			return View(new PagedResultViewModel<FundUnit>(page, take, items.Value, items.Count));
 		}
 
+		[HttpGet]
+		[Route("funds/filter")]
+		public ActionResult Filter()
+		{
+			return View(new FilterFundsViewModel());
+		}
+
+		[HttpPost]
+		[Route("funds/filter")]
+		public async Task<ActionResult> Filter(FilterFundsViewModel model)
+		{
+			var items = await service.GetUnitsWithLotsOfFilters(
+							model.InitialCharge,
+							model.Sector,
+							model.ChargesToCapital);
+
+			return View(new FilterFundsViewModel(items));
+		}
+
 		[Route("funds/{sedol}")]
 		public async Task<ActionResult> Fund(string sedol)
 		{

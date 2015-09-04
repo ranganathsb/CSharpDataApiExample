@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using FundsLibrary.DataApi.Example.Service.Domain;
 using FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain;
 
@@ -11,6 +12,6 @@ namespace FundsLibrary.DataApi.Example.Service.Services
 		Task<IPageResult<FundUnit>> GetUnitsWhereInitialChargesGreaterThan(decimal charge, int page, int take);
 		Task<IPageResult<FundUnit>> GetUnitsWhereIaSector(string sector, int page, int take);
 		Task<IPageResult<FundUnit>> GetUnitsWhereChargesToCapital(bool charged, int page, int take);
-		Task<IPageResult<FundUnit>> GetUnitsWithLotsOfFilters(decimal charge, string sector, bool charged, int page, int take);
+		Task<IEnumerable<FundUnit>> GetUnitsWithLotsOfFilters(decimal? initialCharge, string sector, bool? chargesToCapital);
 	}
 }

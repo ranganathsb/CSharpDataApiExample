@@ -50,6 +50,15 @@
 				<li><a href="@Model.Documents.Factsheets.ProfessionalUnit">Professional Unit Factsheet</a></li>
 			</ul>
 		</div>
+
+		<div class="well">
+			<h4>
+				Charges
+			</h4>
+			<ul>
+				<li>Initial: @Model.StaticData.Charges.Initial</li>
+			</ul>
+		</div>
 	</div>
 	<div class="col-lg-6">
 		<div class="well">
@@ -65,6 +74,14 @@
 				<li>Rayner Spencer Mills: @Model.RatingsData.RaynerSpencerMills.Rating</li>
 				<li>Scopic: @Model.RatingsData.Scopic.Rating</li>
 				<li>Square Mile: @Model.RatingsData.SquareMile.Rating</li>
+			</ul>
+		</div>
+		<div class="well">
+			<h4>
+				Essentials
+			</h4>
+			<ul>
+				<li>Sector: @Model.StaticData.Essentials.IaSector</li>
 			</ul>
 		</div>
 	</div>
