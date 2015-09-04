@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundsLibrary.DataApi.Example.WebUI", "FundsLibrary.DataApi.Example.WebUI\FundsLibrary.DataApi.Example.WebUI.csproj", "{ED7D6273-377B-4D23-9D1F-55C935AEE9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundsLibrary.DataApi.Example.Service", "FundsLibrary.DataApi.Example.Service\FundsLibrary.DataApi.Example.Service.csproj", "{ADD6E2C1-AA9A-4814-9162-FDEC129A4118}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7D6273-377B-4D23-9D1F-55C935AEE9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7D6273-377B-4D23-9D1F-55C935AEE9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7D6273-377B-4D23-9D1F-55C935AEE9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7D6273-377B-4D23-9D1F-55C935AEE9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD6E2C1-AA9A-4814-9162-FDEC129A4118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD6E2C1-AA9A-4814-9162-FDEC129A4118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD6E2C1-AA9A-4814-9162-FDEC129A4118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD6E2C1-AA9A-4814-9162-FDEC129A4118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
