@@ -13,5 +13,6 @@ namespace FundsLibrary.DataApi.Example.Service.Services
 		Task<IPageResult<FundUnit>> GetUnitsWhereIaSector(string sector, int page, int take);
 		Task<IPageResult<FundUnit>> GetUnitsWhereChargesToCapital(bool charged, int page, int take);
 		Task<IEnumerable<FundUnit>> GetUnitsWithLotsOfFilters(decimal? initialCharge, string sector, bool? chargesToCapital);
+		Task<IEnumerable<FundUnit>> GetBySedols(string[] sedols);
 	}
 }

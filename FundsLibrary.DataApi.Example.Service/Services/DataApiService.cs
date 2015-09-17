@@ -82,6 +82,16 @@ namespace FundsLibrary.DataApi.Example.Service.Services
 				.FindEntriesAsync();
 		}
 
+		public async Task<IEnumerable<FundUnit>> GetBySedols(string[] sedols)
+		{
+			var query = client.For<FundUnit>()
+						   .Function("FL.GetSedols")
+						   .Set(new { Sedols = string.Join(",", sedols) });
+
+			return await query
+				  .ExecuteAsEnumerableAsync();
+		}
+
 		private async Task<IPageResult<FundUnit>> GetPagedResponse(Func<IBoundClient<FundUnit>> request)
 		{
 			var annotations = new ODataFeedAnnotations();
