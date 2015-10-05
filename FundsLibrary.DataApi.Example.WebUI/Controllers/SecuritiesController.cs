@@ -6,15 +6,15 @@ using FundsLibrary.DataApi.Example.WebUI.Models;
 
 namespace FundsLibrary.DataApi.Example.WebUI.Controllers
 {
-	public class FundsController : Controller
+	public class SecuritiesController : Controller
 	{
 		private readonly IDataApiService service;
 
-		public FundsController()
+		public SecuritiesController()
 			: this(new DataApiService())
 		{ }
 
-		public FundsController(IDataApiService service)
+		public SecuritiesController(IDataApiService service)
 		{
 			this.service = service;
 		}
@@ -23,32 +23,32 @@ namespace FundsLibrary.DataApi.Example.WebUI.Controllers
 		{
 			var items = await service.GetPage(page, take);
 
-			return View(new PagedResultViewModel<FundUnit>(page, take, items.Value, items.Count));
+			return View(new PagedResultViewModel<Security>(page, take, items.Value, items.Count));
 		}
 
 		[HttpGet]
-		[Route("funds/filter")]
+		[Route("securities/filter")]
 		public ActionResult Filter()
 		{
-			return View(new FilterFundsViewModel());
+			return View(new FilterSecuritiesViewModel());
 		}
 
 		[HttpPost]
-		[Route("funds/filter")]
-		public async Task<ActionResult> Filter(FilterFundsViewModel model)
+		[Route("securities/filter")]
+		public async Task<ActionResult> Filter(FilterSecuritiesViewModel model)
 		{
-			var items = await service.GetUnitsWithLotsOfFilters(
+			var items = await service.GetSecuritiesWithLotsOfFilters(
 							model.InitialCharge,
 							model.Sector,
 							model.ChargesToCapital);
 
-			return View(new FilterFundsViewModel(items));
+			return View(new FilterSecuritiesViewModel(items));
 		}
 
-		[Route("funds/{sedol}")]
-		public async Task<ActionResult> Fund(string sedol)
+		[Route("securities/{sedol}")]
+		public async Task<ActionResult> Security(string sedol)
 		{
-			return View(await service.GetUnitWhereSedol(sedol));
+			return View(await service.GetSecurityWhereSedol(sedol));
 		}
 	}
 }

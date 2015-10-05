@@ -1,12 +1,12 @@
-﻿@model PagedResultViewModel<FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FundUnit>
+﻿@model PagedResultViewModel<FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security>
 
 @{
-	ViewBag.Title = "Fund Units";
+	ViewBag.Title = "Securities";
 }
 
 <div class="row">
 	<div class="well">
-		<h2>Funds</h2>
+		<h2>Securities</h2>
 
 		<table class="table table-striped table-hover">
 			<thead>
@@ -21,7 +21,7 @@
 								unit.StaticData.Management.GroupShortName,
 								unit.StaticData.Identification.ClassName,
 								unit.StaticData.Identification.Name),
-								"Fund",
+								"Security",
 								new { sedol = unit.StaticData.Identification.SedolCode })
 						</td>
 					</tr>

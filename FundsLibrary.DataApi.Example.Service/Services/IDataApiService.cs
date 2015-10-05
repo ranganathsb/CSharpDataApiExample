@@ -7,12 +7,12 @@ namespace FundsLibrary.DataApi.Example.Service.Services
 {
 	public interface IDataApiService
 	{
-		Task<IPageResult<FundUnit>> GetPage(int page, int take);
-		Task<FundUnit> GetUnitWhereSedol(string sedol);
-		Task<IPageResult<FundUnit>> GetUnitsWhereInitialChargesGreaterThan(decimal charge, int page, int take);
-		Task<IPageResult<FundUnit>> GetUnitsWhereIaSector(string sector, int page, int take);
-		Task<IPageResult<FundUnit>> GetUnitsWhereChargesToCapital(bool charged, int page, int take);
-		Task<IEnumerable<FundUnit>> GetUnitsWithLotsOfFilters(decimal? initialCharge, string sector, bool? chargesToCapital);
-		Task<IEnumerable<FundUnit>> GetBySedols(string[] sedols);
+		Task<IPageResult<Security>> GetPage(int page, int take);
+		Task<Security> GetSecurityWhereSedol(string sedol);
+		Task<IPageResult<Security>> GetSecuritiesWhereInitialChargesGreaterThan(decimal charge, int page, int take);
+		Task<IPageResult<Security>> GetSecuritiesWhereIaSector(string sector, int page, int take);
+		Task<IPageResult<Security>> GetSecuritiesWhereChargesToCapital(bool charged, int page, int take);
+		Task<IEnumerable<Security>> GetSecuritiesWithLotsOfFilters(decimal? initialCharge, string sector, bool? chargesToCapital);
+		Task<IEnumerable<Security>> GetSecuritiesBySedols(string[] sedols);
 	}
 }
