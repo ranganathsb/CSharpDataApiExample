@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 10/5/2015 1:30:33 PM
+// Generation date: 14/12/2015 10:49:20
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain
 {
     /// <summary>
@@ -237,23 +237,463 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for Date in the schema.
+    /// There are no comments for BenchmarkSingle in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("Date")]
-    public partial class Date : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("BenchmarkSingle")]
+    public partial class BenchmarkSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Benchmark>
     {
         /// <summary>
-        /// Create a new Date object.
+        /// Initialize a new BenchmarkSingle object.
+        /// </summary>
+        public BenchmarkSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new BenchmarkSingle object.
+        /// </summary>
+        public BenchmarkSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new BenchmarkSingle object.
+        /// </summary>
+        public BenchmarkSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Benchmark> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for Benchmark in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmark")]
+    public partial class Benchmark : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new Benchmark object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static Benchmark CreateBenchmark(global::System.Guid ID)
+        {
+            Benchmark benchmark = new Benchmark();
+            benchmark.Id = ID;
+            return benchmark;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceData")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.BenchmarkPerformanceData PerformanceData
+        {
+            get
+            {
+                return this._PerformanceData;
+            }
+            set
+            {
+                this.OnPerformanceDataChanging(value);
+                this._PerformanceData = value;
+                this.OnPerformanceDataChanged();
+                this.OnPropertyChanged("PerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.BenchmarkPerformanceData _PerformanceData;
+        partial void OnPerformanceDataChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.BenchmarkPerformanceData value);
+        partial void OnPerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for FinexIndexedPerformanceSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexIndexedPerformanceSingle")]
+    public partial class FinexIndexedPerformanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinexIndexedPerformance>
+    {
+        /// <summary>
+        /// Initialize a new FinexIndexedPerformanceSingle object.
+        /// </summary>
+        public FinexIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new FinexIndexedPerformanceSingle object.
+        /// </summary>
+        public FinexIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new FinexIndexedPerformanceSingle object.
+        /// </summary>
+        public FinexIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FinexIndexedPerformance> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for FinexIndexedPerformance in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexIndexedPerformance")]
+    public partial class FinexIndexedPerformance : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new FinexIndexedPerformance object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FinexIndexedPerformance CreateFinexIndexedPerformance(global::System.Guid ID)
+        {
+            FinexIndexedPerformance finexIndexedPerformance = new FinexIndexedPerformance();
+            finexIndexedPerformance.Id = ID;
+            return finexIndexedPerformance;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceData")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.FinexIndexedPerformanceData PerformanceData
+        {
+            get
+            {
+                return this._PerformanceData;
+            }
+            set
+            {
+                this.OnPerformanceDataChanging(value);
+                this._PerformanceData = value;
+                this.OnPerformanceDataChanged();
+                this.OnPropertyChanged("PerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.FinexIndexedPerformanceData _PerformanceData;
+        partial void OnPerformanceDataChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.FinexIndexedPerformanceData value);
+        partial void OnPerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for LipperIndexedPerformanceSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperIndexedPerformanceSingle")]
+    public partial class LipperIndexedPerformanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LipperIndexedPerformance>
+    {
+        /// <summary>
+        /// Initialize a new LipperIndexedPerformanceSingle object.
+        /// </summary>
+        public LipperIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new LipperIndexedPerformanceSingle object.
+        /// </summary>
+        public LipperIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new LipperIndexedPerformanceSingle object.
+        /// </summary>
+        public LipperIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<LipperIndexedPerformance> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for LipperIndexedPerformance in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperIndexedPerformance")]
+    public partial class LipperIndexedPerformance : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new LipperIndexedPerformance object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static LipperIndexedPerformance CreateLipperIndexedPerformance(global::System.Guid ID)
+        {
+            LipperIndexedPerformance lipperIndexedPerformance = new LipperIndexedPerformance();
+            lipperIndexedPerformance.Id = ID;
+            return lipperIndexedPerformance;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceData")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.LipperIndexedPerformanceData PerformanceData
+        {
+            get
+            {
+                return this._PerformanceData;
+            }
+            set
+            {
+                this.OnPerformanceDataChanging(value);
+                this._PerformanceData = value;
+                this.OnPerformanceDataChanged();
+                this.OnPropertyChanged("PerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.LipperIndexedPerformanceData _PerformanceData;
+        partial void OnPerformanceDataChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.LipperIndexedPerformanceData value);
+        partial void OnPerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarIndexedPerformanceSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarIndexedPerformanceSingle")]
+    public partial class MorningstarIndexedPerformanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<MorningstarIndexedPerformance>
+    {
+        /// <summary>
+        /// Initialize a new MorningstarIndexedPerformanceSingle object.
+        /// </summary>
+        public MorningstarIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new MorningstarIndexedPerformanceSingle object.
+        /// </summary>
+        public MorningstarIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new MorningstarIndexedPerformanceSingle object.
+        /// </summary>
+        public MorningstarIndexedPerformanceSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MorningstarIndexedPerformance> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for MorningstarIndexedPerformance in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarIndexedPerformance")]
+    public partial class MorningstarIndexedPerformance : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new MorningstarIndexedPerformance object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MorningstarIndexedPerformance CreateMorningstarIndexedPerformance(global::System.Guid ID)
+        {
+            MorningstarIndexedPerformance morningstarIndexedPerformance = new MorningstarIndexedPerformance();
+            morningstarIndexedPerformance.Id = ID;
+            return morningstarIndexedPerformance;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceData")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.MorningstarIndexedPerformanceData PerformanceData
+        {
+            get
+            {
+                return this._PerformanceData;
+            }
+            set
+            {
+                this.OnPerformanceDataChanging(value);
+                this._PerformanceData = value;
+                this.OnPerformanceDataChanged();
+                this.OnPropertyChanged("PerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.MorningstarIndexedPerformanceData _PerformanceData;
+        partial void OnPerformanceDataChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.MorningstarIndexedPerformanceData value);
+        partial void OnPerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for DayAndMonth in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("DayAndMonth")]
+    public partial class DayAndMonth : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new DayAndMonth object.
         /// </summary>
         /// <param name="day">Initial value of Day.</param>
         /// <param name="month">Initial value of Month.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static Date CreateDate(int day, int month)
+        public static DayAndMonth CreateDayAndMonth(int day, int month)
         {
-            Date date = new Date();
-            date.Day = day;
-            date.Month = month;
-            return date;
+            DayAndMonth dayAndMonth = new DayAndMonth();
+            dayAndMonth.Day = day;
+            dayAndMonth.Month = month;
+            return dayAndMonth;
         }
         /// <summary>
         /// There are no comments for Property Day in the schema.
@@ -347,6 +787,98 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             };
             return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.SecuritySingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> source,
+            global::System.Guid id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> source,
+            global::System.Guid id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> source,
+            global::System.Guid id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance as global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> source,
+            global::System.Guid id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformanceSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
     }
 }
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings
@@ -427,28 +959,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnProspectusChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.Prospectus value);
         partial void OnProspectusChanged();
         /// <summary>
-        /// There are no comments for Property Reports in the schema.
+        /// There are no comments for Property ReportsAndAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Reports")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.Reports Reports
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ReportsAndAccounts")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.ReportsAndAccounts ReportsAndAccounts
         {
             get
             {
-                return this._Reports;
+                return this._ReportsAndAccounts;
             }
             set
             {
-                this.OnReportsChanging(value);
-                this._Reports = value;
-                this.OnReportsChanged();
-                this.OnPropertyChanged("Reports");
+                this.OnReportsAndAccountsChanging(value);
+                this._ReportsAndAccounts = value;
+                this.OnReportsAndAccountsChanged();
+                this.OnPropertyChanged("ReportsAndAccounts");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.Reports _Reports;
-        partial void OnReportsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.Reports value);
-        partial void OnReportsChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.ReportsAndAccounts _ReportsAndAccounts;
+        partial void OnReportsAndAccountsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.ReportsAndAccounts value);
+        partial void OnReportsAndAccountsChanged();
         /// <summary>
         /// There are no comments for Property LatestPointOfSaleDocument in the schema.
         /// </summary>
@@ -472,6 +1004,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _LatestPointOfSaleDocument;
         partial void OnLatestPointOfSaleDocumentChanging(string value);
         partial void OnLatestPointOfSaleDocumentChanged();
+        /// <summary>
+        /// There are no comments for Property LatestPointOfSaleAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestPointOfSaleAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> LatestPointOfSaleAccurateDate
+        {
+            get
+            {
+                return this._LatestPointOfSaleAccurateDate;
+            }
+            set
+            {
+                this.OnLatestPointOfSaleAccurateDateChanging(value);
+                this._LatestPointOfSaleAccurateDate = value;
+                this.OnLatestPointOfSaleAccurateDateChanged();
+                this.OnPropertyChanged("LatestPointOfSaleAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _LatestPointOfSaleAccurateDate;
+        partial void OnLatestPointOfSaleAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLatestPointOfSaleAccurateDateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -497,28 +1052,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class Factsheets : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property ProfessionalClassCreationDate in the schema.
+        /// There are no comments for Property ProfessionalClassAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ProfessionalClassCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> ProfessionalClassCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ProfessionalClassAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> ProfessionalClassAccurateDate
         {
             get
             {
-                return this._ProfessionalClassCreationDate;
+                return this._ProfessionalClassAccurateDate;
             }
             set
             {
-                this.OnProfessionalClassCreationDateChanging(value);
-                this._ProfessionalClassCreationDate = value;
-                this.OnProfessionalClassCreationDateChanged();
-                this.OnPropertyChanged("ProfessionalClassCreationDate");
+                this.OnProfessionalClassAccurateDateChanging(value);
+                this._ProfessionalClassAccurateDate = value;
+                this.OnProfessionalClassAccurateDateChanged();
+                this.OnPropertyChanged("ProfessionalClassAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _ProfessionalClassCreationDate;
-        partial void OnProfessionalClassCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnProfessionalClassCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _ProfessionalClassAccurateDate;
+        partial void OnProfessionalClassAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnProfessionalClassAccurateDateChanged();
         /// <summary>
         /// There are no comments for Property ProfessionalClass in the schema.
         /// </summary>
@@ -543,28 +1098,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnProfessionalClassChanging(string value);
         partial void OnProfessionalClassChanged();
         /// <summary>
-        /// There are no comments for Property PrivateClassCreationDate in the schema.
+        /// There are no comments for Property PrivateClassAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("PrivateClassCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> PrivateClassCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PrivateClassAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> PrivateClassAccurateDate
         {
             get
             {
-                return this._PrivateClassCreationDate;
+                return this._PrivateClassAccurateDate;
             }
             set
             {
-                this.OnPrivateClassCreationDateChanging(value);
-                this._PrivateClassCreationDate = value;
-                this.OnPrivateClassCreationDateChanged();
-                this.OnPropertyChanged("PrivateClassCreationDate");
+                this.OnPrivateClassAccurateDateChanging(value);
+                this._PrivateClassAccurateDate = value;
+                this.OnPrivateClassAccurateDateChanged();
+                this.OnPropertyChanged("PrivateClassAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _PrivateClassCreationDate;
-        partial void OnPrivateClassCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnPrivateClassCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _PrivateClassAccurateDate;
+        partial void OnPrivateClassAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnPrivateClassAccurateDateChanged();
         /// <summary>
         /// There are no comments for Property PrivateClass in the schema.
         /// </summary>
@@ -589,28 +1144,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnPrivateClassChanging(string value);
         partial void OnPrivateClassChanged();
         /// <summary>
-        /// There are no comments for Property ProfessionalUnitCreationDate in the schema.
+        /// There are no comments for Property ProfessionalUnitAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ProfessionalUnitCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> ProfessionalUnitCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ProfessionalUnitAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> ProfessionalUnitAccurateDate
         {
             get
             {
-                return this._ProfessionalUnitCreationDate;
+                return this._ProfessionalUnitAccurateDate;
             }
             set
             {
-                this.OnProfessionalUnitCreationDateChanging(value);
-                this._ProfessionalUnitCreationDate = value;
-                this.OnProfessionalUnitCreationDateChanged();
-                this.OnPropertyChanged("ProfessionalUnitCreationDate");
+                this.OnProfessionalUnitAccurateDateChanging(value);
+                this._ProfessionalUnitAccurateDate = value;
+                this.OnProfessionalUnitAccurateDateChanged();
+                this.OnPropertyChanged("ProfessionalUnitAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _ProfessionalUnitCreationDate;
-        partial void OnProfessionalUnitCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnProfessionalUnitCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _ProfessionalUnitAccurateDate;
+        partial void OnProfessionalUnitAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnProfessionalUnitAccurateDateChanged();
         /// <summary>
         /// There are no comments for Property ProfessionalUnit in the schema.
         /// </summary>
@@ -635,28 +1190,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnProfessionalUnitChanging(string value);
         partial void OnProfessionalUnitChanged();
         /// <summary>
-        /// There are no comments for Property PrivateUnitCreationDate in the schema.
+        /// There are no comments for Property PrivateUnitAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("PrivateUnitCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> PrivateUnitCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PrivateUnitAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> PrivateUnitAccurateDate
         {
             get
             {
-                return this._PrivateUnitCreationDate;
+                return this._PrivateUnitAccurateDate;
             }
             set
             {
-                this.OnPrivateUnitCreationDateChanging(value);
-                this._PrivateUnitCreationDate = value;
-                this.OnPrivateUnitCreationDateChanged();
-                this.OnPropertyChanged("PrivateUnitCreationDate");
+                this.OnPrivateUnitAccurateDateChanging(value);
+                this._PrivateUnitAccurateDate = value;
+                this.OnPrivateUnitAccurateDateChanged();
+                this.OnPropertyChanged("PrivateUnitAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _PrivateUnitCreationDate;
-        partial void OnPrivateUnitCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnPrivateUnitCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _PrivateUnitAccurateDate;
+        partial void OnPrivateUnitAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnPrivateUnitAccurateDateChanged();
         /// <summary>
         /// There are no comments for Property PrivateUnit in the schema.
         /// </summary>
@@ -704,6 +1259,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnPostSaleChanging(string value);
         partial void OnPostSaleChanged();
         /// <summary>
+        /// There are no comments for Property PostSaleAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PostSaleAccurateDate")]
+        public string PostSaleAccurateDate
+        {
+            get
+            {
+                return this._PostSaleAccurateDate;
+            }
+            set
+            {
+                this.OnPostSaleAccurateDateChanging(value);
+                this._PostSaleAccurateDate = value;
+                this.OnPostSaleAccurateDateChanged();
+                this.OnPropertyChanged("PostSaleAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PostSaleAccurateDate;
+        partial void OnPostSaleAccurateDateChanging(string value);
+        partial void OnPostSaleAccurateDateChanged();
+        /// <summary>
         /// There are no comments for Property LatestPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -727,6 +1305,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnLatestPrivateChanging(string value);
         partial void OnLatestPrivateChanged();
         /// <summary>
+        /// There are no comments for Property LatestPrivateAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestPrivateAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> LatestPrivateAccurateDate
+        {
+            get
+            {
+                return this._LatestPrivateAccurateDate;
+            }
+            set
+            {
+                this.OnLatestPrivateAccurateDateChanging(value);
+                this._LatestPrivateAccurateDate = value;
+                this.OnLatestPrivateAccurateDateChanged();
+                this.OnPropertyChanged("LatestPrivateAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _LatestPrivateAccurateDate;
+        partial void OnLatestPrivateAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLatestPrivateAccurateDateChanged();
+        /// <summary>
         /// There are no comments for Property LatestProfessional in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -749,6 +1350,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _LatestProfessional;
         partial void OnLatestProfessionalChanging(string value);
         partial void OnLatestProfessionalChanged();
+        /// <summary>
+        /// There are no comments for Property LatestProfessionalAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestProfessionalAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> LatestProfessionalAccurateDate
+        {
+            get
+            {
+                return this._LatestProfessionalAccurateDate;
+            }
+            set
+            {
+                this.OnLatestProfessionalAccurateDateChanging(value);
+                this._LatestProfessionalAccurateDate = value;
+                this.OnLatestProfessionalAccurateDateChanged();
+                this.OnPropertyChanged("LatestProfessionalAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _LatestProfessionalAccurateDate;
+        partial void OnLatestProfessionalAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLatestProfessionalAccurateDateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -878,51 +1502,51 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class Prospectus : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property ClassSimplifiedCreationDate in the schema.
+        /// There are no comments for Property SimplifiedProspectusAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ClassSimplifiedCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> ClassSimplifiedCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SimplifiedProspectusAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> SimplifiedProspectusAccurateDate
         {
             get
             {
-                return this._ClassSimplifiedCreationDate;
+                return this._SimplifiedProspectusAccurateDate;
             }
             set
             {
-                this.OnClassSimplifiedCreationDateChanging(value);
-                this._ClassSimplifiedCreationDate = value;
-                this.OnClassSimplifiedCreationDateChanged();
-                this.OnPropertyChanged("ClassSimplifiedCreationDate");
+                this.OnSimplifiedProspectusAccurateDateChanging(value);
+                this._SimplifiedProspectusAccurateDate = value;
+                this.OnSimplifiedProspectusAccurateDateChanged();
+                this.OnPropertyChanged("SimplifiedProspectusAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _ClassSimplifiedCreationDate;
-        partial void OnClassSimplifiedCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnClassSimplifiedCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _SimplifiedProspectusAccurateDate;
+        partial void OnSimplifiedProspectusAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnSimplifiedProspectusAccurateDateChanged();
         /// <summary>
-        /// There are no comments for Property ClassSimplified in the schema.
+        /// There are no comments for Property SimplifiedProspectus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ClassSimplified")]
-        public string ClassSimplified
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SimplifiedProspectus")]
+        public string SimplifiedProspectus
         {
             get
             {
-                return this._ClassSimplified;
+                return this._SimplifiedProspectus;
             }
             set
             {
-                this.OnClassSimplifiedChanging(value);
-                this._ClassSimplified = value;
-                this.OnClassSimplifiedChanged();
-                this.OnPropertyChanged("ClassSimplified");
+                this.OnSimplifiedProspectusChanging(value);
+                this._SimplifiedProspectus = value;
+                this.OnSimplifiedProspectusChanged();
+                this.OnPropertyChanged("SimplifiedProspectus");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _ClassSimplified;
-        partial void OnClassSimplifiedChanging(string value);
-        partial void OnClassSimplifiedChanged();
+        private string _SimplifiedProspectus;
+        partial void OnSimplifiedProspectusChanging(string value);
+        partial void OnSimplifiedProspectusChanged();
         /// <summary>
         /// There are no comments for Property FullProspectus in the schema.
         /// </summary>
@@ -947,6 +1571,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnFullProspectusChanging(string value);
         partial void OnFullProspectusChanged();
         /// <summary>
+        /// There are no comments for Property FullProspectusAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FullProspectusAccurateDate")]
+        public string FullProspectusAccurateDate
+        {
+            get
+            {
+                return this._FullProspectusAccurateDate;
+            }
+            set
+            {
+                this.OnFullProspectusAccurateDateChanging(value);
+                this._FullProspectusAccurateDate = value;
+                this.OnFullProspectusAccurateDateChanged();
+                this.OnPropertyChanged("FullProspectusAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FullProspectusAccurateDate;
+        partial void OnFullProspectusAccurateDateChanging(string value);
+        partial void OnFullProspectusAccurateDateChanged();
+        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -965,126 +1612,149 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for Reports in the schema.
+    /// There are no comments for ReportsAndAccounts in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("Reports")]
-    public partial class Reports : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ReportsAndAccounts")]
+    public partial class ReportsAndAccounts : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property FundAccountCreationDate in the schema.
+        /// There are no comments for Property AnnualReportAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FundAccountCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> FundAccountCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnnualReportAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> AnnualReportAccurateDate
         {
             get
             {
-                return this._FundAccountCreationDate;
+                return this._AnnualReportAccurateDate;
             }
             set
             {
-                this.OnFundAccountCreationDateChanging(value);
-                this._FundAccountCreationDate = value;
-                this.OnFundAccountCreationDateChanged();
-                this.OnPropertyChanged("FundAccountCreationDate");
+                this.OnAnnualReportAccurateDateChanging(value);
+                this._AnnualReportAccurateDate = value;
+                this.OnAnnualReportAccurateDateChanged();
+                this.OnPropertyChanged("AnnualReportAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _FundAccountCreationDate;
-        partial void OnFundAccountCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnFundAccountCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _AnnualReportAccurateDate;
+        partial void OnAnnualReportAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnAnnualReportAccurateDateChanged();
         /// <summary>
-        /// There are no comments for Property FundAccount in the schema.
+        /// There are no comments for Property AnnualReport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FundAccount")]
-        public string FundAccount
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnnualReport")]
+        public string AnnualReport
         {
             get
             {
-                return this._FundAccount;
+                return this._AnnualReport;
             }
             set
             {
-                this.OnFundAccountChanging(value);
-                this._FundAccount = value;
-                this.OnFundAccountChanged();
-                this.OnPropertyChanged("FundAccount");
+                this.OnAnnualReportChanging(value);
+                this._AnnualReport = value;
+                this.OnAnnualReportChanged();
+                this.OnPropertyChanged("AnnualReport");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _FundAccount;
-        partial void OnFundAccountChanging(string value);
-        partial void OnFundAccountChanged();
+        private string _AnnualReport;
+        partial void OnAnnualReportChanging(string value);
+        partial void OnAnnualReportChanged();
         /// <summary>
-        /// There are no comments for Property FundAccountInterimCreationDate in the schema.
+        /// There are no comments for Property InterimReportAccurateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FundAccountInterimCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> FundAccountInterimCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InterimReportAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> InterimReportAccurateDate
         {
             get
             {
-                return this._FundAccountInterimCreationDate;
+                return this._InterimReportAccurateDate;
             }
             set
             {
-                this.OnFundAccountInterimCreationDateChanging(value);
-                this._FundAccountInterimCreationDate = value;
-                this.OnFundAccountInterimCreationDateChanged();
-                this.OnPropertyChanged("FundAccountInterimCreationDate");
+                this.OnInterimReportAccurateDateChanging(value);
+                this._InterimReportAccurateDate = value;
+                this.OnInterimReportAccurateDateChanged();
+                this.OnPropertyChanged("InterimReportAccurateDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _FundAccountInterimCreationDate;
-        partial void OnFundAccountInterimCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnFundAccountInterimCreationDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _InterimReportAccurateDate;
+        partial void OnInterimReportAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnInterimReportAccurateDateChanged();
         /// <summary>
-        /// There are no comments for Property FundAccountInterim in the schema.
+        /// There are no comments for Property InterimReport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FundAccountInterim")]
-        public string FundAccountInterim
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InterimReport")]
+        public string InterimReport
         {
             get
             {
-                return this._FundAccountInterim;
+                return this._InterimReport;
             }
             set
             {
-                this.OnFundAccountInterimChanging(value);
-                this._FundAccountInterim = value;
-                this.OnFundAccountInterimChanged();
-                this.OnPropertyChanged("FundAccountInterim");
+                this.OnInterimReportChanging(value);
+                this._InterimReport = value;
+                this.OnInterimReportChanged();
+                this.OnPropertyChanged("InterimReport");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _FundAccountInterim;
-        partial void OnFundAccountInterimChanging(string value);
-        partial void OnFundAccountInterimChanged();
+        private string _InterimReport;
+        partial void OnInterimReportChanging(string value);
+        partial void OnInterimReportChanged();
         /// <summary>
-        /// There are no comments for Property LatestFundAccount in the schema.
+        /// There are no comments for Property LatestReport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestFundAccount")]
-        public string LatestFundAccount
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestReport")]
+        public string LatestReport
         {
             get
             {
-                return this._LatestFundAccount;
+                return this._LatestReport;
             }
             set
             {
-                this.OnLatestFundAccountChanging(value);
-                this._LatestFundAccount = value;
-                this.OnLatestFundAccountChanged();
-                this.OnPropertyChanged("LatestFundAccount");
+                this.OnLatestReportChanging(value);
+                this._LatestReport = value;
+                this.OnLatestReportChanged();
+                this.OnPropertyChanged("LatestReport");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LatestFundAccount;
-        partial void OnLatestFundAccountChanging(string value);
-        partial void OnLatestFundAccountChanged();
+        private string _LatestReport;
+        partial void OnLatestReportChanging(string value);
+        partial void OnLatestReportChanged();
+        /// <summary>
+        /// There are no comments for Property LatestReportAccurateDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestReportAccurateDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> LatestReportAccurateDate
+        {
+            get
+            {
+                return this._LatestReportAccurateDate;
+            }
+            set
+            {
+                this.OnLatestReportAccurateDateChanging(value);
+                this._LatestReportAccurateDate = value;
+                this.OnLatestReportAccurateDateChanged();
+                this.OnPropertyChanged("LatestReportAccurateDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _LatestReportAccurateDate;
+        partial void OnLatestReportAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLatestReportAccurateDateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -1274,28 +1944,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnHoldingsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Holdings value);
         partial void OnHoldingsChanged();
         /// <summary>
-        /// There are no comments for Property IcbBreakdown in the schema.
+        /// There are no comments for Property Icb in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IcbBreakdown")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.IcbBreakdown IcbBreakdown
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Icb")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Icb Icb
         {
             get
             {
-                return this._IcbBreakdown;
+                return this._Icb;
             }
             set
             {
-                this.OnIcbBreakdownChanging(value);
-                this._IcbBreakdown = value;
-                this.OnIcbBreakdownChanged();
-                this.OnPropertyChanged("IcbBreakdown");
+                this.OnIcbChanging(value);
+                this._Icb = value;
+                this.OnIcbChanged();
+                this.OnPropertyChanged("Icb");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.IcbBreakdown _IcbBreakdown;
-        partial void OnIcbBreakdownChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.IcbBreakdown value);
-        partial void OnIcbBreakdownChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Icb _Icb;
+        partial void OnIcbChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Icb value);
+        partial void OnIcbChanged();
         /// <summary>
         /// There are no comments for Property IaSector in the schema.
         /// </summary>
@@ -2232,6 +2902,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             return countryDetails;
         }
         /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -2313,6 +3006,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             return debtCurrency;
         }
         /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -2383,29 +3099,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class DebtMaturity : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property TenToFifteenYrsPercentage in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("TenToFifteenYrsPercentage")]
-        public global::System.Nullable<decimal> TenToFifteenYrsPercentage
-        {
-            get
-            {
-                return this._TenToFifteenYrsPercentage;
-            }
-            set
-            {
-                this.OnTenToFifteenYrsPercentageChanging(value);
-                this._TenToFifteenYrsPercentage = value;
-                this.OnTenToFifteenYrsPercentageChanged();
-                this.OnPropertyChanged("TenToFifteenYrsPercentage");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _TenToFifteenYrsPercentage;
-        partial void OnTenToFifteenYrsPercentageChanging(global::System.Nullable<decimal> value);
-        partial void OnTenToFifteenYrsPercentageChanged();
-        /// <summary>
         /// There are no comments for Property OverFifteenYrsPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -2428,6 +3121,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Nullable<decimal> _OverFifteenYrsPercentage;
         partial void OnOverFifteenYrsPercentageChanging(global::System.Nullable<decimal> value);
         partial void OnOverFifteenYrsPercentageChanged();
+        /// <summary>
+        /// There are no comments for Property TenToFifteenYrsPercentage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TenToFifteenYrsPercentage")]
+        public global::System.Nullable<decimal> TenToFifteenYrsPercentage
+        {
+            get
+            {
+                return this._TenToFifteenYrsPercentage;
+            }
+            set
+            {
+                this.OnTenToFifteenYrsPercentageChanging(value);
+                this._TenToFifteenYrsPercentage = value;
+                this.OnTenToFifteenYrsPercentageChanged();
+                this.OnPropertyChanged("TenToFifteenYrsPercentage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _TenToFifteenYrsPercentage;
+        partial void OnTenToFifteenYrsPercentageChanging(global::System.Nullable<decimal> value);
+        partial void OnTenToFifteenYrsPercentageChanged();
         /// <summary>
         /// There are no comments for Property FivetoTenYrsPercentage in the schema.
         /// </summary>
@@ -3166,103 +3882,103 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for IcbBreakdown in the schema.
+    /// There are no comments for Icb in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("IcbBreakdown")]
-    public partial class IcbBreakdown : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("Icb")]
+    public partial class Icb : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property Industry in the schema.
+        /// There are no comments for Property IndustryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Industry")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> Industry
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IndustryCode")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> IndustryCode
         {
             get
             {
-                return this._Industry;
+                return this._IndustryCode;
             }
             set
             {
-                this.OnIndustryChanging(value);
-                this._Industry = value;
-                this.OnIndustryChanged();
-                this.OnPropertyChanged("Industry");
+                this.OnIndustryCodeChanging(value);
+                this._IndustryCode = value;
+                this.OnIndustryCodeChanged();
+                this.OnPropertyChanged("IndustryCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> _Industry = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry>();
-        partial void OnIndustryChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> value);
-        partial void OnIndustryChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> _IndustryCode = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry>();
+        partial void OnIndustryCodeChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry> value);
+        partial void OnIndustryCodeChanged();
         /// <summary>
-        /// There are no comments for Property Sector in the schema.
+        /// There are no comments for Property SectorCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Sector")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> Sector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SectorCode")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> SectorCode
         {
             get
             {
-                return this._Sector;
+                return this._SectorCode;
             }
             set
             {
-                this.OnSectorChanging(value);
-                this._Sector = value;
-                this.OnSectorChanged();
-                this.OnPropertyChanged("Sector");
+                this.OnSectorCodeChanging(value);
+                this._SectorCode = value;
+                this.OnSectorCodeChanged();
+                this.OnPropertyChanged("SectorCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> _Sector = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector>();
-        partial void OnSectorChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> value);
-        partial void OnSectorChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> _SectorCode = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector>();
+        partial void OnSectorCodeChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector> value);
+        partial void OnSectorCodeChanged();
         /// <summary>
-        /// There are no comments for Property Subsector in the schema.
+        /// There are no comments for Property SubsectorCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Subsector")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> Subsector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SubsectorCode")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> SubsectorCode
         {
             get
             {
-                return this._Subsector;
+                return this._SubsectorCode;
             }
             set
             {
-                this.OnSubsectorChanging(value);
-                this._Subsector = value;
-                this.OnSubsectorChanged();
-                this.OnPropertyChanged("Subsector");
+                this.OnSubsectorCodeChanging(value);
+                this._SubsectorCode = value;
+                this.OnSubsectorCodeChanged();
+                this.OnPropertyChanged("SubsectorCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> _Subsector = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector>();
-        partial void OnSubsectorChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> value);
-        partial void OnSubsectorChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> _SubsectorCode = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector>();
+        partial void OnSubsectorCodeChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector> value);
+        partial void OnSubsectorCodeChanged();
         /// <summary>
-        /// There are no comments for Property Supersector in the schema.
+        /// There are no comments for Property SupersectorCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Supersector")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> Supersector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SupersectorCode")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> SupersectorCode
         {
             get
             {
-                return this._Supersector;
+                return this._SupersectorCode;
             }
             set
             {
-                this.OnSupersectorChanging(value);
-                this._Supersector = value;
-                this.OnSupersectorChanged();
-                this.OnPropertyChanged("Supersector");
+                this.OnSupersectorCodeChanging(value);
+                this._SupersectorCode = value;
+                this.OnSupersectorCodeChanged();
+                this.OnPropertyChanged("SupersectorCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> _Supersector = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector>();
-        partial void OnSupersectorChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> value);
-        partial void OnSupersectorChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> _SupersectorCode = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector>();
+        partial void OnSupersectorCodeChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector> value);
+        partial void OnSupersectorCodeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -3321,6 +4037,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
         /// <summary>
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
@@ -3403,6 +4142,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -3484,6 +4246,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -3564,6 +4349,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
         /// <summary>
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
@@ -4119,6 +4927,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _NavCurrency;
         partial void OnNavCurrencyChanging(string value);
         partial void OnNavCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property NavCurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NavCurrencyCode")]
+        public string NavCurrencyCode
+        {
+            get
+            {
+                return this._NavCurrencyCode;
+            }
+            set
+            {
+                this.OnNavCurrencyCodeChanging(value);
+                this._NavCurrencyCode = value;
+                this.OnNavCurrencyCodeChanged();
+                this.OnPropertyChanged("NavCurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _NavCurrencyCode;
+        partial void OnNavCurrencyCodeChanging(string value);
+        partial void OnNavCurrencyCodeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -5872,6 +6703,236 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnExposureTotalAssetsPercentageChanging(decimal value);
         partial void OnExposureTotalAssetsPercentageChanged();
         /// <summary>
+        /// There are no comments for Property NumberOfSharesHeld in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NumberOfSharesHeld")]
+        public global::System.Nullable<decimal> NumberOfSharesHeld
+        {
+            get
+            {
+                return this._NumberOfSharesHeld;
+            }
+            set
+            {
+                this.OnNumberOfSharesHeldChanging(value);
+                this._NumberOfSharesHeld = value;
+                this.OnNumberOfSharesHeldChanged();
+                this.OnPropertyChanged("NumberOfSharesHeld");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _NumberOfSharesHeld;
+        partial void OnNumberOfSharesHeldChanging(global::System.Nullable<decimal> value);
+        partial void OnNumberOfSharesHeldChanged();
+        /// <summary>
+        /// There are no comments for Property SecurityCountry in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SecurityCountry")]
+        public string SecurityCountry
+        {
+            get
+            {
+                return this._SecurityCountry;
+            }
+            set
+            {
+                this.OnSecurityCountryChanging(value);
+                this._SecurityCountry = value;
+                this.OnSecurityCountryChanged();
+                this.OnPropertyChanged("SecurityCountry");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SecurityCountry;
+        partial void OnSecurityCountryChanging(string value);
+        partial void OnSecurityCountryChanged();
+        /// <summary>
+        /// There are no comments for Property SecurityCountryCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SecurityCountryCode")]
+        public string SecurityCountryCode
+        {
+            get
+            {
+                return this._SecurityCountryCode;
+            }
+            set
+            {
+                this.OnSecurityCountryCodeChanging(value);
+                this._SecurityCountryCode = value;
+                this.OnSecurityCountryCodeChanged();
+                this.OnPropertyChanged("SecurityCountryCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SecurityCountryCode;
+        partial void OnSecurityCountryCodeChanging(string value);
+        partial void OnSecurityCountryCodeChanged();
+        /// <summary>
+        /// There are no comments for Property IcbIndustryCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IcbIndustryCode")]
+        public string IcbIndustryCode
+        {
+            get
+            {
+                return this._IcbIndustryCode;
+            }
+            set
+            {
+                this.OnIcbIndustryCodeChanging(value);
+                this._IcbIndustryCode = value;
+                this.OnIcbIndustryCodeChanged();
+                this.OnPropertyChanged("IcbIndustryCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _IcbIndustryCode;
+        partial void OnIcbIndustryCodeChanging(string value);
+        partial void OnIcbIndustryCodeChanged();
+        /// <summary>
+        /// There are no comments for Property IcbSuperSectorCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IcbSuperSectorCode")]
+        public string IcbSuperSectorCode
+        {
+            get
+            {
+                return this._IcbSuperSectorCode;
+            }
+            set
+            {
+                this.OnIcbSuperSectorCodeChanging(value);
+                this._IcbSuperSectorCode = value;
+                this.OnIcbSuperSectorCodeChanged();
+                this.OnPropertyChanged("IcbSuperSectorCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _IcbSuperSectorCode;
+        partial void OnIcbSuperSectorCodeChanging(string value);
+        partial void OnIcbSuperSectorCodeChanged();
+        /// <summary>
+        /// There are no comments for Property IcbSectorCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IcbSectorCode")]
+        public string IcbSectorCode
+        {
+            get
+            {
+                return this._IcbSectorCode;
+            }
+            set
+            {
+                this.OnIcbSectorCodeChanging(value);
+                this._IcbSectorCode = value;
+                this.OnIcbSectorCodeChanged();
+                this.OnPropertyChanged("IcbSectorCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _IcbSectorCode;
+        partial void OnIcbSectorCodeChanging(string value);
+        partial void OnIcbSectorCodeChanged();
+        /// <summary>
+        /// There are no comments for Property IcbSubSectorCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IcbSubSectorCode")]
+        public string IcbSubSectorCode
+        {
+            get
+            {
+                return this._IcbSubSectorCode;
+            }
+            set
+            {
+                this.OnIcbSubSectorCodeChanging(value);
+                this._IcbSubSectorCode = value;
+                this.OnIcbSubSectorCodeChanged();
+                this.OnPropertyChanged("IcbSubSectorCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _IcbSubSectorCode;
+        partial void OnIcbSubSectorCodeChanging(string value);
+        partial void OnIcbSubSectorCodeChanged();
+        /// <summary>
+        /// There are no comments for Property BondCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BondCurrency")]
+        public string BondCurrency
+        {
+            get
+            {
+                return this._BondCurrency;
+            }
+            set
+            {
+                this.OnBondCurrencyChanging(value);
+                this._BondCurrency = value;
+                this.OnBondCurrencyChanged();
+                this.OnPropertyChanged("BondCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _BondCurrency;
+        partial void OnBondCurrencyChanging(string value);
+        partial void OnBondCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property BondCurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BondCurrencyCode")]
+        public string BondCurrencyCode
+        {
+            get
+            {
+                return this._BondCurrencyCode;
+            }
+            set
+            {
+                this.OnBondCurrencyCodeChanging(value);
+                this._BondCurrencyCode = value;
+                this.OnBondCurrencyCodeChanged();
+                this.OnPropertyChanged("BondCurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _BondCurrencyCode;
+        partial void OnBondCurrencyCodeChanging(string value);
+        partial void OnBondCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property FlAssetType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FlAssetType")]
+        public string FlAssetType
+        {
+            get
+            {
+                return this._FlAssetType;
+            }
+            set
+            {
+                this.OnFlAssetTypeChanging(value);
+                this._FlAssetType = value;
+                this.OnFlAssetTypeChanged();
+                this.OnPropertyChanged("FlAssetType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FlAssetType;
+        partial void OnFlAssetTypeChanging(string value);
+        partial void OnFlAssetTypeChanged();
+        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -6363,120 +7424,51 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class Morningstar : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property Rating in the schema.
+        /// There are no comments for Property MorningstarAnalyst in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Rating")]
-        public global::System.Nullable<int> Rating
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarAnalyst")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst MorningstarAnalyst
         {
             get
             {
-                return this._Rating;
+                return this._MorningstarAnalyst;
             }
             set
             {
-                this.OnRatingChanging(value);
-                this._Rating = value;
-                this.OnRatingChanged();
-                this.OnPropertyChanged("Rating");
+                this.OnMorningstarAnalystChanging(value);
+                this._MorningstarAnalyst = value;
+                this.OnMorningstarAnalystChanged();
+                this.OnPropertyChanged("MorningstarAnalyst");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _Rating;
-        partial void OnRatingChanging(global::System.Nullable<int> value);
-        partial void OnRatingChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst _MorningstarAnalyst;
+        partial void OnMorningstarAnalystChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst value);
+        partial void OnMorningstarAnalystChanged();
         /// <summary>
-        /// There are no comments for Property AnalystRatingCreationDate in the schema.
+        /// There are no comments for Property MorningstarStar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> AnalystRatingCreationDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarStar")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar MorningstarStar
         {
             get
             {
-                return this._AnalystRatingCreationDate;
+                return this._MorningstarStar;
             }
             set
             {
-                this.OnAnalystRatingCreationDateChanging(value);
-                this._AnalystRatingCreationDate = value;
-                this.OnAnalystRatingCreationDateChanged();
-                this.OnPropertyChanged("AnalystRatingCreationDate");
+                this.OnMorningstarStarChanging(value);
+                this._MorningstarStar = value;
+                this.OnMorningstarStarChanged();
+                this.OnPropertyChanged("MorningstarStar");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _AnalystRatingCreationDate;
-        partial void OnAnalystRatingCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnAnalystRatingCreationDateChanged();
-        /// <summary>
-        /// There are no comments for Property AnalystRating in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRating")]
-        public string AnalystRating
-        {
-            get
-            {
-                return this._AnalystRating;
-            }
-            set
-            {
-                this.OnAnalystRatingChanging(value);
-                this._AnalystRating = value;
-                this.OnAnalystRatingChanged();
-                this.OnPropertyChanged("AnalystRating");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AnalystRating;
-        partial void OnAnalystRatingChanging(string value);
-        partial void OnAnalystRatingChanged();
-        /// <summary>
-        /// There are no comments for Property QualitativeRatingDocument in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("QualitativeRatingDocument")]
-        public string QualitativeRatingDocument
-        {
-            get
-            {
-                return this._QualitativeRatingDocument;
-            }
-            set
-            {
-                this.OnQualitativeRatingDocumentChanging(value);
-                this._QualitativeRatingDocument = value;
-                this.OnQualitativeRatingDocumentChanged();
-                this.OnPropertyChanged("QualitativeRatingDocument");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _QualitativeRatingDocument;
-        partial void OnQualitativeRatingDocumentChanging(string value);
-        partial void OnQualitativeRatingDocumentChanged();
-        /// <summary>
-        /// There are no comments for Property AnalystRatingDocument in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingDocument")]
-        public string AnalystRatingDocument
-        {
-            get
-            {
-                return this._AnalystRatingDocument;
-            }
-            set
-            {
-                this.OnAnalystRatingDocumentChanging(value);
-                this._AnalystRatingDocument = value;
-                this.OnAnalystRatingDocumentChanged();
-                this.OnPropertyChanged("AnalystRatingDocument");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AnalystRatingDocument;
-        partial void OnAnalystRatingDocumentChanging(string value);
-        partial void OnAnalystRatingDocumentChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar _MorningstarStar;
+        partial void OnMorningstarStarChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar value);
+        partial void OnMorningstarStarChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -6730,6 +7722,172 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
 }
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings
+{
+    /// <summary>
+    /// There are no comments for MorningstarAnalyst in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarAnalyst")]
+    public partial class MorningstarAnalyst : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property AnalystRatingCreationDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingCreationDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> AnalystRatingCreationDate
+        {
+            get
+            {
+                return this._AnalystRatingCreationDate;
+            }
+            set
+            {
+                this.OnAnalystRatingCreationDateChanging(value);
+                this._AnalystRatingCreationDate = value;
+                this.OnAnalystRatingCreationDateChanged();
+                this.OnPropertyChanged("AnalystRatingCreationDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _AnalystRatingCreationDate;
+        partial void OnAnalystRatingCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnAnalystRatingCreationDateChanged();
+        /// <summary>
+        /// There are no comments for Property AnalystRating in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRating")]
+        public string AnalystRating
+        {
+            get
+            {
+                return this._AnalystRating;
+            }
+            set
+            {
+                this.OnAnalystRatingChanging(value);
+                this._AnalystRating = value;
+                this.OnAnalystRatingChanged();
+                this.OnPropertyChanged("AnalystRating");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AnalystRating;
+        partial void OnAnalystRatingChanging(string value);
+        partial void OnAnalystRatingChanged();
+        /// <summary>
+        /// There are no comments for Property AnalystRatingDocument in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingDocument")]
+        public string AnalystRatingDocument
+        {
+            get
+            {
+                return this._AnalystRatingDocument;
+            }
+            set
+            {
+                this.OnAnalystRatingDocumentChanging(value);
+                this._AnalystRatingDocument = value;
+                this.OnAnalystRatingDocumentChanged();
+                this.OnPropertyChanged("AnalystRatingDocument");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AnalystRatingDocument;
+        partial void OnAnalystRatingDocumentChanging(string value);
+        partial void OnAnalystRatingDocumentChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarStar in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarStar")]
+    public partial class MorningstarStar : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property StarRating in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRating")]
+        public global::System.Nullable<int> StarRating
+        {
+            get
+            {
+                return this._StarRating;
+            }
+            set
+            {
+                this.OnStarRatingChanging(value);
+                this._StarRating = value;
+                this.OnStarRatingChanged();
+                this.OnPropertyChanged("StarRating");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _StarRating;
+        partial void OnStarRatingChanging(global::System.Nullable<int> value);
+        partial void OnStarRatingChanged();
+        /// <summary>
+        /// There are no comments for Property StarRatingDocument in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRatingDocument")]
+        public string StarRatingDocument
+        {
+            get
+            {
+                return this._StarRatingDocument;
+            }
+            set
+            {
+                this.OnStarRatingDocumentChanging(value);
+                this._StarRatingDocument = value;
+                this.OnStarRatingDocumentChanged();
+                this.OnPropertyChanged("StarRatingDocument");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _StarRatingDocument;
+        partial void OnStarRatingDocumentChanging(string value);
+        partial void OnStarRatingDocumentChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings
 {
     /// <summary>
@@ -6784,6 +7942,52 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.Essentials _Essentials;
         partial void OnEssentialsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.Essentials value);
         partial void OnEssentialsChanged();
+        /// <summary>
+        /// There are no comments for Property Attributes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Attributes")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.AttributesDetails Attributes
+        {
+            get
+            {
+                return this._Attributes;
+            }
+            set
+            {
+                this.OnAttributesChanging(value);
+                this._Attributes = value;
+                this.OnAttributesChanged();
+                this.OnPropertyChanged("Attributes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.AttributesDetails _Attributes;
+        partial void OnAttributesChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.AttributesDetails value);
+        partial void OnAttributesChanged();
+        /// <summary>
+        /// There are no comments for Property LaunchDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LaunchDetails")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.LaunchDetails LaunchDetails
+        {
+            get
+            {
+                return this._LaunchDetails;
+            }
+            set
+            {
+                this.OnLaunchDetailsChanging(value);
+                this._LaunchDetails = value;
+                this.OnLaunchDetailsChanged();
+                this.OnPropertyChanged("LaunchDetails");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.LaunchDetails _LaunchDetails;
+        partial void OnLaunchDetailsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.LaunchDetails value);
+        partial void OnLaunchDetailsChanged();
         /// <summary>
         /// There are no comments for Property Identification in the schema.
         /// </summary>
@@ -6877,6 +8081,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnRisksChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.Risks value);
         partial void OnRisksChanged();
         /// <summary>
+        /// There are no comments for Property KiidExtraction in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("KiidExtraction")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtraction KiidExtraction
+        {
+            get
+            {
+                return this._KiidExtraction;
+            }
+            set
+            {
+                this.OnKiidExtractionChanging(value);
+                this._KiidExtraction = value;
+                this.OnKiidExtractionChanged();
+                this.OnPropertyChanged("KiidExtraction");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtraction _KiidExtraction;
+        partial void OnKiidExtractionChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtraction value);
+        partial void OnKiidExtractionChanged();
+        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -6900,29 +8127,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     [global::Microsoft.OData.Client.OriginalNameAttribute("Charges")]
     public partial class Charges : global::System.ComponentModel.INotifyPropertyChanged
     {
-        /// <summary>
-        /// There are no comments for Property Kiids in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Kiids")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KIIDCharges Kiids
-        {
-            get
-            {
-                return this._Kiids;
-            }
-            set
-            {
-                this.OnKiidsChanging(value);
-                this._Kiids = value;
-                this.OnKiidsChanged();
-                this.OnPropertyChanged("Kiids");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KIIDCharges _Kiids;
-        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KIIDCharges value);
-        partial void OnKiidsChanged();
         /// <summary>
         /// There are no comments for Property AmcPercentage in the schema.
         /// </summary>
@@ -7379,99 +8583,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for KIIDCharges in the schema.
-    /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("KIIDCharges")]
-    public partial class KIIDCharges : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property ExitCharge in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ExitCharge")]
-        public global::System.Nullable<decimal> ExitCharge
-        {
-            get
-            {
-                return this._ExitCharge;
-            }
-            set
-            {
-                this.OnExitChargeChanging(value);
-                this._ExitCharge = value;
-                this.OnExitChargeChanged();
-                this.OnPropertyChanged("ExitCharge");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _ExitCharge;
-        partial void OnExitChargeChanging(global::System.Nullable<decimal> value);
-        partial void OnExitChargeChanged();
-        /// <summary>
-        /// There are no comments for Property InitialCharge in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("InitialCharge")]
-        public global::System.Nullable<decimal> InitialCharge
-        {
-            get
-            {
-                return this._InitialCharge;
-            }
-            set
-            {
-                this.OnInitialChargeChanging(value);
-                this._InitialCharge = value;
-                this.OnInitialChargeChanged();
-                this.OnPropertyChanged("InitialCharge");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _InitialCharge;
-        partial void OnInitialChargeChanging(global::System.Nullable<decimal> value);
-        partial void OnInitialChargeChanged();
-        /// <summary>
-        /// There are no comments for Property OngoingCharge in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("OngoingCharge")]
-        public global::System.Nullable<decimal> OngoingCharge
-        {
-            get
-            {
-                return this._OngoingCharge;
-            }
-            set
-            {
-                this.OnOngoingChargeChanging(value);
-                this._OngoingCharge = value;
-                this.OnOngoingChargeChanged();
-                this.OnPropertyChanged("OngoingCharge");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _OngoingCharge;
-        partial void OnOngoingChargeChanging(global::System.Nullable<decimal> value);
-        partial void OnOngoingChargeChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
     /// There are no comments for Essentials in the schema.
     /// </summary>
     [global::Microsoft.OData.Client.OriginalNameAttribute("Essentials")]
@@ -7523,29 +8634,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Nullable<bool> _ClassCleanValue;
         partial void OnClassCleanValueChanging(global::System.Nullable<bool> value);
         partial void OnClassCleanValueChanged();
-        /// <summary>
-        /// There are no comments for Property ClassLaunchDate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ClassLaunchDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> ClassLaunchDate
-        {
-            get
-            {
-                return this._ClassLaunchDate;
-            }
-            set
-            {
-                this.OnClassLaunchDateChanging(value);
-                this._ClassLaunchDate = value;
-                this.OnClassLaunchDateChanged();
-                this.OnPropertyChanged("ClassLaunchDate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _ClassLaunchDate;
-        partial void OnClassLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnClassLaunchDateChanged();
         /// <summary>
         /// There are no comments for Property IaSector in the schema.
         /// </summary>
@@ -7708,98 +8796,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnIsaQualifyingChanging(global::System.Nullable<bool> value);
         partial void OnIsaQualifyingChanged();
         /// <summary>
-        /// There are no comments for Property LaunchCurrency in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LaunchCurrency")]
-        public string LaunchCurrency
-        {
-            get
-            {
-                return this._LaunchCurrency;
-            }
-            set
-            {
-                this.OnLaunchCurrencyChanging(value);
-                this._LaunchCurrency = value;
-                this.OnLaunchCurrencyChanged();
-                this.OnPropertyChanged("LaunchCurrency");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LaunchCurrency;
-        partial void OnLaunchCurrencyChanging(string value);
-        partial void OnLaunchCurrencyChanged();
-        /// <summary>
-        /// There are no comments for Property LaunchDate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LaunchDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> LaunchDate
-        {
-            get
-            {
-                return this._LaunchDate;
-            }
-            set
-            {
-                this.OnLaunchDateChanging(value);
-                this._LaunchDate = value;
-                this.OnLaunchDateChanged();
-                this.OnPropertyChanged("LaunchDate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _LaunchDate;
-        partial void OnLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnLaunchDateChanged();
-        /// <summary>
-        /// There are no comments for Property LaunchPrice in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LaunchPrice")]
-        public global::System.Nullable<decimal> LaunchPrice
-        {
-            get
-            {
-                return this._LaunchPrice;
-            }
-            set
-            {
-                this.OnLaunchPriceChanging(value);
-                this._LaunchPrice = value;
-                this.OnLaunchPriceChanged();
-                this.OnPropertyChanged("LaunchPrice");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _LaunchPrice;
-        partial void OnLaunchPriceChanging(global::System.Nullable<decimal> value);
-        partial void OnLaunchPriceChanged();
-        /// <summary>
-        /// There are no comments for Property EstimatedOrdinaryShareLaunchNav in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("EstimatedOrdinaryShareLaunchNav")]
-        public global::System.Nullable<decimal> EstimatedOrdinaryShareLaunchNav
-        {
-            get
-            {
-                return this._EstimatedOrdinaryShareLaunchNav;
-            }
-            set
-            {
-                this.OnEstimatedOrdinaryShareLaunchNavChanging(value);
-                this._EstimatedOrdinaryShareLaunchNav = value;
-                this.OnEstimatedOrdinaryShareLaunchNavChanged();
-                this.OnPropertyChanged("EstimatedOrdinaryShareLaunchNav");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _EstimatedOrdinaryShareLaunchNav;
-        partial void OnEstimatedOrdinaryShareLaunchNavChanging(global::System.Nullable<decimal> value);
-        partial void OnEstimatedOrdinaryShareLaunchNavChanged();
-        /// <summary>
         /// There are no comments for Property SippQualifying in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -7868,29 +8864,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Nullable<global::System.TimeSpan> _ValuationPoint;
         partial void OnValuationPointChanging(global::System.Nullable<global::System.TimeSpan> value);
         partial void OnValuationPointChanged();
-        /// <summary>
-        /// There are no comments for Property UnitLaunchCurrency in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchCurrency")]
-        public string UnitLaunchCurrency
-        {
-            get
-            {
-                return this._UnitLaunchCurrency;
-            }
-            set
-            {
-                this.OnUnitLaunchCurrencyChanging(value);
-                this._UnitLaunchCurrency = value;
-                this.OnUnitLaunchCurrencyChanged();
-                this.OnPropertyChanged("UnitLaunchCurrency");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _UnitLaunchCurrency;
-        partial void OnUnitLaunchCurrencyChanging(string value);
-        partial void OnUnitLaunchCurrencyChanged();
         /// <summary>
         /// There are no comments for Property AicSector in the schema.
         /// </summary>
@@ -8029,98 +9002,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Nullable<global::System.DateTimeOffset> _DealingDate;
         partial void OnDealingDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnDealingDateChanged();
-        /// <summary>
-        /// There are no comments for Property AmountRaised in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AmountRaised")]
-        public global::System.Nullable<int> AmountRaised
-        {
-            get
-            {
-                return this._AmountRaised;
-            }
-            set
-            {
-                this.OnAmountRaisedChanging(value);
-                this._AmountRaised = value;
-                this.OnAmountRaisedChanged();
-                this.OnPropertyChanged("AmountRaised");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _AmountRaised;
-        partial void OnAmountRaisedChanging(global::System.Nullable<int> value);
-        partial void OnAmountRaisedChanged();
-        /// <summary>
-        /// There are no comments for Property AmountRaisedAsAtDate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AmountRaisedAsAtDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> AmountRaisedAsAtDate
-        {
-            get
-            {
-                return this._AmountRaisedAsAtDate;
-            }
-            set
-            {
-                this.OnAmountRaisedAsAtDateChanging(value);
-                this._AmountRaisedAsAtDate = value;
-                this.OnAmountRaisedAsAtDateChanged();
-                this.OnPropertyChanged("AmountRaisedAsAtDate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _AmountRaisedAsAtDate;
-        partial void OnAmountRaisedAsAtDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnAmountRaisedAsAtDateChanged();
-        /// <summary>
-        /// There are no comments for Property MaximumNumberOfOrdinarySharesOffered in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MaximumNumberOfOrdinarySharesOffered")]
-        public global::System.Nullable<int> MaximumNumberOfOrdinarySharesOffered
-        {
-            get
-            {
-                return this._MaximumNumberOfOrdinarySharesOffered;
-            }
-            set
-            {
-                this.OnMaximumNumberOfOrdinarySharesOfferedChanging(value);
-                this._MaximumNumberOfOrdinarySharesOffered = value;
-                this.OnMaximumNumberOfOrdinarySharesOfferedChanged();
-                this.OnPropertyChanged("MaximumNumberOfOrdinarySharesOffered");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _MaximumNumberOfOrdinarySharesOffered;
-        partial void OnMaximumNumberOfOrdinarySharesOfferedChanging(global::System.Nullable<int> value);
-        partial void OnMaximumNumberOfOrdinarySharesOfferedChanged();
-        /// <summary>
-        /// There are no comments for Property MaximumNumberOfOrdinarySharesInIssue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MaximumNumberOfOrdinarySharesInIssue")]
-        public global::System.Nullable<int> MaximumNumberOfOrdinarySharesInIssue
-        {
-            get
-            {
-                return this._MaximumNumberOfOrdinarySharesInIssue;
-            }
-            set
-            {
-                this.OnMaximumNumberOfOrdinarySharesInIssueChanging(value);
-                this._MaximumNumberOfOrdinarySharesInIssue = value;
-                this.OnMaximumNumberOfOrdinarySharesInIssueChanged();
-                this.OnPropertyChanged("MaximumNumberOfOrdinarySharesInIssue");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _MaximumNumberOfOrdinarySharesInIssue;
-        partial void OnMaximumNumberOfOrdinarySharesInIssueChanging(global::System.Nullable<int> value);
-        partial void OnMaximumNumberOfOrdinarySharesInIssueChanged();
         /// <summary>
         /// There are no comments for Property ShareBuybackPolicy in the schema.
         /// </summary>
@@ -8536,52 +9417,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnSubscriptionExtensionCloseDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnSubscriptionExtensionCloseDateChanged();
         /// <summary>
-        /// There are no comments for Property UnitLaunchDate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> UnitLaunchDate
-        {
-            get
-            {
-                return this._UnitLaunchDate;
-            }
-            set
-            {
-                this.OnUnitLaunchDateChanging(value);
-                this._UnitLaunchDate = value;
-                this.OnUnitLaunchDateChanged();
-                this.OnPropertyChanged("UnitLaunchDate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _UnitLaunchDate;
-        partial void OnUnitLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnUnitLaunchDateChanged();
-        /// <summary>
-        /// There are no comments for Property UnitLaunchPrice in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchPrice")]
-        public global::System.Nullable<decimal> UnitLaunchPrice
-        {
-            get
-            {
-                return this._UnitLaunchPrice;
-            }
-            set
-            {
-                this.OnUnitLaunchPriceChanging(value);
-                this._UnitLaunchPrice = value;
-                this.OnUnitLaunchPriceChanged();
-                this.OnPropertyChanged("UnitLaunchPrice");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _UnitLaunchPrice;
-        partial void OnUnitLaunchPriceChanging(global::System.Nullable<decimal> value);
-        partial void OnUnitLaunchPriceChanged();
-        /// <summary>
         /// There are no comments for Property StockListingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -8605,580 +9440,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnStockListingCurrencyChanging(string value);
         partial void OnStockListingCurrencyChanged();
         /// <summary>
-        /// There are no comments for Property MultiManager in the schema.
+        /// There are no comments for Property StockListingCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MultiManager")]
-        public global::System.Nullable<bool> MultiManager
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StockListingCurrencyCode")]
+        public string StockListingCurrencyCode
         {
             get
             {
-                return this._MultiManager;
+                return this._StockListingCurrencyCode;
             }
             set
             {
-                this.OnMultiManagerChanging(value);
-                this._MultiManager = value;
-                this.OnMultiManagerChanged();
-                this.OnPropertyChanged("MultiManager");
+                this.OnStockListingCurrencyCodeChanging(value);
+                this._StockListingCurrencyCode = value;
+                this.OnStockListingCurrencyCodeChanged();
+                this.OnPropertyChanged("StockListingCurrencyCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _MultiManager;
-        partial void OnMultiManagerChanging(global::System.Nullable<bool> value);
-        partial void OnMultiManagerChanged();
-        /// <summary>
-        /// There are no comments for Property IndexTracker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IndexTracker")]
-        public global::System.Nullable<bool> IndexTracker
-        {
-            get
-            {
-                return this._IndexTracker;
-            }
-            set
-            {
-                this.OnIndexTrackerChanging(value);
-                this._IndexTracker = value;
-                this.OnIndexTrackerChanged();
-                this.OnPropertyChanged("IndexTracker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _IndexTracker;
-        partial void OnIndexTrackerChanging(global::System.Nullable<bool> value);
-        partial void OnIndexTrackerChanged();
-        /// <summary>
-        /// There are no comments for Property Property in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Property")]
-        public global::System.Nullable<bool> Property
-        {
-            get
-            {
-                return this._Property;
-            }
-            set
-            {
-                this.OnPropertyChanging(value);
-                this._Property = value;
-                this.OnPropertyChanged();
-                this.OnPropertyChanged("Property");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Property;
-        partial void OnPropertyChanging(global::System.Nullable<bool> value);
-        partial void OnPropertyChanged();
-        /// <summary>
-        /// There are no comments for Property Commodity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Commodity")]
-        public global::System.Nullable<bool> Commodity
-        {
-            get
-            {
-                return this._Commodity;
-            }
-            set
-            {
-                this.OnCommodityChanging(value);
-                this._Commodity = value;
-                this.OnCommodityChanged();
-                this.OnPropertyChanged("Commodity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Commodity;
-        partial void OnCommodityChanging(global::System.Nullable<bool> value);
-        partial void OnCommodityChanged();
-        /// <summary>
-        /// There are no comments for Property ProtectedAbsoluteReturn in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ProtectedAbsoluteReturn")]
-        public global::System.Nullable<bool> ProtectedAbsoluteReturn
-        {
-            get
-            {
-                return this._ProtectedAbsoluteReturn;
-            }
-            set
-            {
-                this.OnProtectedAbsoluteReturnChanging(value);
-                this._ProtectedAbsoluteReturn = value;
-                this.OnProtectedAbsoluteReturnChanged();
-                this.OnPropertyChanged("ProtectedAbsoluteReturn");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _ProtectedAbsoluteReturn;
-        partial void OnProtectedAbsoluteReturnChanging(global::System.Nullable<bool> value);
-        partial void OnProtectedAbsoluteReturnChanged();
-        /// <summary>
-        /// There are no comments for Property Bric in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Bric")]
-        public global::System.Nullable<bool> Bric
-        {
-            get
-            {
-                return this._Bric;
-            }
-            set
-            {
-                this.OnBricChanging(value);
-                this._Bric = value;
-                this.OnBricChanged();
-                this.OnPropertyChanged("Bric");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Bric;
-        partial void OnBricChanging(global::System.Nullable<bool> value);
-        partial void OnBricChanged();
-        /// <summary>
-        /// There are no comments for Property FundCommentaryRequired in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FundCommentaryRequired")]
-        public global::System.Nullable<bool> FundCommentaryRequired
-        {
-            get
-            {
-                return this._FundCommentaryRequired;
-            }
-            set
-            {
-                this.OnFundCommentaryRequiredChanging(value);
-                this._FundCommentaryRequired = value;
-                this.OnFundCommentaryRequiredChanged();
-                this.OnPropertyChanged("FundCommentaryRequired");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _FundCommentaryRequired;
-        partial void OnFundCommentaryRequiredChanging(global::System.Nullable<bool> value);
-        partial void OnFundCommentaryRequiredChanged();
-        /// <summary>
-        /// There are no comments for Property Bond in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Bond")]
-        public global::System.Nullable<bool> Bond
-        {
-            get
-            {
-                return this._Bond;
-            }
-            set
-            {
-                this.OnBondChanging(value);
-                this._Bond = value;
-                this.OnBondChanged();
-                this.OnPropertyChanged("Bond");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Bond;
-        partial void OnBondChanging(global::System.Nullable<bool> value);
-        partial void OnBondChanged();
-        /// <summary>
-        /// There are no comments for Property GenericBreakdown in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("GenericBreakdown")]
-        public global::System.Nullable<bool> GenericBreakdown
-        {
-            get
-            {
-                return this._GenericBreakdown;
-            }
-            set
-            {
-                this.OnGenericBreakdownChanging(value);
-                this._GenericBreakdown = value;
-                this.OnGenericBreakdownChanged();
-                this.OnPropertyChanged("GenericBreakdown");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _GenericBreakdown;
-        partial void OnGenericBreakdownChanging(global::System.Nullable<bool> value);
-        partial void OnGenericBreakdownChanged();
-        /// <summary>
-        /// There are no comments for Property Leverage in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Leverage")]
-        public global::System.Nullable<decimal> Leverage
-        {
-            get
-            {
-                return this._Leverage;
-            }
-            set
-            {
-                this.OnLeverageChanging(value);
-                this._Leverage = value;
-                this.OnLeverageChanged();
-                this.OnPropertyChanged("Leverage");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _Leverage;
-        partial void OnLeverageChanging(global::System.Nullable<decimal> value);
-        partial void OnLeverageChanged();
-        /// <summary>
-        /// There are no comments for Property Cash in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Cash")]
-        public global::System.Nullable<bool> Cash
-        {
-            get
-            {
-                return this._Cash;
-            }
-            set
-            {
-                this.OnCashChanging(value);
-                this._Cash = value;
-                this.OnCashChanged();
-                this.OnPropertyChanged("Cash");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Cash;
-        partial void OnCashChanging(global::System.Nullable<bool> value);
-        partial void OnCashChanged();
-        /// <summary>
-        /// There are no comments for Property SingleAssetClass in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("SingleAssetClass")]
-        public global::System.Nullable<bool> SingleAssetClass
-        {
-            get
-            {
-                return this._SingleAssetClass;
-            }
-            set
-            {
-                this.OnSingleAssetClassChanging(value);
-                this._SingleAssetClass = value;
-                this.OnSingleAssetClassChanged();
-                this.OnPropertyChanged("SingleAssetClass");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _SingleAssetClass;
-        partial void OnSingleAssetClassChanging(global::System.Nullable<bool> value);
-        partial void OnSingleAssetClassChanged();
-        /// <summary>
-        /// There are no comments for Property HigherVolatility in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("HigherVolatility")]
-        public global::System.Nullable<bool> HigherVolatility
-        {
-            get
-            {
-                return this._HigherVolatility;
-            }
-            set
-            {
-                this.OnHigherVolatilityChanging(value);
-                this._HigherVolatility = value;
-                this.OnHigherVolatilityChanged();
-                this.OnPropertyChanged("HigherVolatility");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _HigherVolatility;
-        partial void OnHigherVolatilityChanging(global::System.Nullable<bool> value);
-        partial void OnHigherVolatilityChanged();
-        /// <summary>
-        /// There are no comments for Property InternallyManaged in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("InternallyManaged")]
-        public global::System.Nullable<bool> InternallyManaged
-        {
-            get
-            {
-                return this._InternallyManaged;
-            }
-            set
-            {
-                this.OnInternallyManagedChanging(value);
-                this._InternallyManaged = value;
-                this.OnInternallyManagedChanged();
-                this.OnPropertyChanged("InternallyManaged");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _InternallyManaged;
-        partial void OnInternallyManagedChanging(global::System.Nullable<bool> value);
-        partial void OnInternallyManagedChanged();
-        /// <summary>
-        /// There are no comments for Property WithProfits in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("WithProfits")]
-        public global::System.Nullable<bool> WithProfits
-        {
-            get
-            {
-                return this._WithProfits;
-            }
-            set
-            {
-                this.OnWithProfitsChanging(value);
-                this._WithProfits = value;
-                this.OnWithProfitsChanged();
-                this.OnPropertyChanged("WithProfits");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _WithProfits;
-        partial void OnWithProfitsChanging(global::System.Nullable<bool> value);
-        partial void OnWithProfitsChanged();
-        /// <summary>
-        /// There are no comments for Property AssetType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AssetType")]
-        public string AssetType
-        {
-            get
-            {
-                return this._AssetType;
-            }
-            set
-            {
-                this.OnAssetTypeChanging(value);
-                this._AssetType = value;
-                this.OnAssetTypeChanged();
-                this.OnPropertyChanged("AssetType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AssetType;
-        partial void OnAssetTypeChanging(string value);
-        partial void OnAssetTypeChanged();
-        /// <summary>
-        /// There are no comments for Property ManagementStyle in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ManagementStyle")]
-        public string ManagementStyle
-        {
-            get
-            {
-                return this._ManagementStyle;
-            }
-            set
-            {
-                this.OnManagementStyleChanging(value);
-                this._ManagementStyle = value;
-                this.OnManagementStyleChanged();
-                this.OnPropertyChanged("ManagementStyle");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _ManagementStyle;
-        partial void OnManagementStyleChanging(string value);
-        partial void OnManagementStyleChanged();
-        /// <summary>
-        /// There are no comments for Property GlobalBond in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("GlobalBond")]
-        public global::System.Nullable<bool> GlobalBond
-        {
-            get
-            {
-                return this._GlobalBond;
-            }
-            set
-            {
-                this.OnGlobalBondChanging(value);
-                this._GlobalBond = value;
-                this.OnGlobalBondChanged();
-                this.OnPropertyChanged("GlobalBond");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _GlobalBond;
-        partial void OnGlobalBondChanging(global::System.Nullable<bool> value);
-        partial void OnGlobalBondChanged();
-        /// <summary>
-        /// There are no comments for Property CorporateBonds in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("CorporateBonds")]
-        public global::System.Nullable<bool> CorporateBonds
-        {
-            get
-            {
-                return this._CorporateBonds;
-            }
-            set
-            {
-                this.OnCorporateBondsChanging(value);
-                this._CorporateBonds = value;
-                this.OnCorporateBondsChanged();
-                this.OnPropertyChanged("CorporateBonds");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _CorporateBonds;
-        partial void OnCorporateBondsChanging(global::System.Nullable<bool> value);
-        partial void OnCorporateBondsChanged();
-        /// <summary>
-        /// There are no comments for Property Equities in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Equities")]
-        public global::System.Nullable<bool> Equities
-        {
-            get
-            {
-                return this._Equities;
-            }
-            set
-            {
-                this.OnEquitiesChanging(value);
-                this._Equities = value;
-                this.OnEquitiesChanged();
-                this.OnPropertyChanged("Equities");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Equities;
-        partial void OnEquitiesChanging(global::System.Nullable<bool> value);
-        partial void OnEquitiesChanged();
-        /// <summary>
-        /// There are no comments for Property Gilts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Gilts")]
-        public global::System.Nullable<bool> Gilts
-        {
-            get
-            {
-                return this._Gilts;
-            }
-            set
-            {
-                this.OnGiltsChanging(value);
-                this._Gilts = value;
-                this.OnGiltsChanged();
-                this.OnPropertyChanged("Gilts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _Gilts;
-        partial void OnGiltsChanging(global::System.Nullable<bool> value);
-        partial void OnGiltsChanged();
-        /// <summary>
-        /// There are no comments for Property GuaranteedFunds in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("GuaranteedFunds")]
-        public global::System.Nullable<bool> GuaranteedFunds
-        {
-            get
-            {
-                return this._GuaranteedFunds;
-            }
-            set
-            {
-                this.OnGuaranteedFundsChanging(value);
-                this._GuaranteedFunds = value;
-                this.OnGuaranteedFundsChanged();
-                this.OnPropertyChanged("GuaranteedFunds");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _GuaranteedFunds;
-        partial void OnGuaranteedFundsChanging(global::System.Nullable<bool> value);
-        partial void OnGuaranteedFundsChanged();
-        /// <summary>
-        /// There are no comments for Property MixedAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MixedAsset")]
-        public global::System.Nullable<bool> MixedAsset
-        {
-            get
-            {
-                return this._MixedAsset;
-            }
-            set
-            {
-                this.OnMixedAssetChanging(value);
-                this._MixedAsset = value;
-                this.OnMixedAssetChanged();
-                this.OnPropertyChanged("MixedAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _MixedAsset;
-        partial void OnMixedAssetChanging(global::System.Nullable<bool> value);
-        partial void OnMixedAssetChanged();
-        /// <summary>
-        /// There are no comments for Property SpecialistOther in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("SpecialistOther")]
-        public global::System.Nullable<bool> SpecialistOther
-        {
-            get
-            {
-                return this._SpecialistOther;
-            }
-            set
-            {
-                this.OnSpecialistOtherChanging(value);
-                this._SpecialistOther = value;
-                this.OnSpecialistOtherChanged();
-                this.OnPropertyChanged("SpecialistOther");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _SpecialistOther;
-        partial void OnSpecialistOtherChanging(global::System.Nullable<bool> value);
-        partial void OnSpecialistOtherChanged();
-        /// <summary>
-        /// There are no comments for Property LifeStyle in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LifeStyle")]
-        public global::System.Nullable<bool> LifeStyle
-        {
-            get
-            {
-                return this._LifeStyle;
-            }
-            set
-            {
-                this.OnLifeStyleChanging(value);
-                this._LifeStyle = value;
-                this.OnLifeStyleChanged();
-                this.OnPropertyChanged("LifeStyle");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<bool> _LifeStyle;
-        partial void OnLifeStyleChanging(global::System.Nullable<bool> value);
-        partial void OnLifeStyleChanged();
+        private string _StockListingCurrencyCode;
+        partial void OnStockListingCurrencyCodeChanging(string value);
+        partial void OnStockListingCurrencyCodeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -9341,29 +9624,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _UnitType;
         partial void OnUnitTypeChanging(string value);
         partial void OnUnitTypeChanged();
-        /// <summary>
-        /// There are no comments for Property VctType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("VctType")]
-        public string VctType
-        {
-            get
-            {
-                return this._VctType;
-            }
-            set
-            {
-                this.OnVctTypeChanging(value);
-                this._VctType = value;
-                this.OnVctTypeChanged();
-                this.OnPropertyChanged("VctType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _VctType;
-        partial void OnVctTypeChanging(string value);
-        partial void OnVctTypeChanged();
         /// <summary>
         /// There are no comments for Property InternalCode in the schema.
         /// </summary>
@@ -10183,6 +10443,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
+        /// There are no comments for Property Photo in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Photo")]
+        public string Photo
+        {
+            get
+            {
+                return this._Photo;
+            }
+            set
+            {
+                this.OnPhotoChanging(value);
+                this._Photo = value;
+                this.OnPhotoChanged();
+                this.OnPropertyChanged("Photo");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Photo;
+        partial void OnPhotoChanging(string value);
+        partial void OnPhotoChanged();
+        /// <summary>
         /// There are no comments for Property PositionWithinTeam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -10460,29 +10743,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     [global::Microsoft.OData.Client.OriginalNameAttribute("Risks")]
     public partial class Risks : global::System.ComponentModel.INotifyPropertyChanged
     {
-        /// <summary>
-        /// There are no comments for Property Srri in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Srri")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.SrriRisk Srri
-        {
-            get
-            {
-                return this._Srri;
-            }
-            set
-            {
-                this.OnSrriChanging(value);
-                this._Srri = value;
-                this.OnSrriChanged();
-                this.OnPropertyChanged("Srri");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.SrriRisk _Srri;
-        partial void OnSrriChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.SrriRisk value);
-        partial void OnSrriChanged();
         /// <summary>
         /// There are no comments for Property ChargesToCapital in the schema.
         /// </summary>
@@ -11077,34 +11337,57 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for SrriRisk in the schema.
+    /// There are no comments for KiidExtraction in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("SrriRisk")]
-    public partial class SrriRisk : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("KiidExtraction")]
+    public partial class KiidExtraction : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property ValidatedSrri in the schema.
+        /// There are no comments for Property Kiids in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ValidatedSrri")]
-        public global::System.Nullable<int> ValidatedSrri
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kiids")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges Kiids
         {
             get
             {
-                return this._ValidatedSrri;
+                return this._Kiids;
             }
             set
             {
-                this.OnValidatedSrriChanging(value);
-                this._ValidatedSrri = value;
-                this.OnValidatedSrriChanged();
-                this.OnPropertyChanged("ValidatedSrri");
+                this.OnKiidsChanging(value);
+                this._Kiids = value;
+                this.OnKiidsChanged();
+                this.OnPropertyChanged("Kiids");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _ValidatedSrri;
-        partial void OnValidatedSrriChanging(global::System.Nullable<int> value);
-        partial void OnValidatedSrriChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges _Kiids;
+        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges value);
+        partial void OnKiidsChanged();
+        /// <summary>
+        /// There are no comments for Property Srri in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Srri")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.SrriRisk Srri
+        {
+            get
+            {
+                return this._Srri;
+            }
+            set
+            {
+                this.OnSrriChanging(value);
+                this._Srri = value;
+                this.OnSrriChanged();
+                this.OnPropertyChanged("Srri");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.SrriRisk _Srri;
+        partial void OnSrriChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.SrriRisk value);
+        partial void OnSrriChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -11379,6 +11662,1123 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
 }
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping
+{
+    /// <summary>
+    /// There are no comments for AttributesDetails in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("AttributesDetails")]
+    public partial class AttributesDetails : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property MultiManager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MultiManager")]
+        public global::System.Nullable<bool> MultiManager
+        {
+            get
+            {
+                return this._MultiManager;
+            }
+            set
+            {
+                this.OnMultiManagerChanging(value);
+                this._MultiManager = value;
+                this.OnMultiManagerChanged();
+                this.OnPropertyChanged("MultiManager");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _MultiManager;
+        partial void OnMultiManagerChanging(global::System.Nullable<bool> value);
+        partial void OnMultiManagerChanged();
+        /// <summary>
+        /// There are no comments for Property IndexTracker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IndexTracker")]
+        public global::System.Nullable<bool> IndexTracker
+        {
+            get
+            {
+                return this._IndexTracker;
+            }
+            set
+            {
+                this.OnIndexTrackerChanging(value);
+                this._IndexTracker = value;
+                this.OnIndexTrackerChanged();
+                this.OnPropertyChanged("IndexTracker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _IndexTracker;
+        partial void OnIndexTrackerChanging(global::System.Nullable<bool> value);
+        partial void OnIndexTrackerChanged();
+        /// <summary>
+        /// There are no comments for Property Property in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Property")]
+        public global::System.Nullable<bool> Property
+        {
+            get
+            {
+                return this._Property;
+            }
+            set
+            {
+                this.OnPropertyChanging(value);
+                this._Property = value;
+                this.OnPropertyChanged();
+                this.OnPropertyChanged("Property");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Property;
+        partial void OnPropertyChanging(global::System.Nullable<bool> value);
+        partial void OnPropertyChanged();
+        /// <summary>
+        /// There are no comments for Property Commodity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Commodity")]
+        public global::System.Nullable<bool> Commodity
+        {
+            get
+            {
+                return this._Commodity;
+            }
+            set
+            {
+                this.OnCommodityChanging(value);
+                this._Commodity = value;
+                this.OnCommodityChanged();
+                this.OnPropertyChanged("Commodity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Commodity;
+        partial void OnCommodityChanging(global::System.Nullable<bool> value);
+        partial void OnCommodityChanged();
+        /// <summary>
+        /// There are no comments for Property ProtectedAbsoluteReturn in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ProtectedAbsoluteReturn")]
+        public global::System.Nullable<bool> ProtectedAbsoluteReturn
+        {
+            get
+            {
+                return this._ProtectedAbsoluteReturn;
+            }
+            set
+            {
+                this.OnProtectedAbsoluteReturnChanging(value);
+                this._ProtectedAbsoluteReturn = value;
+                this.OnProtectedAbsoluteReturnChanged();
+                this.OnPropertyChanged("ProtectedAbsoluteReturn");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _ProtectedAbsoluteReturn;
+        partial void OnProtectedAbsoluteReturnChanging(global::System.Nullable<bool> value);
+        partial void OnProtectedAbsoluteReturnChanged();
+        /// <summary>
+        /// There are no comments for Property Bric in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bric")]
+        public global::System.Nullable<bool> Bric
+        {
+            get
+            {
+                return this._Bric;
+            }
+            set
+            {
+                this.OnBricChanging(value);
+                this._Bric = value;
+                this.OnBricChanged();
+                this.OnPropertyChanged("Bric");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Bric;
+        partial void OnBricChanging(global::System.Nullable<bool> value);
+        partial void OnBricChanged();
+        /// <summary>
+        /// There are no comments for Property Bond in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bond")]
+        public global::System.Nullable<bool> Bond
+        {
+            get
+            {
+                return this._Bond;
+            }
+            set
+            {
+                this.OnBondChanging(value);
+                this._Bond = value;
+                this.OnBondChanged();
+                this.OnPropertyChanged("Bond");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Bond;
+        partial void OnBondChanging(global::System.Nullable<bool> value);
+        partial void OnBondChanged();
+        /// <summary>
+        /// There are no comments for Property Leverage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Leverage")]
+        public global::System.Nullable<decimal> Leverage
+        {
+            get
+            {
+                return this._Leverage;
+            }
+            set
+            {
+                this.OnLeverageChanging(value);
+                this._Leverage = value;
+                this.OnLeverageChanged();
+                this.OnPropertyChanged("Leverage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _Leverage;
+        partial void OnLeverageChanging(global::System.Nullable<decimal> value);
+        partial void OnLeverageChanged();
+        /// <summary>
+        /// There are no comments for Property Cash in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Cash")]
+        public global::System.Nullable<bool> Cash
+        {
+            get
+            {
+                return this._Cash;
+            }
+            set
+            {
+                this.OnCashChanging(value);
+                this._Cash = value;
+                this.OnCashChanged();
+                this.OnPropertyChanged("Cash");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Cash;
+        partial void OnCashChanging(global::System.Nullable<bool> value);
+        partial void OnCashChanged();
+        /// <summary>
+        /// There are no comments for Property SingleAssetClass in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SingleAssetClass")]
+        public global::System.Nullable<bool> SingleAssetClass
+        {
+            get
+            {
+                return this._SingleAssetClass;
+            }
+            set
+            {
+                this.OnSingleAssetClassChanging(value);
+                this._SingleAssetClass = value;
+                this.OnSingleAssetClassChanged();
+                this.OnPropertyChanged("SingleAssetClass");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _SingleAssetClass;
+        partial void OnSingleAssetClassChanging(global::System.Nullable<bool> value);
+        partial void OnSingleAssetClassChanged();
+        /// <summary>
+        /// There are no comments for Property HigherVolatility in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HigherVolatility")]
+        public global::System.Nullable<bool> HigherVolatility
+        {
+            get
+            {
+                return this._HigherVolatility;
+            }
+            set
+            {
+                this.OnHigherVolatilityChanging(value);
+                this._HigherVolatility = value;
+                this.OnHigherVolatilityChanged();
+                this.OnPropertyChanged("HigherVolatility");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _HigherVolatility;
+        partial void OnHigherVolatilityChanging(global::System.Nullable<bool> value);
+        partial void OnHigherVolatilityChanged();
+        /// <summary>
+        /// There are no comments for Property InternallyManaged in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InternallyManaged")]
+        public global::System.Nullable<bool> InternallyManaged
+        {
+            get
+            {
+                return this._InternallyManaged;
+            }
+            set
+            {
+                this.OnInternallyManagedChanging(value);
+                this._InternallyManaged = value;
+                this.OnInternallyManagedChanged();
+                this.OnPropertyChanged("InternallyManaged");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _InternallyManaged;
+        partial void OnInternallyManagedChanging(global::System.Nullable<bool> value);
+        partial void OnInternallyManagedChanged();
+        /// <summary>
+        /// There are no comments for Property WithProfits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("WithProfits")]
+        public global::System.Nullable<bool> WithProfits
+        {
+            get
+            {
+                return this._WithProfits;
+            }
+            set
+            {
+                this.OnWithProfitsChanging(value);
+                this._WithProfits = value;
+                this.OnWithProfitsChanged();
+                this.OnPropertyChanged("WithProfits");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _WithProfits;
+        partial void OnWithProfitsChanging(global::System.Nullable<bool> value);
+        partial void OnWithProfitsChanged();
+        /// <summary>
+        /// There are no comments for Property AssetType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AssetType")]
+        public string AssetType
+        {
+            get
+            {
+                return this._AssetType;
+            }
+            set
+            {
+                this.OnAssetTypeChanging(value);
+                this._AssetType = value;
+                this.OnAssetTypeChanged();
+                this.OnPropertyChanged("AssetType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AssetType;
+        partial void OnAssetTypeChanging(string value);
+        partial void OnAssetTypeChanged();
+        /// <summary>
+        /// There are no comments for Property ManagementStyle in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ManagementStyle")]
+        public string ManagementStyle
+        {
+            get
+            {
+                return this._ManagementStyle;
+            }
+            set
+            {
+                this.OnManagementStyleChanging(value);
+                this._ManagementStyle = value;
+                this.OnManagementStyleChanged();
+                this.OnPropertyChanged("ManagementStyle");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ManagementStyle;
+        partial void OnManagementStyleChanging(string value);
+        partial void OnManagementStyleChanged();
+        /// <summary>
+        /// There are no comments for Property GlobalBond in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GlobalBond")]
+        public global::System.Nullable<bool> GlobalBond
+        {
+            get
+            {
+                return this._GlobalBond;
+            }
+            set
+            {
+                this.OnGlobalBondChanging(value);
+                this._GlobalBond = value;
+                this.OnGlobalBondChanged();
+                this.OnPropertyChanged("GlobalBond");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _GlobalBond;
+        partial void OnGlobalBondChanging(global::System.Nullable<bool> value);
+        partial void OnGlobalBondChanged();
+        /// <summary>
+        /// There are no comments for Property CorporateBonds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CorporateBonds")]
+        public global::System.Nullable<bool> CorporateBonds
+        {
+            get
+            {
+                return this._CorporateBonds;
+            }
+            set
+            {
+                this.OnCorporateBondsChanging(value);
+                this._CorporateBonds = value;
+                this.OnCorporateBondsChanged();
+                this.OnPropertyChanged("CorporateBonds");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _CorporateBonds;
+        partial void OnCorporateBondsChanging(global::System.Nullable<bool> value);
+        partial void OnCorporateBondsChanged();
+        /// <summary>
+        /// There are no comments for Property Equities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Equities")]
+        public global::System.Nullable<bool> Equities
+        {
+            get
+            {
+                return this._Equities;
+            }
+            set
+            {
+                this.OnEquitiesChanging(value);
+                this._Equities = value;
+                this.OnEquitiesChanged();
+                this.OnPropertyChanged("Equities");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Equities;
+        partial void OnEquitiesChanging(global::System.Nullable<bool> value);
+        partial void OnEquitiesChanged();
+        /// <summary>
+        /// There are no comments for Property Gilts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Gilts")]
+        public global::System.Nullable<bool> Gilts
+        {
+            get
+            {
+                return this._Gilts;
+            }
+            set
+            {
+                this.OnGiltsChanging(value);
+                this._Gilts = value;
+                this.OnGiltsChanged();
+                this.OnPropertyChanged("Gilts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _Gilts;
+        partial void OnGiltsChanging(global::System.Nullable<bool> value);
+        partial void OnGiltsChanged();
+        /// <summary>
+        /// There are no comments for Property GuaranteedFunds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GuaranteedFunds")]
+        public global::System.Nullable<bool> GuaranteedFunds
+        {
+            get
+            {
+                return this._GuaranteedFunds;
+            }
+            set
+            {
+                this.OnGuaranteedFundsChanging(value);
+                this._GuaranteedFunds = value;
+                this.OnGuaranteedFundsChanged();
+                this.OnPropertyChanged("GuaranteedFunds");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _GuaranteedFunds;
+        partial void OnGuaranteedFundsChanging(global::System.Nullable<bool> value);
+        partial void OnGuaranteedFundsChanged();
+        /// <summary>
+        /// There are no comments for Property MixedAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MixedAsset")]
+        public global::System.Nullable<bool> MixedAsset
+        {
+            get
+            {
+                return this._MixedAsset;
+            }
+            set
+            {
+                this.OnMixedAssetChanging(value);
+                this._MixedAsset = value;
+                this.OnMixedAssetChanged();
+                this.OnPropertyChanged("MixedAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _MixedAsset;
+        partial void OnMixedAssetChanging(global::System.Nullable<bool> value);
+        partial void OnMixedAssetChanged();
+        /// <summary>
+        /// There are no comments for Property SpecialistOther in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SpecialistOther")]
+        public global::System.Nullable<bool> SpecialistOther
+        {
+            get
+            {
+                return this._SpecialistOther;
+            }
+            set
+            {
+                this.OnSpecialistOtherChanging(value);
+                this._SpecialistOther = value;
+                this.OnSpecialistOtherChanged();
+                this.OnPropertyChanged("SpecialistOther");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _SpecialistOther;
+        partial void OnSpecialistOtherChanging(global::System.Nullable<bool> value);
+        partial void OnSpecialistOtherChanged();
+        /// <summary>
+        /// There are no comments for Property LifeStyle in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LifeStyle")]
+        public global::System.Nullable<bool> LifeStyle
+        {
+            get
+            {
+                return this._LifeStyle;
+            }
+            set
+            {
+                this.OnLifeStyleChanging(value);
+                this._LifeStyle = value;
+                this.OnLifeStyleChanged();
+                this.OnPropertyChanged("LifeStyle");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<bool> _LifeStyle;
+        partial void OnLifeStyleChanging(global::System.Nullable<bool> value);
+        partial void OnLifeStyleChanged();
+        /// <summary>
+        /// There are no comments for Property VctType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("VctType")]
+        public string VctType
+        {
+            get
+            {
+                return this._VctType;
+            }
+            set
+            {
+                this.OnVctTypeChanging(value);
+                this._VctType = value;
+                this.OnVctTypeChanged();
+                this.OnPropertyChanged("VctType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _VctType;
+        partial void OnVctTypeChanging(string value);
+        partial void OnVctTypeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping
+{
+    /// <summary>
+    /// There are no comments for LaunchDetails in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LaunchDetails")]
+    public partial class LaunchDetails : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property ClassLaunchDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ClassLaunchDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> ClassLaunchDate
+        {
+            get
+            {
+                return this._ClassLaunchDate;
+            }
+            set
+            {
+                this.OnClassLaunchDateChanging(value);
+                this._ClassLaunchDate = value;
+                this.OnClassLaunchDateChanged();
+                this.OnPropertyChanged("ClassLaunchDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _ClassLaunchDate;
+        partial void OnClassLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnClassLaunchDateChanged();
+        /// <summary>
+        /// There are no comments for Property FundLaunchDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FundLaunchDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> FundLaunchDate
+        {
+            get
+            {
+                return this._FundLaunchDate;
+            }
+            set
+            {
+                this.OnFundLaunchDateChanging(value);
+                this._FundLaunchDate = value;
+                this.OnFundLaunchDateChanged();
+                this.OnPropertyChanged("FundLaunchDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _FundLaunchDate;
+        partial void OnFundLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnFundLaunchDateChanged();
+        /// <summary>
+        /// There are no comments for Property FundLaunchPrice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FundLaunchPrice")]
+        public global::System.Nullable<decimal> FundLaunchPrice
+        {
+            get
+            {
+                return this._FundLaunchPrice;
+            }
+            set
+            {
+                this.OnFundLaunchPriceChanging(value);
+                this._FundLaunchPrice = value;
+                this.OnFundLaunchPriceChanged();
+                this.OnPropertyChanged("FundLaunchPrice");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _FundLaunchPrice;
+        partial void OnFundLaunchPriceChanging(global::System.Nullable<decimal> value);
+        partial void OnFundLaunchPriceChanged();
+        /// <summary>
+        /// There are no comments for Property FundLaunchCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FundLaunchCurrency")]
+        public string FundLaunchCurrency
+        {
+            get
+            {
+                return this._FundLaunchCurrency;
+            }
+            set
+            {
+                this.OnFundLaunchCurrencyChanging(value);
+                this._FundLaunchCurrency = value;
+                this.OnFundLaunchCurrencyChanged();
+                this.OnPropertyChanged("FundLaunchCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FundLaunchCurrency;
+        partial void OnFundLaunchCurrencyChanging(string value);
+        partial void OnFundLaunchCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property FundLaunchCurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FundLaunchCurrencyCode")]
+        public string FundLaunchCurrencyCode
+        {
+            get
+            {
+                return this._FundLaunchCurrencyCode;
+            }
+            set
+            {
+                this.OnFundLaunchCurrencyCodeChanging(value);
+                this._FundLaunchCurrencyCode = value;
+                this.OnFundLaunchCurrencyCodeChanged();
+                this.OnPropertyChanged("FundLaunchCurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FundLaunchCurrencyCode;
+        partial void OnFundLaunchCurrencyCodeChanging(string value);
+        partial void OnFundLaunchCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property UnitLaunchCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchCurrency")]
+        public string UnitLaunchCurrency
+        {
+            get
+            {
+                return this._UnitLaunchCurrency;
+            }
+            set
+            {
+                this.OnUnitLaunchCurrencyChanging(value);
+                this._UnitLaunchCurrency = value;
+                this.OnUnitLaunchCurrencyChanged();
+                this.OnPropertyChanged("UnitLaunchCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _UnitLaunchCurrency;
+        partial void OnUnitLaunchCurrencyChanging(string value);
+        partial void OnUnitLaunchCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property UnitLaunchCurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchCurrencyCode")]
+        public string UnitLaunchCurrencyCode
+        {
+            get
+            {
+                return this._UnitLaunchCurrencyCode;
+            }
+            set
+            {
+                this.OnUnitLaunchCurrencyCodeChanging(value);
+                this._UnitLaunchCurrencyCode = value;
+                this.OnUnitLaunchCurrencyCodeChanged();
+                this.OnPropertyChanged("UnitLaunchCurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _UnitLaunchCurrencyCode;
+        partial void OnUnitLaunchCurrencyCodeChanging(string value);
+        partial void OnUnitLaunchCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property UnitLaunchDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> UnitLaunchDate
+        {
+            get
+            {
+                return this._UnitLaunchDate;
+            }
+            set
+            {
+                this.OnUnitLaunchDateChanging(value);
+                this._UnitLaunchDate = value;
+                this.OnUnitLaunchDateChanged();
+                this.OnPropertyChanged("UnitLaunchDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _UnitLaunchDate;
+        partial void OnUnitLaunchDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnUnitLaunchDateChanged();
+        /// <summary>
+        /// There are no comments for Property UnitLaunchPrice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitLaunchPrice")]
+        public global::System.Nullable<decimal> UnitLaunchPrice
+        {
+            get
+            {
+                return this._UnitLaunchPrice;
+            }
+            set
+            {
+                this.OnUnitLaunchPriceChanging(value);
+                this._UnitLaunchPrice = value;
+                this.OnUnitLaunchPriceChanged();
+                this.OnPropertyChanged("UnitLaunchPrice");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _UnitLaunchPrice;
+        partial void OnUnitLaunchPriceChanging(global::System.Nullable<decimal> value);
+        partial void OnUnitLaunchPriceChanged();
+        /// <summary>
+        /// There are no comments for Property PriceCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceCurrency")]
+        public string PriceCurrency
+        {
+            get
+            {
+                return this._PriceCurrency;
+            }
+            set
+            {
+                this.OnPriceCurrencyChanging(value);
+                this._PriceCurrency = value;
+                this.OnPriceCurrencyChanged();
+                this.OnPropertyChanged("PriceCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PriceCurrency;
+        partial void OnPriceCurrencyChanging(string value);
+        partial void OnPriceCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property PriceCurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceCurrencyCode")]
+        public string PriceCurrencyCode
+        {
+            get
+            {
+                return this._PriceCurrencyCode;
+            }
+            set
+            {
+                this.OnPriceCurrencyCodeChanging(value);
+                this._PriceCurrencyCode = value;
+                this.OnPriceCurrencyCodeChanged();
+                this.OnPropertyChanged("PriceCurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PriceCurrencyCode;
+        partial void OnPriceCurrencyCodeChanging(string value);
+        partial void OnPriceCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property EstimatedOrdinaryShareLaunchNav in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("EstimatedOrdinaryShareLaunchNav")]
+        public global::System.Nullable<decimal> EstimatedOrdinaryShareLaunchNav
+        {
+            get
+            {
+                return this._EstimatedOrdinaryShareLaunchNav;
+            }
+            set
+            {
+                this.OnEstimatedOrdinaryShareLaunchNavChanging(value);
+                this._EstimatedOrdinaryShareLaunchNav = value;
+                this.OnEstimatedOrdinaryShareLaunchNavChanged();
+                this.OnPropertyChanged("EstimatedOrdinaryShareLaunchNav");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _EstimatedOrdinaryShareLaunchNav;
+        partial void OnEstimatedOrdinaryShareLaunchNavChanging(global::System.Nullable<decimal> value);
+        partial void OnEstimatedOrdinaryShareLaunchNavChanged();
+        /// <summary>
+        /// There are no comments for Property AmountRaised in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AmountRaised")]
+        public global::System.Nullable<int> AmountRaised
+        {
+            get
+            {
+                return this._AmountRaised;
+            }
+            set
+            {
+                this.OnAmountRaisedChanging(value);
+                this._AmountRaised = value;
+                this.OnAmountRaisedChanged();
+                this.OnPropertyChanged("AmountRaised");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _AmountRaised;
+        partial void OnAmountRaisedChanging(global::System.Nullable<int> value);
+        partial void OnAmountRaisedChanged();
+        /// <summary>
+        /// There are no comments for Property AmountRaisedAsAtDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AmountRaisedAsAtDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> AmountRaisedAsAtDate
+        {
+            get
+            {
+                return this._AmountRaisedAsAtDate;
+            }
+            set
+            {
+                this.OnAmountRaisedAsAtDateChanging(value);
+                this._AmountRaisedAsAtDate = value;
+                this.OnAmountRaisedAsAtDateChanged();
+                this.OnPropertyChanged("AmountRaisedAsAtDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _AmountRaisedAsAtDate;
+        partial void OnAmountRaisedAsAtDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnAmountRaisedAsAtDateChanged();
+        /// <summary>
+        /// There are no comments for Property MaximumNumberOfOrdinarySharesOffered in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MaximumNumberOfOrdinarySharesOffered")]
+        public global::System.Nullable<int> MaximumNumberOfOrdinarySharesOffered
+        {
+            get
+            {
+                return this._MaximumNumberOfOrdinarySharesOffered;
+            }
+            set
+            {
+                this.OnMaximumNumberOfOrdinarySharesOfferedChanging(value);
+                this._MaximumNumberOfOrdinarySharesOffered = value;
+                this.OnMaximumNumberOfOrdinarySharesOfferedChanged();
+                this.OnPropertyChanged("MaximumNumberOfOrdinarySharesOffered");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _MaximumNumberOfOrdinarySharesOffered;
+        partial void OnMaximumNumberOfOrdinarySharesOfferedChanging(global::System.Nullable<int> value);
+        partial void OnMaximumNumberOfOrdinarySharesOfferedChanged();
+        /// <summary>
+        /// There are no comments for Property MaximumNumberOfOrdinarySharesInIssue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MaximumNumberOfOrdinarySharesInIssue")]
+        public global::System.Nullable<int> MaximumNumberOfOrdinarySharesInIssue
+        {
+            get
+            {
+                return this._MaximumNumberOfOrdinarySharesInIssue;
+            }
+            set
+            {
+                this.OnMaximumNumberOfOrdinarySharesInIssueChanging(value);
+                this._MaximumNumberOfOrdinarySharesInIssue = value;
+                this.OnMaximumNumberOfOrdinarySharesInIssueChanged();
+                this.OnPropertyChanged("MaximumNumberOfOrdinarySharesInIssue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _MaximumNumberOfOrdinarySharesInIssue;
+        partial void OnMaximumNumberOfOrdinarySharesInIssueChanging(global::System.Nullable<int> value);
+        partial void OnMaximumNumberOfOrdinarySharesInIssueChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping
+{
+    /// <summary>
+    /// There are no comments for KIIDCharges in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("KIIDCharges")]
+    public partial class KIIDCharges : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property ExitCharge in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExitCharge")]
+        public global::System.Nullable<decimal> ExitCharge
+        {
+            get
+            {
+                return this._ExitCharge;
+            }
+            set
+            {
+                this.OnExitChargeChanging(value);
+                this._ExitCharge = value;
+                this.OnExitChargeChanged();
+                this.OnPropertyChanged("ExitCharge");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _ExitCharge;
+        partial void OnExitChargeChanging(global::System.Nullable<decimal> value);
+        partial void OnExitChargeChanged();
+        /// <summary>
+        /// There are no comments for Property InitialCharge in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InitialCharge")]
+        public global::System.Nullable<decimal> InitialCharge
+        {
+            get
+            {
+                return this._InitialCharge;
+            }
+            set
+            {
+                this.OnInitialChargeChanging(value);
+                this._InitialCharge = value;
+                this.OnInitialChargeChanged();
+                this.OnPropertyChanged("InitialCharge");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _InitialCharge;
+        partial void OnInitialChargeChanging(global::System.Nullable<decimal> value);
+        partial void OnInitialChargeChanged();
+        /// <summary>
+        /// There are no comments for Property OngoingCharge in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("OngoingCharge")]
+        public global::System.Nullable<decimal> OngoingCharge
+        {
+            get
+            {
+                return this._OngoingCharge;
+            }
+            set
+            {
+                this.OnOngoingChargeChanging(value);
+                this._OngoingCharge = value;
+                this.OnOngoingChargeChanged();
+                this.OnPropertyChanged("OngoingCharge");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _OngoingCharge;
+        partial void OnOngoingChargeChanging(global::System.Nullable<decimal> value);
+        partial void OnOngoingChargeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for SrriRisk in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("SrriRisk")]
+    public partial class SrriRisk : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property ValidatedSrri in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ValidatedSrri")]
+        public global::System.Nullable<int> ValidatedSrri
+        {
+            get
+            {
+                return this._ValidatedSrri;
+            }
+            set
+            {
+                this.OnValidatedSrriChanging(value);
+                this._ValidatedSrri = value;
+                this.OnValidatedSrriChanged();
+                this.OnPropertyChanged("ValidatedSrri");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _ValidatedSrri;
+        partial void OnValidatedSrriChanging(global::System.Nullable<int> value);
+        partial void OnValidatedSrriChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings
 {
     /// <summary>
@@ -11619,28 +13019,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnFundFirstIncomePaymentDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnFundFirstIncomePaymentDateChanged();
         /// <summary>
-        /// There are no comments for Property LatestIncomePaymentDate in the schema.
+        /// There are no comments for Property NextIncomePaymentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LatestIncomePaymentDate")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date LatestIncomePaymentDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NextIncomePaymentDate")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth NextIncomePaymentDate
         {
             get
             {
-                return this._LatestIncomePaymentDate;
+                return this._NextIncomePaymentDate;
             }
             set
             {
-                this.OnLatestIncomePaymentDateChanging(value);
-                this._LatestIncomePaymentDate = value;
-                this.OnLatestIncomePaymentDateChanged();
-                this.OnPropertyChanged("LatestIncomePaymentDate");
+                this.OnNextIncomePaymentDateChanging(value);
+                this._NextIncomePaymentDate = value;
+                this.OnNextIncomePaymentDateChanged();
+                this.OnPropertyChanged("NextIncomePaymentDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date _LatestIncomePaymentDate;
-        partial void OnLatestIncomePaymentDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date value);
-        partial void OnLatestIncomePaymentDateChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth _NextIncomePaymentDate;
+        partial void OnNextIncomePaymentDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth value);
+        partial void OnNextIncomePaymentDateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -11670,7 +13070,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("AccountEndDate")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date AccountEndDate
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth AccountEndDate
         {
             get
             {
@@ -11685,15 +13085,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date _AccountEndDate;
-        partial void OnAccountEndDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date value);
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth _AccountEndDate;
+        partial void OnAccountEndDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth value);
         partial void OnAccountEndDateChanged();
         /// <summary>
         /// There are no comments for Property ExDividendDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("ExDividendDate")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date ExDividendDate
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth ExDividendDate
         {
             get
             {
@@ -11708,15 +13108,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date _ExDividendDate;
-        partial void OnExDividendDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date value);
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth _ExDividendDate;
+        partial void OnExDividendDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth value);
         partial void OnExDividendDateChanged();
         /// <summary>
         /// There are no comments for Property IncomePaymentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("IncomePaymentDate")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date IncomePaymentDate
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth IncomePaymentDate
         {
             get
             {
@@ -11731,8 +13131,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date _IncomePaymentDate;
-        partial void OnIncomePaymentDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Date value);
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth _IncomePaymentDate;
+        partial void OnIncomePaymentDateChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DayAndMonth value);
         partial void OnIncomePaymentDateChanged();
         /// <summary>
         /// There are no comments for Property FinalPayment in the schema.
@@ -12479,19 +13879,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class LipperPerformance : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new LipperPerformance object.
-        /// </summary>
-        /// <param name="benchmark">Initial value of Benchmark.</param>
-        /// <param name="sector">Initial value of Sector.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static LipperPerformance CreateLipperPerformance(global::System.Guid benchmark, global::System.Guid sector)
-        {
-            LipperPerformance lipperPerformance = new LipperPerformance();
-            lipperPerformance.Benchmark = benchmark;
-            lipperPerformance.Sector = sector;
-            return lipperPerformance;
-        }
-        /// <summary>
         /// There are no comments for Property Details in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -12538,149 +13925,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnPricesChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPriceData value);
         partial void OnPricesChanged();
         /// <summary>
-        /// There are no comments for Property CumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData CumulativePerformance
-        {
-            get
-            {
-                return this._CumulativePerformance;
-            }
-            set
-            {
-                this.OnCumulativePerformanceChanging(value);
-                this._CumulativePerformance = value;
-                this.OnCumulativePerformanceChanged();
-                this.OnPropertyChanged("CumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _CumulativePerformance;
-        partial void OnCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnCumulativePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property DiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData DiscretePerformance
-        {
-            get
-            {
-                return this._DiscretePerformance;
-            }
-            set
-            {
-                this.OnDiscretePerformanceChanging(value);
-                this._DiscretePerformance = value;
-                this.OnDiscretePerformanceChanged();
-                this.OnPropertyChanged("DiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _DiscretePerformance;
-        partial void OnDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnDiscretePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property MonthEndCumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndCumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData MonthEndCumulativePerformance
-        {
-            get
-            {
-                return this._MonthEndCumulativePerformance;
-            }
-            set
-            {
-                this.OnMonthEndCumulativePerformanceChanging(value);
-                this._MonthEndCumulativePerformance = value;
-                this.OnMonthEndCumulativePerformanceChanged();
-                this.OnPropertyChanged("MonthEndCumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _MonthEndCumulativePerformance;
-        partial void OnMonthEndCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnMonthEndCumulativePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property MonthEndDiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndDiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData MonthEndDiscretePerformance
-        {
-            get
-            {
-                return this._MonthEndDiscretePerformance;
-            }
-            set
-            {
-                this.OnMonthEndDiscretePerformanceChanging(value);
-                this._MonthEndDiscretePerformance = value;
-                this.OnMonthEndDiscretePerformanceChanged();
-                this.OnPropertyChanged("MonthEndDiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _MonthEndDiscretePerformance;
-        partial void OnMonthEndDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnMonthEndDiscretePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property QuarterEndCumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndCumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData QuarterEndCumulativePerformance
-        {
-            get
-            {
-                return this._QuarterEndCumulativePerformance;
-            }
-            set
-            {
-                this.OnQuarterEndCumulativePerformanceChanging(value);
-                this._QuarterEndCumulativePerformance = value;
-                this.OnQuarterEndCumulativePerformanceChanged();
-                this.OnPropertyChanged("QuarterEndCumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _QuarterEndCumulativePerformance;
-        partial void OnQuarterEndCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnQuarterEndCumulativePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property QuarterEndDiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndDiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData QuarterEndDiscretePerformance
-        {
-            get
-            {
-                return this._QuarterEndDiscretePerformance;
-            }
-            set
-            {
-                this.OnQuarterEndDiscretePerformanceChanging(value);
-                this._QuarterEndDiscretePerformance = value;
-                this.OnQuarterEndDiscretePerformanceChanged();
-                this.OnPropertyChanged("QuarterEndDiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData _QuarterEndDiscretePerformance;
-        partial void OnQuarterEndDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData value);
-        partial void OnQuarterEndDiscretePerformanceChanged();
-        /// <summary>
         /// There are no comments for Property Benchmark in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmark")]
-        public global::System.Guid Benchmark
+        public global::System.Nullable<global::System.Guid> Benchmark
         {
             get
             {
@@ -12695,32 +13944,147 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Benchmark;
-        partial void OnBenchmarkChanging(global::System.Guid value);
+        private global::System.Nullable<global::System.Guid> _Benchmark;
+        partial void OnBenchmarkChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnBenchmarkChanged();
         /// <summary>
-        /// There are no comments for Property Sector in the schema.
+        /// There are no comments for Property CumulativePerformance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Sector")]
-        public global::System.Guid Sector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> CumulativePerformance
         {
             get
             {
-                return this._Sector;
+                return this._CumulativePerformance;
             }
             set
             {
-                this.OnSectorChanging(value);
-                this._Sector = value;
-                this.OnSectorChanged();
-                this.OnPropertyChanged("Sector");
+                this.OnCumulativePerformanceChanging(value);
+                this._CumulativePerformance = value;
+                this.OnCumulativePerformanceChanged();
+                this.OnPropertyChanged("CumulativePerformance");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Sector;
-        partial void OnSectorChanging(global::System.Guid value);
-        partial void OnSectorChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _CumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnCumulativePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property DiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> DiscretePerformance
+        {
+            get
+            {
+                return this._DiscretePerformance;
+            }
+            set
+            {
+                this.OnDiscretePerformanceChanging(value);
+                this._DiscretePerformance = value;
+                this.OnDiscretePerformanceChanged();
+                this.OnPropertyChanged("DiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _DiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property MonthEndCumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndCumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> MonthEndCumulativePerformance
+        {
+            get
+            {
+                return this._MonthEndCumulativePerformance;
+            }
+            set
+            {
+                this.OnMonthEndCumulativePerformanceChanging(value);
+                this._MonthEndCumulativePerformance = value;
+                this.OnMonthEndCumulativePerformanceChanged();
+                this.OnPropertyChanged("MonthEndCumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _MonthEndCumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnMonthEndCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnMonthEndCumulativePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property MonthEndDiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndDiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> MonthEndDiscretePerformance
+        {
+            get
+            {
+                return this._MonthEndDiscretePerformance;
+            }
+            set
+            {
+                this.OnMonthEndDiscretePerformanceChanging(value);
+                this._MonthEndDiscretePerformance = value;
+                this.OnMonthEndDiscretePerformanceChanged();
+                this.OnPropertyChanged("MonthEndDiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _MonthEndDiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnMonthEndDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnMonthEndDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property QuarterEndCumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndCumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> QuarterEndCumulativePerformance
+        {
+            get
+            {
+                return this._QuarterEndCumulativePerformance;
+            }
+            set
+            {
+                this.OnQuarterEndCumulativePerformanceChanging(value);
+                this._QuarterEndCumulativePerformance = value;
+                this.OnQuarterEndCumulativePerformanceChanged();
+                this.OnPropertyChanged("QuarterEndCumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _QuarterEndCumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnQuarterEndCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnQuarterEndCumulativePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property QuarterEndDiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndDiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> QuarterEndDiscretePerformance
+        {
+            get
+            {
+                return this._QuarterEndDiscretePerformance;
+            }
+            set
+            {
+                this.OnQuarterEndDiscretePerformanceChanging(value);
+                this._QuarterEndDiscretePerformance = value;
+                this.OnQuarterEndDiscretePerformanceChanged();
+                this.OnPropertyChanged("QuarterEndDiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> _QuarterEndDiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData>();
+        partial void OnQuarterEndDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData> value);
+        partial void OnQuarterEndDiscretePerformanceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -12746,91 +14110,74 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class LipperDetailsData : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new LipperDetailsData object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        /// <param name="iaSector">Initial value of IaSector.</param>
-        /// <param name="globalSector">Initial value of GlobalSector.</param>
-        /// <param name="ukOffshoreSector">Initial value of UkOffshoreSector.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static LipperDetailsData CreateLipperDetailsData(global::System.Guid ID, global::System.Guid iaSector, global::System.Guid globalSector, global::System.Guid ukOffshoreSector)
-        {
-            LipperDetailsData lipperDetailsData = new LipperDetailsData();
-            lipperDetailsData.Id = ID;
-            lipperDetailsData.IaSector = iaSector;
-            lipperDetailsData.GlobalSector = globalSector;
-            lipperDetailsData.UkOffshoreSector = ukOffshoreSector;
-            return lipperDetailsData;
-        }
-        /// <summary>
-        /// There are no comments for Property Id in the schema.
+        /// There are no comments for Property BenchmarkId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
-        public global::System.Guid Id
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BenchmarkId")]
+        public global::System.Nullable<global::System.Guid> BenchmarkId
         {
             get
             {
-                return this._Id;
+                return this._BenchmarkId;
             }
             set
             {
-                this.OnIdChanging(value);
-                this._Id = value;
-                this.OnIdChanged();
-                this.OnPropertyChanged("Id");
+                this.OnBenchmarkIdChanging(value);
+                this._BenchmarkId = value;
+                this.OnBenchmarkIdChanged();
+                this.OnPropertyChanged("BenchmarkId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Id;
-        partial void OnIdChanging(global::System.Guid value);
-        partial void OnIdChanged();
+        private global::System.Nullable<global::System.Guid> _BenchmarkId;
+        partial void OnBenchmarkIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnBenchmarkIdChanged();
         /// <summary>
-        /// There are no comments for Property Code in the schema.
+        /// There are no comments for Property LipperCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
-        public string Code
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LipperCode")]
+        public string LipperCode
         {
             get
             {
-                return this._Code;
+                return this._LipperCode;
             }
             set
             {
-                this.OnCodeChanging(value);
-                this._Code = value;
-                this.OnCodeChanged();
-                this.OnPropertyChanged("Code");
+                this.OnLipperCodeChanging(value);
+                this._LipperCode = value;
+                this.OnLipperCodeChanged();
+                this.OnPropertyChanged("LipperCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Code;
-        partial void OnCodeChanging(string value);
-        partial void OnCodeChanged();
+        private string _LipperCode;
+        partial void OnLipperCodeChanging(string value);
+        partial void OnLipperCodeChanged();
         /// <summary>
-        /// There are no comments for Property UnitCode in the schema.
+        /// There are no comments for Property PrimaryUnitLipperCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitCode")]
-        public string UnitCode
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PrimaryUnitLipperCode")]
+        public string PrimaryUnitLipperCode
         {
             get
             {
-                return this._UnitCode;
+                return this._PrimaryUnitLipperCode;
             }
             set
             {
-                this.OnUnitCodeChanging(value);
-                this._UnitCode = value;
-                this.OnUnitCodeChanged();
-                this.OnPropertyChanged("UnitCode");
+                this.OnPrimaryUnitLipperCodeChanging(value);
+                this._PrimaryUnitLipperCode = value;
+                this.OnPrimaryUnitLipperCodeChanged();
+                this.OnPropertyChanged("PrimaryUnitLipperCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _UnitCode;
-        partial void OnUnitCodeChanging(string value);
-        partial void OnUnitCodeChanged();
+        private string _PrimaryUnitLipperCode;
+        partial void OnPrimaryUnitLipperCodeChanging(string value);
+        partial void OnPrimaryUnitLipperCodeChanged();
         /// <summary>
         /// There are no comments for Property Currency in the schema.
         /// </summary>
@@ -12855,97 +14202,120 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnCurrencyChanging(string value);
         partial void OnCurrencyChanged();
         /// <summary>
-        /// There are no comments for Property IaSector in the schema.
+        /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IaSector")]
-        public global::System.Guid IaSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CurrencyCode")]
+        public string CurrencyCode
         {
             get
             {
-                return this._IaSector;
+                return this._CurrencyCode;
             }
             set
             {
-                this.OnIaSectorChanging(value);
-                this._IaSector = value;
-                this.OnIaSectorChanged();
-                this.OnPropertyChanged("IaSector");
+                this.OnCurrencyCodeChanging(value);
+                this._CurrencyCode = value;
+                this.OnCurrencyCodeChanged();
+                this.OnPropertyChanged("CurrencyCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _IaSector;
-        partial void OnIaSectorChanging(global::System.Guid value);
-        partial void OnIaSectorChanged();
+        private string _CurrencyCode;
+        partial void OnCurrencyCodeChanging(string value);
+        partial void OnCurrencyCodeChanged();
         /// <summary>
-        /// There are no comments for Property GlobalSector in the schema.
+        /// There are no comments for Property IaSectorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("GlobalSector")]
-        public global::System.Guid GlobalSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IaSectorId")]
+        public global::System.Nullable<global::System.Guid> IaSectorId
         {
             get
             {
-                return this._GlobalSector;
+                return this._IaSectorId;
             }
             set
             {
-                this.OnGlobalSectorChanging(value);
-                this._GlobalSector = value;
-                this.OnGlobalSectorChanged();
-                this.OnPropertyChanged("GlobalSector");
+                this.OnIaSectorIdChanging(value);
+                this._IaSectorId = value;
+                this.OnIaSectorIdChanged();
+                this.OnPropertyChanged("IaSectorId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _GlobalSector;
-        partial void OnGlobalSectorChanging(global::System.Guid value);
-        partial void OnGlobalSectorChanged();
+        private global::System.Nullable<global::System.Guid> _IaSectorId;
+        partial void OnIaSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnIaSectorIdChanged();
         /// <summary>
-        /// There are no comments for Property UkOffshoreSector in the schema.
+        /// There are no comments for Property GlobalSectorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UkOffshoreSector")]
-        public global::System.Guid UkOffshoreSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GlobalSectorId")]
+        public global::System.Nullable<global::System.Guid> GlobalSectorId
         {
             get
             {
-                return this._UkOffshoreSector;
+                return this._GlobalSectorId;
             }
             set
             {
-                this.OnUkOffshoreSectorChanging(value);
-                this._UkOffshoreSector = value;
-                this.OnUkOffshoreSectorChanged();
-                this.OnPropertyChanged("UkOffshoreSector");
+                this.OnGlobalSectorIdChanging(value);
+                this._GlobalSectorId = value;
+                this.OnGlobalSectorIdChanged();
+                this.OnPropertyChanged("GlobalSectorId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _UkOffshoreSector;
-        partial void OnUkOffshoreSectorChanging(global::System.Guid value);
-        partial void OnUkOffshoreSectorChanged();
+        private global::System.Nullable<global::System.Guid> _GlobalSectorId;
+        partial void OnGlobalSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnGlobalSectorIdChanged();
         /// <summary>
-        /// There are no comments for Property AbiSector in the schema.
+        /// There are no comments for Property UkOffshoreSectorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AbiSector")]
-        public string AbiSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UkOffshoreSectorId")]
+        public global::System.Nullable<global::System.Guid> UkOffshoreSectorId
         {
             get
             {
-                return this._AbiSector;
+                return this._UkOffshoreSectorId;
             }
             set
             {
-                this.OnAbiSectorChanging(value);
-                this._AbiSector = value;
-                this.OnAbiSectorChanged();
-                this.OnPropertyChanged("AbiSector");
+                this.OnUkOffshoreSectorIdChanging(value);
+                this._UkOffshoreSectorId = value;
+                this.OnUkOffshoreSectorIdChanged();
+                this.OnPropertyChanged("UkOffshoreSectorId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AbiSector;
-        partial void OnAbiSectorChanging(string value);
-        partial void OnAbiSectorChanged();
+        private global::System.Nullable<global::System.Guid> _UkOffshoreSectorId;
+        partial void OnUkOffshoreSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnUkOffshoreSectorIdChanged();
+        /// <summary>
+        /// There are no comments for Property AbiSectorId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AbiSectorId")]
+        public global::System.Nullable<global::System.Guid> AbiSectorId
+        {
+            get
+            {
+                return this._AbiSectorId;
+            }
+            set
+            {
+                this.OnAbiSectorIdChanging(value);
+                this._AbiSectorId = value;
+                this.OnAbiSectorIdChanged();
+                this.OnPropertyChanged("AbiSectorId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _AbiSectorId;
+        partial void OnAbiSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnAbiSectorIdChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -12971,43 +14341,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class LipperPriceData : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new LipperPriceData object.
-        /// </summary>
-        /// <param name="date">Initial value of Date.</param>
-        /// <param name="netAssetValue">Initial value of NetAssetValue.</param>
-        /// <param name="bid">Initial value of Bid.</param>
-        /// <param name="offer">Initial value of Offer.</param>
-        /// <param name="previousDate">Initial value of PreviousDate.</param>
-        /// <param name="netAssetValueChange">Initial value of NetAssetValueChange.</param>
-        /// <param name="bidChange">Initial value of BidChange.</param>
-        /// <param name="offerChange">Initial value of OfferChange.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static LipperPriceData CreateLipperPriceData(global::System.DateTimeOffset date, 
-                    decimal netAssetValue, 
-                    decimal bid, 
-                    decimal offer, 
-                    global::System.DateTimeOffset previousDate, 
-                    decimal netAssetValueChange, 
-                    decimal bidChange, 
-                    decimal offerChange)
-        {
-            LipperPriceData lipperPriceData = new LipperPriceData();
-            lipperPriceData.Date = date;
-            lipperPriceData.NetAssetValue = netAssetValue;
-            lipperPriceData.Bid = bid;
-            lipperPriceData.Offer = offer;
-            lipperPriceData.PreviousDate = previousDate;
-            lipperPriceData.NetAssetValueChange = netAssetValueChange;
-            lipperPriceData.BidChange = bidChange;
-            lipperPriceData.OfferChange = offerChange;
-            return lipperPriceData;
-        }
-        /// <summary>
         /// There are no comments for Property Date in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Date")]
-        public global::System.DateTimeOffset Date
+        public global::System.Nullable<global::System.DateTimeOffset> Date
         {
             get
             {
@@ -13022,8 +14360,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.DateTimeOffset _Date;
-        partial void OnDateChanging(global::System.DateTimeOffset value);
+        private global::System.Nullable<global::System.DateTimeOffset> _Date;
+        partial void OnDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnDateChanged();
         /// <summary>
         /// There are no comments for Property Currency in the schema.
@@ -13049,11 +14387,34 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnCurrencyChanging(string value);
         partial void OnCurrencyChanged();
         /// <summary>
+        /// There are no comments for Property CurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CurrencyCode")]
+        public string CurrencyCode
+        {
+            get
+            {
+                return this._CurrencyCode;
+            }
+            set
+            {
+                this.OnCurrencyCodeChanging(value);
+                this._CurrencyCode = value;
+                this.OnCurrencyCodeChanged();
+                this.OnPropertyChanged("CurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _CurrencyCode;
+        partial void OnCurrencyCodeChanging(string value);
+        partial void OnCurrencyCodeChanged();
+        /// <summary>
         /// There are no comments for Property NetAssetValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("NetAssetValue")]
-        public decimal NetAssetValue
+        public global::System.Nullable<decimal> NetAssetValue
         {
             get
             {
@@ -13068,15 +14429,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _NetAssetValue;
-        partial void OnNetAssetValueChanging(decimal value);
+        private global::System.Nullable<decimal> _NetAssetValue;
+        partial void OnNetAssetValueChanging(global::System.Nullable<decimal> value);
         partial void OnNetAssetValueChanged();
         /// <summary>
         /// There are no comments for Property Bid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Bid")]
-        public decimal Bid
+        public global::System.Nullable<decimal> Bid
         {
             get
             {
@@ -13091,15 +14452,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _Bid;
-        partial void OnBidChanging(decimal value);
+        private global::System.Nullable<decimal> _Bid;
+        partial void OnBidChanging(global::System.Nullable<decimal> value);
         partial void OnBidChanged();
         /// <summary>
         /// There are no comments for Property Offer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Offer")]
-        public decimal Offer
+        public global::System.Nullable<decimal> Offer
         {
             get
             {
@@ -13114,15 +14475,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _Offer;
-        partial void OnOfferChanging(decimal value);
+        private global::System.Nullable<decimal> _Offer;
+        partial void OnOfferChanging(global::System.Nullable<decimal> value);
         partial void OnOfferChanged();
         /// <summary>
         /// There are no comments for Property PreviousDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("PreviousDate")]
-        public global::System.DateTimeOffset PreviousDate
+        public global::System.Nullable<global::System.DateTimeOffset> PreviousDate
         {
             get
             {
@@ -13137,15 +14498,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.DateTimeOffset _PreviousDate;
-        partial void OnPreviousDateChanging(global::System.DateTimeOffset value);
+        private global::System.Nullable<global::System.DateTimeOffset> _PreviousDate;
+        partial void OnPreviousDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnPreviousDateChanged();
         /// <summary>
         /// There are no comments for Property NetAssetValueChange in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("NetAssetValueChange")]
-        public decimal NetAssetValueChange
+        public global::System.Nullable<decimal> NetAssetValueChange
         {
             get
             {
@@ -13160,15 +14521,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _NetAssetValueChange;
-        partial void OnNetAssetValueChangeChanging(decimal value);
+        private global::System.Nullable<decimal> _NetAssetValueChange;
+        partial void OnNetAssetValueChangeChanging(global::System.Nullable<decimal> value);
         partial void OnNetAssetValueChangeChanged();
         /// <summary>
         /// There are no comments for Property BidChange in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("BidChange")]
-        public decimal BidChange
+        public global::System.Nullable<decimal> BidChange
         {
             get
             {
@@ -13183,15 +14544,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _BidChange;
-        partial void OnBidChangeChanging(decimal value);
+        private global::System.Nullable<decimal> _BidChange;
+        partial void OnBidChangeChanging(global::System.Nullable<decimal> value);
         partial void OnBidChangeChanged();
         /// <summary>
         /// There are no comments for Property OfferChange in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("OfferChange")]
-        public decimal OfferChange
+        public global::System.Nullable<decimal> OfferChange
         {
             get
             {
@@ -13206,8 +14567,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _OfferChange;
-        partial void OnOfferChangeChanging(decimal value);
+        private global::System.Nullable<decimal> _OfferChange;
+        partial void OnOfferChangeChanging(global::System.Nullable<decimal> value);
         partial void OnOfferChangeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
@@ -13573,19 +14934,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class MorningStarPerformance : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new MorningStarPerformance object.
-        /// </summary>
-        /// <param name="benchmark">Initial value of Benchmark.</param>
-        /// <param name="sector">Initial value of Sector.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static MorningStarPerformance CreateMorningStarPerformance(global::System.Guid benchmark, global::System.Guid sector)
-        {
-            MorningStarPerformance morningStarPerformance = new MorningStarPerformance();
-            morningStarPerformance.Benchmark = benchmark;
-            morningStarPerformance.Sector = sector;
-            return morningStarPerformance;
-        }
-        /// <summary>
         /// There are no comments for Property Details in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -13632,149 +14980,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnPricesChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarPriceData value);
         partial void OnPricesChanged();
         /// <summary>
-        /// There are no comments for Property DiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData DiscretePerformance
-        {
-            get
-            {
-                return this._DiscretePerformance;
-            }
-            set
-            {
-                this.OnDiscretePerformanceChanging(value);
-                this._DiscretePerformance = value;
-                this.OnDiscretePerformanceChanged();
-                this.OnPropertyChanged("DiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData _DiscretePerformance;
-        partial void OnDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData value);
-        partial void OnDiscretePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property CumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData CumulativePerformance
-        {
-            get
-            {
-                return this._CumulativePerformance;
-            }
-            set
-            {
-                this.OnCumulativePerformanceChanging(value);
-                this._CumulativePerformance = value;
-                this.OnCumulativePerformanceChanged();
-                this.OnPropertyChanged("CumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData _CumulativePerformance;
-        partial void OnCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData value);
-        partial void OnCumulativePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property MonthEndDiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndDiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData MonthEndDiscretePerformance
-        {
-            get
-            {
-                return this._MonthEndDiscretePerformance;
-            }
-            set
-            {
-                this.OnMonthEndDiscretePerformanceChanging(value);
-                this._MonthEndDiscretePerformance = value;
-                this.OnMonthEndDiscretePerformanceChanged();
-                this.OnPropertyChanged("MonthEndDiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData _MonthEndDiscretePerformance;
-        partial void OnMonthEndDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData value);
-        partial void OnMonthEndDiscretePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property MonthEndCumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndCumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData MonthEndCumulativePerformance
-        {
-            get
-            {
-                return this._MonthEndCumulativePerformance;
-            }
-            set
-            {
-                this.OnMonthEndCumulativePerformanceChanging(value);
-                this._MonthEndCumulativePerformance = value;
-                this.OnMonthEndCumulativePerformanceChanged();
-                this.OnPropertyChanged("MonthEndCumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData _MonthEndCumulativePerformance;
-        partial void OnMonthEndCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData value);
-        partial void OnMonthEndCumulativePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property QuarterEndDiscretePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndDiscretePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData QuarterEndDiscretePerformance
-        {
-            get
-            {
-                return this._QuarterEndDiscretePerformance;
-            }
-            set
-            {
-                this.OnQuarterEndDiscretePerformanceChanging(value);
-                this._QuarterEndDiscretePerformance = value;
-                this.OnQuarterEndDiscretePerformanceChanged();
-                this.OnPropertyChanged("QuarterEndDiscretePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData _QuarterEndDiscretePerformance;
-        partial void OnQuarterEndDiscretePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData value);
-        partial void OnQuarterEndDiscretePerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property QuarterEndCumulativePerformance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndCumulativePerformance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData QuarterEndCumulativePerformance
-        {
-            get
-            {
-                return this._QuarterEndCumulativePerformance;
-            }
-            set
-            {
-                this.OnQuarterEndCumulativePerformanceChanging(value);
-                this._QuarterEndCumulativePerformance = value;
-                this.OnQuarterEndCumulativePerformanceChanged();
-                this.OnPropertyChanged("QuarterEndCumulativePerformance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData _QuarterEndCumulativePerformance;
-        partial void OnQuarterEndCumulativePerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData value);
-        partial void OnQuarterEndCumulativePerformanceChanged();
-        /// <summary>
         /// There are no comments for Property Benchmark in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmark")]
-        public global::System.Guid Benchmark
+        public global::System.Nullable<global::System.Guid> Benchmark
         {
             get
             {
@@ -13789,32 +14999,147 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Benchmark;
-        partial void OnBenchmarkChanging(global::System.Guid value);
+        private global::System.Nullable<global::System.Guid> _Benchmark;
+        partial void OnBenchmarkChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnBenchmarkChanged();
         /// <summary>
-        /// There are no comments for Property Sector in the schema.
+        /// There are no comments for Property DiscretePerformance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Sector")]
-        public global::System.Guid Sector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> DiscretePerformance
         {
             get
             {
-                return this._Sector;
+                return this._DiscretePerformance;
             }
             set
             {
-                this.OnSectorChanging(value);
-                this._Sector = value;
-                this.OnSectorChanged();
-                this.OnPropertyChanged("Sector");
+                this.OnDiscretePerformanceChanging(value);
+                this._DiscretePerformance = value;
+                this.OnDiscretePerformanceChanged();
+                this.OnPropertyChanged("DiscretePerformance");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Sector;
-        partial void OnSectorChanging(global::System.Guid value);
-        partial void OnSectorChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> _DiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData>();
+        partial void OnDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> value);
+        partial void OnDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property CumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> CumulativePerformance
+        {
+            get
+            {
+                return this._CumulativePerformance;
+            }
+            set
+            {
+                this.OnCumulativePerformanceChanging(value);
+                this._CumulativePerformance = value;
+                this.OnCumulativePerformanceChanged();
+                this.OnPropertyChanged("CumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> _CumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData>();
+        partial void OnCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> value);
+        partial void OnCumulativePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property MonthEndDiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndDiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> MonthEndDiscretePerformance
+        {
+            get
+            {
+                return this._MonthEndDiscretePerformance;
+            }
+            set
+            {
+                this.OnMonthEndDiscretePerformanceChanging(value);
+                this._MonthEndDiscretePerformance = value;
+                this.OnMonthEndDiscretePerformanceChanged();
+                this.OnPropertyChanged("MonthEndDiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> _MonthEndDiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData>();
+        partial void OnMonthEndDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> value);
+        partial void OnMonthEndDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property MonthEndCumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MonthEndCumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> MonthEndCumulativePerformance
+        {
+            get
+            {
+                return this._MonthEndCumulativePerformance;
+            }
+            set
+            {
+                this.OnMonthEndCumulativePerformanceChanging(value);
+                this._MonthEndCumulativePerformance = value;
+                this.OnMonthEndCumulativePerformanceChanged();
+                this.OnPropertyChanged("MonthEndCumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> _MonthEndCumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData>();
+        partial void OnMonthEndCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> value);
+        partial void OnMonthEndCumulativePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property QuarterEndDiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndDiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> QuarterEndDiscretePerformance
+        {
+            get
+            {
+                return this._QuarterEndDiscretePerformance;
+            }
+            set
+            {
+                this.OnQuarterEndDiscretePerformanceChanging(value);
+                this._QuarterEndDiscretePerformance = value;
+                this.OnQuarterEndDiscretePerformanceChanged();
+                this.OnPropertyChanged("QuarterEndDiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> _QuarterEndDiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData>();
+        partial void OnQuarterEndDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData> value);
+        partial void OnQuarterEndDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property QuarterEndCumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("QuarterEndCumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> QuarterEndCumulativePerformance
+        {
+            get
+            {
+                return this._QuarterEndCumulativePerformance;
+            }
+            set
+            {
+                this.OnQuarterEndCumulativePerformanceChanging(value);
+                this._QuarterEndCumulativePerformance = value;
+                this.OnQuarterEndCumulativePerformanceChanged();
+                this.OnPropertyChanged("QuarterEndCumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> _QuarterEndCumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData>();
+        partial void OnQuarterEndCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData> value);
+        partial void OnQuarterEndCumulativePerformanceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -13840,108 +15165,189 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class MorningStarDetailsData : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new MorningStarDetailsData object.
-        /// </summary>
-        /// <param name="unitCode">Initial value of UnitCode.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static MorningStarDetailsData CreateMorningStarDetailsData(global::System.Guid unitCode)
-        {
-            MorningStarDetailsData morningStarDetailsData = new MorningStarDetailsData();
-            morningStarDetailsData.UnitCode = unitCode;
-            return morningStarDetailsData;
-        }
-        /// <summary>
-        /// There are no comments for Property Id in the schema.
+        /// There are no comments for Property BenchmarkId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
-        public string Id
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BenchmarkId")]
+        public global::System.Nullable<global::System.Guid> BenchmarkId
         {
             get
             {
-                return this._Id;
+                return this._BenchmarkId;
             }
             set
             {
-                this.OnIdChanging(value);
-                this._Id = value;
-                this.OnIdChanged();
-                this.OnPropertyChanged("Id");
+                this.OnBenchmarkIdChanging(value);
+                this._BenchmarkId = value;
+                this.OnBenchmarkIdChanged();
+                this.OnPropertyChanged("BenchmarkId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Id;
-        partial void OnIdChanging(string value);
-        partial void OnIdChanged();
+        private global::System.Nullable<global::System.Guid> _BenchmarkId;
+        partial void OnBenchmarkIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnBenchmarkIdChanged();
         /// <summary>
-        /// There are no comments for Property Code in the schema.
+        /// There are no comments for Property MsCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
-        public string Code
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MsCode")]
+        public string MsCode
         {
             get
             {
-                return this._Code;
+                return this._MsCode;
             }
             set
             {
-                this.OnCodeChanging(value);
-                this._Code = value;
-                this.OnCodeChanged();
-                this.OnPropertyChanged("Code");
+                this.OnMsCodeChanging(value);
+                this._MsCode = value;
+                this.OnMsCodeChanged();
+                this.OnPropertyChanged("MsCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Code;
-        partial void OnCodeChanging(string value);
-        partial void OnCodeChanged();
+        private string _MsCode;
+        partial void OnMsCodeChanging(string value);
+        partial void OnMsCodeChanged();
         /// <summary>
-        /// There are no comments for Property IaSector in the schema.
+        /// There are no comments for Property PrimaryUnitMsCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IaSector")]
-        public string IaSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PrimaryUnitMsCode")]
+        public global::System.Nullable<global::System.Guid> PrimaryUnitMsCode
         {
             get
             {
-                return this._IaSector;
+                return this._PrimaryUnitMsCode;
             }
             set
             {
-                this.OnIaSectorChanging(value);
-                this._IaSector = value;
-                this.OnIaSectorChanged();
-                this.OnPropertyChanged("IaSector");
+                this.OnPrimaryUnitMsCodeChanging(value);
+                this._PrimaryUnitMsCode = value;
+                this.OnPrimaryUnitMsCodeChanged();
+                this.OnPropertyChanged("PrimaryUnitMsCode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _IaSector;
-        partial void OnIaSectorChanging(string value);
-        partial void OnIaSectorChanged();
+        private global::System.Nullable<global::System.Guid> _PrimaryUnitMsCode;
+        partial void OnPrimaryUnitMsCodeChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnPrimaryUnitMsCodeChanged();
         /// <summary>
-        /// There are no comments for Property UnitCode in the schema.
+        /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("UnitCode")]
-        public global::System.Guid UnitCode
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Currency")]
+        public string Currency
         {
             get
             {
-                return this._UnitCode;
+                return this._Currency;
             }
             set
             {
-                this.OnUnitCodeChanging(value);
-                this._UnitCode = value;
-                this.OnUnitCodeChanged();
-                this.OnPropertyChanged("UnitCode");
+                this.OnCurrencyChanging(value);
+                this._Currency = value;
+                this.OnCurrencyChanged();
+                this.OnPropertyChanged("Currency");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _UnitCode;
-        partial void OnUnitCodeChanging(global::System.Guid value);
-        partial void OnUnitCodeChanged();
+        private string _Currency;
+        partial void OnCurrencyChanging(string value);
+        partial void OnCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property CurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CurrencyCode")]
+        public string CurrencyCode
+        {
+            get
+            {
+                return this._CurrencyCode;
+            }
+            set
+            {
+                this.OnCurrencyCodeChanging(value);
+                this._CurrencyCode = value;
+                this.OnCurrencyCodeChanged();
+                this.OnPropertyChanged("CurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _CurrencyCode;
+        partial void OnCurrencyCodeChanging(string value);
+        partial void OnCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property IaSectorId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IaSectorId")]
+        public string IaSectorId
+        {
+            get
+            {
+                return this._IaSectorId;
+            }
+            set
+            {
+                this.OnIaSectorIdChanging(value);
+                this._IaSectorId = value;
+                this.OnIaSectorIdChanged();
+                this.OnPropertyChanged("IaSectorId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _IaSectorId;
+        partial void OnIaSectorIdChanging(string value);
+        partial void OnIaSectorIdChanged();
+        /// <summary>
+        /// There are no comments for Property FundIaSectorId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FundIaSectorId")]
+        public global::System.Nullable<global::System.Guid> FundIaSectorId
+        {
+            get
+            {
+                return this._FundIaSectorId;
+            }
+            set
+            {
+                this.OnFundIaSectorIdChanging(value);
+                this._FundIaSectorId = value;
+                this.OnFundIaSectorIdChanged();
+                this.OnPropertyChanged("FundIaSectorId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _FundIaSectorId;
+        partial void OnFundIaSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnFundIaSectorIdChanged();
+        /// <summary>
+        /// There are no comments for Property AbiSectorId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AbiSectorId")]
+        public global::System.Nullable<global::System.Guid> AbiSectorId
+        {
+            get
+            {
+                return this._AbiSectorId;
+            }
+            set
+            {
+                this.OnAbiSectorIdChanging(value);
+                this._AbiSectorId = value;
+                this.OnAbiSectorIdChanged();
+                this.OnPropertyChanged("AbiSectorId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _AbiSectorId;
+        partial void OnAbiSectorIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnAbiSectorIdChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -13967,37 +15373,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class MorningStarPriceData : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new MorningStarPriceData object.
-        /// </summary>
-        /// <param name="date">Initial value of Date.</param>
-        /// <param name="netAssetValue">Initial value of NetAssetValue.</param>
-        /// <param name="bid">Initial value of Bid.</param>
-        /// <param name="offer">Initial value of Offer.</param>
-        /// <param name="mid">Initial value of Mid.</param>
-        /// <param name="lastUpdate">Initial value of LastUpdate.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static MorningStarPriceData CreateMorningStarPriceData(global::System.DateTimeOffset date, 
-                    decimal netAssetValue, 
-                    decimal bid, 
-                    decimal offer, 
-                    decimal mid, 
-                    global::System.DateTimeOffset lastUpdate)
-        {
-            MorningStarPriceData morningStarPriceData = new MorningStarPriceData();
-            morningStarPriceData.Date = date;
-            morningStarPriceData.NetAssetValue = netAssetValue;
-            morningStarPriceData.Bid = bid;
-            morningStarPriceData.Offer = offer;
-            morningStarPriceData.Mid = mid;
-            morningStarPriceData.LastUpdate = lastUpdate;
-            return morningStarPriceData;
-        }
-        /// <summary>
         /// There are no comments for Property Date in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Date")]
-        public global::System.DateTimeOffset Date
+        public global::System.Nullable<global::System.DateTimeOffset> Date
         {
             get
             {
@@ -14012,8 +15392,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.DateTimeOffset _Date;
-        partial void OnDateChanging(global::System.DateTimeOffset value);
+        private global::System.Nullable<global::System.DateTimeOffset> _Date;
+        partial void OnDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnDateChanged();
         /// <summary>
         /// There are no comments for Property Currency in the schema.
@@ -14039,11 +15419,34 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnCurrencyChanging(string value);
         partial void OnCurrencyChanged();
         /// <summary>
+        /// There are no comments for Property CurrencyCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CurrencyCode")]
+        public string CurrencyCode
+        {
+            get
+            {
+                return this._CurrencyCode;
+            }
+            set
+            {
+                this.OnCurrencyCodeChanging(value);
+                this._CurrencyCode = value;
+                this.OnCurrencyCodeChanged();
+                this.OnPropertyChanged("CurrencyCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _CurrencyCode;
+        partial void OnCurrencyCodeChanging(string value);
+        partial void OnCurrencyCodeChanged();
+        /// <summary>
         /// There are no comments for Property NetAssetValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("NetAssetValue")]
-        public decimal NetAssetValue
+        public global::System.Nullable<decimal> NetAssetValue
         {
             get
             {
@@ -14058,15 +15461,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _NetAssetValue;
-        partial void OnNetAssetValueChanging(decimal value);
+        private global::System.Nullable<decimal> _NetAssetValue;
+        partial void OnNetAssetValueChanging(global::System.Nullable<decimal> value);
         partial void OnNetAssetValueChanged();
         /// <summary>
         /// There are no comments for Property Bid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Bid")]
-        public decimal Bid
+        public global::System.Nullable<decimal> Bid
         {
             get
             {
@@ -14081,15 +15484,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _Bid;
-        partial void OnBidChanging(decimal value);
+        private global::System.Nullable<decimal> _Bid;
+        partial void OnBidChanging(global::System.Nullable<decimal> value);
         partial void OnBidChanged();
         /// <summary>
         /// There are no comments for Property Offer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Offer")]
-        public decimal Offer
+        public global::System.Nullable<decimal> Offer
         {
             get
             {
@@ -14104,15 +15507,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _Offer;
-        partial void OnOfferChanging(decimal value);
+        private global::System.Nullable<decimal> _Offer;
+        partial void OnOfferChanging(global::System.Nullable<decimal> value);
         partial void OnOfferChanged();
         /// <summary>
         /// There are no comments for Property Mid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Mid")]
-        public decimal Mid
+        public global::System.Nullable<decimal> Mid
         {
             get
             {
@@ -14127,15 +15530,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private decimal _Mid;
-        partial void OnMidChanging(decimal value);
+        private global::System.Nullable<decimal> _Mid;
+        partial void OnMidChanging(global::System.Nullable<decimal> value);
         partial void OnMidChanged();
         /// <summary>
         /// There are no comments for Property LastUpdate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("LastUpdate")]
-        public global::System.DateTimeOffset LastUpdate
+        public global::System.Nullable<global::System.DateTimeOffset> LastUpdate
         {
             get
             {
@@ -14150,8 +15553,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.DateTimeOffset _LastUpdate;
-        partial void OnLastUpdateChanging(global::System.DateTimeOffset value);
+        private global::System.Nullable<global::System.DateTimeOffset> _LastUpdate;
+        partial void OnLastUpdateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnLastUpdateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
@@ -15041,19 +16444,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class FinexPerformance : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new FinexPerformance object.
-        /// </summary>
-        /// <param name="benchmark">Initial value of Benchmark.</param>
-        /// <param name="sector">Initial value of Sector.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static FinexPerformance CreateFinexPerformance(global::System.Guid benchmark, global::System.Guid sector)
-        {
-            FinexPerformance finexPerformance = new FinexPerformance();
-            finexPerformance.Benchmark = benchmark;
-            finexPerformance.Sector = sector;
-            return finexPerformance;
-        }
-        /// <summary>
         /// There are no comments for Property Details in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -15099,6 +16489,52 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPriceData _Price;
         partial void OnPriceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPriceData value);
         partial void OnPriceChanged();
+        /// <summary>
+        /// There are no comments for Property Benchmark in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmark")]
+        public global::System.Nullable<global::System.Guid> Benchmark
+        {
+            get
+            {
+                return this._Benchmark;
+            }
+            set
+            {
+                this.OnBenchmarkChanging(value);
+                this._Benchmark = value;
+                this.OnBenchmarkChanged();
+                this.OnPropertyChanged("Benchmark");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _Benchmark;
+        partial void OnBenchmarkChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnBenchmarkChanged();
+        /// <summary>
+        /// There are no comments for Property Performance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Performance")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData Performance
+        {
+            get
+            {
+                return this._Performance;
+            }
+            set
+            {
+                this.OnPerformanceChanging(value);
+                this._Performance = value;
+                this.OnPerformanceChanged();
+                this.OnPropertyChanged("Performance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData _Performance;
+        partial void OnPerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData value);
+        partial void OnPerformanceChanged();
         /// <summary>
         /// There are no comments for Property MonthEndPerformance in the schema.
         /// </summary>
@@ -15146,75 +16582,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnQuarterEndPerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData value);
         partial void OnQuarterEndPerformanceChanged();
         /// <summary>
-        /// There are no comments for Property Performance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Performance")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData Performance
-        {
-            get
-            {
-                return this._Performance;
-            }
-            set
-            {
-                this.OnPerformanceChanging(value);
-                this._Performance = value;
-                this.OnPerformanceChanged();
-                this.OnPropertyChanged("Performance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData _Performance;
-        partial void OnPerformanceChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData value);
-        partial void OnPerformanceChanged();
-        /// <summary>
-        /// There are no comments for Property Benchmark in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmark")]
-        public global::System.Guid Benchmark
-        {
-            get
-            {
-                return this._Benchmark;
-            }
-            set
-            {
-                this.OnBenchmarkChanging(value);
-                this._Benchmark = value;
-                this.OnBenchmarkChanged();
-                this.OnPropertyChanged("Benchmark");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Benchmark;
-        partial void OnBenchmarkChanging(global::System.Guid value);
-        partial void OnBenchmarkChanged();
-        /// <summary>
-        /// There are no comments for Property Sector in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Sector")]
-        public global::System.Guid Sector
-        {
-            get
-            {
-                return this._Sector;
-            }
-            set
-            {
-                this.OnSectorChanging(value);
-                this._Sector = value;
-                this.OnSectorChanged();
-                this.OnPropertyChanged("Sector");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Guid _Sector;
-        partial void OnSectorChanging(global::System.Guid value);
-        partial void OnSectorChanged();
-        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -15239,28 +16606,166 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class FinexDetailsData : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property Code in the schema.
+        /// There are no comments for Property Citicode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
-        public string Code
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Citicode")]
+        public string Citicode
         {
             get
             {
-                return this._Code;
+                return this._Citicode;
             }
             set
             {
-                this.OnCodeChanging(value);
-                this._Code = value;
-                this.OnCodeChanged();
-                this.OnPropertyChanged("Code");
+                this.OnCiticodeChanging(value);
+                this._Citicode = value;
+                this.OnCiticodeChanged();
+                this.OnPropertyChanged("Citicode");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Code;
-        partial void OnCodeChanging(string value);
-        partial void OnCodeChanged();
+        private string _Citicode;
+        partial void OnCiticodeChanging(string value);
+        partial void OnCiticodeChanged();
+        /// <summary>
+        /// There are no comments for Property TrackingError in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TrackingError")]
+        public global::System.Nullable<decimal> TrackingError
+        {
+            get
+            {
+                return this._TrackingError;
+            }
+            set
+            {
+                this.OnTrackingErrorChanging(value);
+                this._TrackingError = value;
+                this.OnTrackingErrorChanged();
+                this.OnPropertyChanged("TrackingError");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _TrackingError;
+        partial void OnTrackingErrorChanging(global::System.Nullable<decimal> value);
+        partial void OnTrackingErrorChanged();
+        /// <summary>
+        /// There are no comments for Property ForSaleIn in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ForSaleIn")]
+        public string ForSaleIn
+        {
+            get
+            {
+                return this._ForSaleIn;
+            }
+            set
+            {
+                this.OnForSaleInChanging(value);
+                this._ForSaleIn = value;
+                this.OnForSaleInChanged();
+                this.OnPropertyChanged("ForSaleIn");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ForSaleIn;
+        partial void OnForSaleInChanging(string value);
+        partial void OnForSaleInChanged();
+        /// <summary>
+        /// There are no comments for Property LegalStructure in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalStructure")]
+        public string LegalStructure
+        {
+            get
+            {
+                return this._LegalStructure;
+            }
+            set
+            {
+                this.OnLegalStructureChanging(value);
+                this._LegalStructure = value;
+                this.OnLegalStructureChanged();
+                this.OnPropertyChanged("LegalStructure");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _LegalStructure;
+        partial void OnLegalStructureChanging(string value);
+        partial void OnLegalStructureChanged();
+        /// <summary>
+        /// There are no comments for Property NameOfSector in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NameOfSector")]
+        public string NameOfSector
+        {
+            get
+            {
+                return this._NameOfSector;
+            }
+            set
+            {
+                this.OnNameOfSectorChanging(value);
+                this._NameOfSector = value;
+                this.OnNameOfSectorChanged();
+                this.OnPropertyChanged("NameOfSector");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _NameOfSector;
+        partial void OnNameOfSectorChanging(string value);
+        partial void OnNameOfSectorChanged();
+        /// <summary>
+        /// There are no comments for Property CrownRating in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CrownRating")]
+        public string CrownRating
+        {
+            get
+            {
+                return this._CrownRating;
+            }
+            set
+            {
+                this.OnCrownRatingChanging(value);
+                this._CrownRating = value;
+                this.OnCrownRatingChanged();
+                this.OnPropertyChanged("CrownRating");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _CrownRating;
+        partial void OnCrownRatingChanging(string value);
+        partial void OnCrownRatingChanged();
+        /// <summary>
+        /// There are no comments for Property AbiSector in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AbiSector")]
+        public global::System.Nullable<global::System.Guid> AbiSector
+        {
+            get
+            {
+                return this._AbiSector;
+            }
+            set
+            {
+                this.OnAbiSectorChanging(value);
+                this._AbiSector = value;
+                this.OnAbiSectorChanged();
+                this.OnPropertyChanged("AbiSector");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _AbiSector;
+        partial void OnAbiSectorChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnAbiSectorChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -15285,17 +16790,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     [global::Microsoft.OData.Client.OriginalNameAttribute("FinexPriceData")]
     public partial class FinexPriceData : global::System.ComponentModel.INotifyPropertyChanged
     {
-        /// <summary>
-        /// Create a new FinexPriceData object.
-        /// </summary>
-        /// <param name="priceDate">Initial value of PriceDate.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static FinexPriceData CreateFinexPriceData(global::System.DateTimeOffset priceDate)
-        {
-            FinexPriceData finexPriceData = new FinexPriceData();
-            finexPriceData.PriceDate = priceDate;
-            return finexPriceData;
-        }
         /// <summary>
         /// There are no comments for Property BidPrice in the schema.
         /// </summary>
@@ -15393,7 +16887,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("PriceDate")]
-        public global::System.DateTimeOffset PriceDate
+        public global::System.Nullable<global::System.DateTimeOffset> PriceDate
         {
             get
             {
@@ -15408,8 +16902,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.DateTimeOffset _PriceDate;
-        partial void OnPriceDateChanging(global::System.DateTimeOffset value);
+        private global::System.Nullable<global::System.DateTimeOffset> _PriceDate;
+        partial void OnPriceDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnPriceDateChanged();
         /// <summary>
         /// There are no comments for Property Alpha in the schema.
@@ -15503,6 +16997,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Nullable<decimal> _Volatility;
         partial void OnVolatilityChanging(global::System.Nullable<decimal> value);
         partial void OnVolatilityChanged();
+        /// <summary>
+        /// There are no comments for Property InformationRatio in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InformationRatio")]
+        public global::System.Nullable<decimal> InformationRatio
+        {
+            get
+            {
+                return this._InformationRatio;
+            }
+            set
+            {
+                this.OnInformationRatioChanging(value);
+                this._InformationRatio = value;
+                this.OnInformationRatioChanged();
+                this.OnPropertyChanged("InformationRatio");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _InformationRatio;
+        partial void OnInformationRatioChanging(global::System.Nullable<decimal> value);
+        partial void OnInformationRatioChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -17207,143 +18724,1562 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnUnitQuartile0To12MonthChanging(global::System.Nullable<int> value);
         partial void OnUnitQuartile0To12MonthChanged();
         /// <summary>
-        /// There are no comments for Property InformationRatio in the schema.
+        /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("InformationRatio")]
-        public global::System.Nullable<decimal> InformationRatio
-        {
-            get
-            {
-                return this._InformationRatio;
-            }
-            set
-            {
-                this.OnInformationRatioChanging(value);
-                this._InformationRatio = value;
-                this.OnInformationRatioChanged();
-                this.OnPropertyChanged("InformationRatio");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _InformationRatio;
-        partial void OnInformationRatioChanging(global::System.Nullable<decimal> value);
-        partial void OnInformationRatioChanged();
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
-        /// There are no comments for Property TrackingError in the schema.
+        /// The value of the property is changed
         /// </summary>
+        /// <param name="property">property name</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("TrackingError")]
-        public global::System.Nullable<decimal> TrackingError
+        protected virtual void OnPropertyChanged(string property)
         {
-            get
+            if ((this.PropertyChanged != null))
             {
-                return this._TrackingError;
-            }
-            set
-            {
-                this.OnTrackingErrorChanging(value);
-                this._TrackingError = value;
-                this.OnTrackingErrorChanged();
-                this.OnPropertyChanged("TrackingError");
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<decimal> _TrackingError;
-        partial void OnTrackingErrorChanging(global::System.Nullable<decimal> value);
-        partial void OnTrackingErrorChanged();
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings
+{
+    /// <summary>
+    /// There are no comments for BenchmarkPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("BenchmarkPerformanceData")]
+    public partial class BenchmarkPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
         /// <summary>
-        /// There are no comments for Property ForSaleIn in the schema.
+        /// There are no comments for Property Lipper in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ForSaleIn")]
-        public string ForSaleIn
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Lipper")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformance Lipper
         {
             get
             {
-                return this._ForSaleIn;
+                return this._Lipper;
             }
             set
             {
-                this.OnForSaleInChanging(value);
-                this._ForSaleIn = value;
-                this.OnForSaleInChanged();
-                this.OnPropertyChanged("ForSaleIn");
+                this.OnLipperChanging(value);
+                this._Lipper = value;
+                this.OnLipperChanged();
+                this.OnPropertyChanged("Lipper");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _ForSaleIn;
-        partial void OnForSaleInChanging(string value);
-        partial void OnForSaleInChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformance _Lipper;
+        partial void OnLipperChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformance value);
+        partial void OnLipperChanged();
         /// <summary>
-        /// There are no comments for Property LegalStructure in the schema.
+        /// There are no comments for Property Finex in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalStructure")]
-        public string LegalStructure
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Finex")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformance Finex
         {
             get
             {
-                return this._LegalStructure;
+                return this._Finex;
             }
             set
             {
-                this.OnLegalStructureChanging(value);
-                this._LegalStructure = value;
-                this.OnLegalStructureChanged();
-                this.OnPropertyChanged("LegalStructure");
+                this.OnFinexChanging(value);
+                this._Finex = value;
+                this.OnFinexChanged();
+                this.OnPropertyChanged("Finex");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LegalStructure;
-        partial void OnLegalStructureChanging(string value);
-        partial void OnLegalStructureChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformance _Finex;
+        partial void OnFinexChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformance value);
+        partial void OnFinexChanged();
         /// <summary>
-        /// There are no comments for Property NameOfSector in the schema.
+        /// There are no comments for Property Morningstar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("NameOfSector")]
-        public string NameOfSector
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Morningstar")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkPerformance Morningstar
         {
             get
             {
-                return this._NameOfSector;
+                return this._Morningstar;
             }
             set
             {
-                this.OnNameOfSectorChanging(value);
-                this._NameOfSector = value;
-                this.OnNameOfSectorChanged();
-                this.OnPropertyChanged("NameOfSector");
+                this.OnMorningstarChanging(value);
+                this._Morningstar = value;
+                this.OnMorningstarChanged();
+                this.OnPropertyChanged("Morningstar");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _NameOfSector;
-        partial void OnNameOfSectorChanging(string value);
-        partial void OnNameOfSectorChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkPerformance _Morningstar;
+        partial void OnMorningstarChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkPerformance value);
+        partial void OnMorningstarChanged();
         /// <summary>
-        /// There are no comments for Property CrownRating in the schema.
+        /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("CrownRating")]
-        public string CrownRating
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper
+{
+    /// <summary>
+    /// There are no comments for LipperBenchmarkPerformance in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperBenchmarkPerformance")]
+    public partial class LipperBenchmarkPerformance : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Details in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Details")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkDetailsData Details
         {
             get
             {
-                return this._CrownRating;
+                return this._Details;
             }
             set
             {
-                this.OnCrownRatingChanging(value);
-                this._CrownRating = value;
-                this.OnCrownRatingChanged();
-                this.OnPropertyChanged("CrownRating");
+                this.OnDetailsChanging(value);
+                this._Details = value;
+                this.OnDetailsChanged();
+                this.OnPropertyChanged("Details");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _CrownRating;
-        partial void OnCrownRatingChanging(string value);
-        partial void OnCrownRatingChanged();
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkDetailsData _Details;
+        partial void OnDetailsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkDetailsData value);
+        partial void OnDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property DiscretePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> DiscretePerformance
+        {
+            get
+            {
+                return this._DiscretePerformance;
+            }
+            set
+            {
+                this.OnDiscretePerformanceChanging(value);
+                this._DiscretePerformance = value;
+                this.OnDiscretePerformanceChanged();
+                this.OnPropertyChanged("DiscretePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> _DiscretePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData>();
+        partial void OnDiscretePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> value);
+        partial void OnDiscretePerformanceChanged();
+        /// <summary>
+        /// There are no comments for Property CumulativePerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformance")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> CumulativePerformance
+        {
+            get
+            {
+                return this._CumulativePerformance;
+            }
+            set
+            {
+                this.OnCumulativePerformanceChanging(value);
+                this._CumulativePerformance = value;
+                this.OnCumulativePerformanceChanged();
+                this.OnPropertyChanged("CumulativePerformance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> _CumulativePerformance = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData>();
+        partial void OnCumulativePerformanceChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData> value);
+        partial void OnCumulativePerformanceChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for LipperBenchmarkDetailsData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperBenchmarkDetailsData")]
+    public partial class LipperBenchmarkDetailsData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        public global::System.Nullable<global::System.Guid> Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<global::System.Guid> _Id;
+        partial void OnIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for LipperBenchmarkPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperBenchmarkPerformanceData")]
+    public partial class LipperBenchmarkPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new LipperBenchmarkPerformanceData object.
+        /// </summary>
+        /// <param name="periodStartDate">Initial value of PeriodStartDate.</param>
+        /// <param name="periodEndDate">Initial value of PeriodEndDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static LipperBenchmarkPerformanceData CreateLipperBenchmarkPerformanceData(global::System.DateTimeOffset periodStartDate, global::System.DateTimeOffset periodEndDate)
+        {
+            LipperBenchmarkPerformanceData lipperBenchmarkPerformanceData = new LipperBenchmarkPerformanceData();
+            lipperBenchmarkPerformanceData.PeriodStartDate = periodStartDate;
+            lipperBenchmarkPerformanceData.PeriodEndDate = periodEndDate;
+            return lipperBenchmarkPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property TimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TimeSpan")]
+        public string TimeSpan
+        {
+            get
+            {
+                return this._TimeSpan;
+            }
+            set
+            {
+                this.OnTimeSpanChanging(value);
+                this._TimeSpan = value;
+                this.OnTimeSpanChanged();
+                this.OnPropertyChanged("TimeSpan");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _TimeSpan;
+        partial void OnTimeSpanChanging(string value);
+        partial void OnTimeSpanChanged();
+        /// <summary>
+        /// There are no comments for Property PeriodStartDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PeriodStartDate")]
+        public global::System.DateTimeOffset PeriodStartDate
+        {
+            get
+            {
+                return this._PeriodStartDate;
+            }
+            set
+            {
+                this.OnPeriodStartDateChanging(value);
+                this._PeriodStartDate = value;
+                this.OnPeriodStartDateChanged();
+                this.OnPropertyChanged("PeriodStartDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _PeriodStartDate;
+        partial void OnPeriodStartDateChanging(global::System.DateTimeOffset value);
+        partial void OnPeriodStartDateChanged();
+        /// <summary>
+        /// There are no comments for Property PeriodEndDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PeriodEndDate")]
+        public global::System.DateTimeOffset PeriodEndDate
+        {
+            get
+            {
+                return this._PeriodEndDate;
+            }
+            set
+            {
+                this.OnPeriodEndDateChanging(value);
+                this._PeriodEndDate = value;
+                this.OnPeriodEndDateChanged();
+                this.OnPropertyChanged("PeriodEndDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _PeriodEndDate;
+        partial void OnPeriodEndDateChanging(global::System.DateTimeOffset value);
+        partial void OnPeriodEndDateChanged();
+        /// <summary>
+        /// There are no comments for Property NetLocalCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NetLocalCurrency")]
+        public global::System.Nullable<decimal> NetLocalCurrency
+        {
+            get
+            {
+                return this._NetLocalCurrency;
+            }
+            set
+            {
+                this.OnNetLocalCurrencyChanging(value);
+                this._NetLocalCurrency = value;
+                this.OnNetLocalCurrencyChanged();
+                this.OnPropertyChanged("NetLocalCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _NetLocalCurrency;
+        partial void OnNetLocalCurrencyChanging(global::System.Nullable<decimal> value);
+        partial void OnNetLocalCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property NetGbp in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NetGbp")]
+        public global::System.Nullable<decimal> NetGbp
+        {
+            get
+            {
+                return this._NetGbp;
+            }
+            set
+            {
+                this.OnNetGbpChanging(value);
+                this._NetGbp = value;
+                this.OnNetGbpChanged();
+                this.OnPropertyChanged("NetGbp");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _NetGbp;
+        partial void OnNetGbpChanging(global::System.Nullable<decimal> value);
+        partial void OnNetGbpChanged();
+        /// <summary>
+        /// There are no comments for Property GrossLocalCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GrossLocalCurrency")]
+        public global::System.Nullable<decimal> GrossLocalCurrency
+        {
+            get
+            {
+                return this._GrossLocalCurrency;
+            }
+            set
+            {
+                this.OnGrossLocalCurrencyChanging(value);
+                this._GrossLocalCurrency = value;
+                this.OnGrossLocalCurrencyChanged();
+                this.OnPropertyChanged("GrossLocalCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _GrossLocalCurrency;
+        partial void OnGrossLocalCurrencyChanging(global::System.Nullable<decimal> value);
+        partial void OnGrossLocalCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property GrossGbp in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GrossGbp")]
+        public global::System.Nullable<decimal> GrossGbp
+        {
+            get
+            {
+                return this._GrossGbp;
+            }
+            set
+            {
+                this.OnGrossGbpChanging(value);
+                this._GrossGbp = value;
+                this.OnGrossGbpChanged();
+                this.OnPropertyChanged("GrossGbp");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _GrossGbp;
+        partial void OnGrossGbpChanging(global::System.Nullable<decimal> value);
+        partial void OnGrossGbpChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex
+{
+    /// <summary>
+    /// There are no comments for FinexBenchmarkPerformance in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexBenchmarkPerformance")]
+    public partial class FinexBenchmarkPerformance : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Details in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Details")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkDetailsData Details
+        {
+            get
+            {
+                return this._Details;
+            }
+            set
+            {
+                this.OnDetailsChanging(value);
+                this._Details = value;
+                this.OnDetailsChanged();
+                this.OnPropertyChanged("Details");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkDetailsData _Details;
+        partial void OnDetailsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkDetailsData value);
+        partial void OnDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property DiscretePerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformanceData")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> DiscretePerformanceData
+        {
+            get
+            {
+                return this._DiscretePerformanceData;
+            }
+            set
+            {
+                this.OnDiscretePerformanceDataChanging(value);
+                this._DiscretePerformanceData = value;
+                this.OnDiscretePerformanceDataChanged();
+                this.OnPropertyChanged("DiscretePerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> _DiscretePerformanceData = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData>();
+        partial void OnDiscretePerformanceDataChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> value);
+        partial void OnDiscretePerformanceDataChanged();
+        /// <summary>
+        /// There are no comments for Property CumulativePerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformanceData")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> CumulativePerformanceData
+        {
+            get
+            {
+                return this._CumulativePerformanceData;
+            }
+            set
+            {
+                this.OnCumulativePerformanceDataChanging(value);
+                this._CumulativePerformanceData = value;
+                this.OnCumulativePerformanceDataChanged();
+                this.OnPropertyChanged("CumulativePerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> _CumulativePerformanceData = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData>();
+        partial void OnCumulativePerformanceDataChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData> value);
+        partial void OnCumulativePerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for FinexBenchmarkDetailsData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexBenchmarkDetailsData")]
+    public partial class FinexBenchmarkDetailsData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for FinexBenchmarkPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexBenchmarkPerformanceData")]
+    public partial class FinexBenchmarkPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new FinexBenchmarkPerformanceData object.
+        /// </summary>
+        /// <param name="date">Initial value of Date.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FinexBenchmarkPerformanceData CreateFinexBenchmarkPerformanceData(global::System.DateTimeOffset date)
+        {
+            FinexBenchmarkPerformanceData finexBenchmarkPerformanceData = new FinexBenchmarkPerformanceData();
+            finexBenchmarkPerformanceData.Date = date;
+            return finexBenchmarkPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property TimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TimeSpan")]
+        public string TimeSpan
+        {
+            get
+            {
+                return this._TimeSpan;
+            }
+            set
+            {
+                this.OnTimeSpanChanging(value);
+                this._TimeSpan = value;
+                this.OnTimeSpanChanged();
+                this.OnPropertyChanged("TimeSpan");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _TimeSpan;
+        partial void OnTimeSpanChanging(string value);
+        partial void OnTimeSpanChanged();
+        /// <summary>
+        /// There are no comments for Property Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Date")]
+        public global::System.DateTimeOffset Date
+        {
+            get
+            {
+                return this._Date;
+            }
+            set
+            {
+                this.OnDateChanging(value);
+                this._Date = value;
+                this.OnDateChanged();
+                this.OnPropertyChanged("Date");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _Date;
+        partial void OnDateChanging(global::System.DateTimeOffset value);
+        partial void OnDateChanged();
+        /// <summary>
+        /// There are no comments for Property ValueNetLocalCurrency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ValueNetLocalCurrency")]
+        public global::System.Nullable<decimal> ValueNetLocalCurrency
+        {
+            get
+            {
+                return this._ValueNetLocalCurrency;
+            }
+            set
+            {
+                this.OnValueNetLocalCurrencyChanging(value);
+                this._ValueNetLocalCurrency = value;
+                this.OnValueNetLocalCurrencyChanged();
+                this.OnPropertyChanged("ValueNetLocalCurrency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _ValueNetLocalCurrency;
+        partial void OnValueNetLocalCurrencyChanging(global::System.Nullable<decimal> value);
+        partial void OnValueNetLocalCurrencyChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar
+{
+    /// <summary>
+    /// There are no comments for MorningstarBenchmarkPerformance in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarBenchmarkPerformance")]
+    public partial class MorningstarBenchmarkPerformance : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Details in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Details")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkDetailsData Details
+        {
+            get
+            {
+                return this._Details;
+            }
+            set
+            {
+                this.OnDetailsChanging(value);
+                this._Details = value;
+                this.OnDetailsChanged();
+                this.OnPropertyChanged("Details");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkDetailsData _Details;
+        partial void OnDetailsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkDetailsData value);
+        partial void OnDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property DiscretePerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscretePerformanceData")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarDiscreteBenchmarkPerformanceData> DiscretePerformanceData
+        {
+            get
+            {
+                return this._DiscretePerformanceData;
+            }
+            set
+            {
+                this.OnDiscretePerformanceDataChanging(value);
+                this._DiscretePerformanceData = value;
+                this.OnDiscretePerformanceDataChanged();
+                this.OnPropertyChanged("DiscretePerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarDiscreteBenchmarkPerformanceData> _DiscretePerformanceData = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarDiscreteBenchmarkPerformanceData>();
+        partial void OnDiscretePerformanceDataChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarDiscreteBenchmarkPerformanceData> value);
+        partial void OnDiscretePerformanceDataChanged();
+        /// <summary>
+        /// There are no comments for Property CumulativePerformanceData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativePerformanceData")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarCumulativeBenchmarkPerformanceData> CumulativePerformanceData
+        {
+            get
+            {
+                return this._CumulativePerformanceData;
+            }
+            set
+            {
+                this.OnCumulativePerformanceDataChanging(value);
+                this._CumulativePerformanceData = value;
+                this.OnCumulativePerformanceDataChanged();
+                this.OnPropertyChanged("CumulativePerformanceData");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarCumulativeBenchmarkPerformanceData> _CumulativePerformanceData = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarCumulativeBenchmarkPerformanceData>();
+        partial void OnCumulativePerformanceDataChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarCumulativeBenchmarkPerformanceData> value);
+        partial void OnCumulativePerformanceDataChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarBenchmarkDetailsData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarBenchmarkDetailsData")]
+    public partial class MorningstarBenchmarkDetailsData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarDiscreteBenchmarkPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarDiscreteBenchmarkPerformanceData")]
+    public partial class MorningstarDiscreteBenchmarkPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new MorningstarDiscreteBenchmarkPerformanceData object.
+        /// </summary>
+        /// <param name="performanceDate">Initial value of PerformanceDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MorningstarDiscreteBenchmarkPerformanceData CreateMorningstarDiscreteBenchmarkPerformanceData(global::System.DateTimeOffset performanceDate)
+        {
+            MorningstarDiscreteBenchmarkPerformanceData morningstarDiscreteBenchmarkPerformanceData = new MorningstarDiscreteBenchmarkPerformanceData();
+            morningstarDiscreteBenchmarkPerformanceData.PerformanceDate = performanceDate;
+            return morningstarDiscreteBenchmarkPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property TimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TimeSpan")]
+        public string TimeSpan
+        {
+            get
+            {
+                return this._TimeSpan;
+            }
+            set
+            {
+                this.OnTimeSpanChanging(value);
+                this._TimeSpan = value;
+                this.OnTimeSpanChanged();
+                this.OnPropertyChanged("TimeSpan");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _TimeSpan;
+        partial void OnTimeSpanChanging(string value);
+        partial void OnTimeSpanChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceDate")]
+        public global::System.DateTimeOffset PerformanceDate
+        {
+            get
+            {
+                return this._PerformanceDate;
+            }
+            set
+            {
+                this.OnPerformanceDateChanging(value);
+                this._PerformanceDate = value;
+                this.OnPerformanceDateChanged();
+                this.OnPropertyChanged("PerformanceDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _PerformanceDate;
+        partial void OnPerformanceDateChanging(global::System.DateTimeOffset value);
+        partial void OnPerformanceDateChanged();
+        /// <summary>
+        /// There are no comments for Property Currency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Currency")]
+        public string Currency
+        {
+            get
+            {
+                return this._Currency;
+            }
+            set
+            {
+                this.OnCurrencyChanging(value);
+                this._Currency = value;
+                this.OnCurrencyChanged();
+                this.OnPropertyChanged("Currency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Currency;
+        partial void OnCurrencyChanging(string value);
+        partial void OnCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property DiscreteTotalReturn in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DiscreteTotalReturn")]
+        public global::System.Nullable<decimal> DiscreteTotalReturn
+        {
+            get
+            {
+                return this._DiscreteTotalReturn;
+            }
+            set
+            {
+                this.OnDiscreteTotalReturnChanging(value);
+                this._DiscreteTotalReturn = value;
+                this.OnDiscreteTotalReturnChanged();
+                this.OnPropertyChanged("DiscreteTotalReturn");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _DiscreteTotalReturn;
+        partial void OnDiscreteTotalReturnChanging(global::System.Nullable<decimal> value);
+        partial void OnDiscreteTotalReturnChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarCumulativeBenchmarkPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarCumulativeBenchmarkPerformanceData")]
+    public partial class MorningstarCumulativeBenchmarkPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new MorningstarCumulativeBenchmarkPerformanceData object.
+        /// </summary>
+        /// <param name="performanceDate">Initial value of PerformanceDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MorningstarCumulativeBenchmarkPerformanceData CreateMorningstarCumulativeBenchmarkPerformanceData(global::System.DateTimeOffset performanceDate)
+        {
+            MorningstarCumulativeBenchmarkPerformanceData morningstarCumulativeBenchmarkPerformanceData = new MorningstarCumulativeBenchmarkPerformanceData();
+            morningstarCumulativeBenchmarkPerformanceData.PerformanceDate = performanceDate;
+            return morningstarCumulativeBenchmarkPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property TimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TimeSpan")]
+        public string TimeSpan
+        {
+            get
+            {
+                return this._TimeSpan;
+            }
+            set
+            {
+                this.OnTimeSpanChanging(value);
+                this._TimeSpan = value;
+                this.OnTimeSpanChanged();
+                this.OnPropertyChanged("TimeSpan");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _TimeSpan;
+        partial void OnTimeSpanChanging(string value);
+        partial void OnTimeSpanChanged();
+        /// <summary>
+        /// There are no comments for Property PerformanceDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PerformanceDate")]
+        public global::System.DateTimeOffset PerformanceDate
+        {
+            get
+            {
+                return this._PerformanceDate;
+            }
+            set
+            {
+                this.OnPerformanceDateChanging(value);
+                this._PerformanceDate = value;
+                this.OnPerformanceDateChanged();
+                this.OnPropertyChanged("PerformanceDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _PerformanceDate;
+        partial void OnPerformanceDateChanging(global::System.DateTimeOffset value);
+        partial void OnPerformanceDateChanged();
+        /// <summary>
+        /// There are no comments for Property Currency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Currency")]
+        public string Currency
+        {
+            get
+            {
+                return this._Currency;
+            }
+            set
+            {
+                this.OnCurrencyChanging(value);
+                this._Currency = value;
+                this.OnCurrencyChanged();
+                this.OnPropertyChanged("Currency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Currency;
+        partial void OnCurrencyChanging(string value);
+        partial void OnCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property CumulativeTotalReturn in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CumulativeTotalReturn")]
+        public global::System.Nullable<decimal> CumulativeTotalReturn
+        {
+            get
+            {
+                return this._CumulativeTotalReturn;
+            }
+            set
+            {
+                this.OnCumulativeTotalReturnChanging(value);
+                this._CumulativeTotalReturn = value;
+                this.OnCumulativeTotalReturnChanged();
+                this.OnPropertyChanged("CumulativeTotalReturn");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _CumulativeTotalReturn;
+        partial void OnCumulativeTotalReturnChanging(global::System.Nullable<decimal> value);
+        partial void OnCumulativeTotalReturnChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping
+{
+    /// <summary>
+    /// There are no comments for FinexIndexedPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("FinexIndexedPerformanceData")]
+    public partial class FinexIndexedPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new FinexIndexedPerformanceData object.
+        /// </summary>
+        /// <param name="sampleDate">Initial value of SampleDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FinexIndexedPerformanceData CreateFinexIndexedPerformanceData(global::System.DateTimeOffset sampleDate)
+        {
+            FinexIndexedPerformanceData finexIndexedPerformanceData = new FinexIndexedPerformanceData();
+            finexIndexedPerformanceData.SampleDate = sampleDate;
+            return finexIndexedPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Value")]
+        public global::System.Nullable<decimal> Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _Value;
+        partial void OnValueChanging(global::System.Nullable<decimal> value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// There are no comments for Property SampleDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SampleDate")]
+        public global::System.DateTimeOffset SampleDate
+        {
+            get
+            {
+                return this._SampleDate;
+            }
+            set
+            {
+                this.OnSampleDateChanging(value);
+                this._SampleDate = value;
+                this.OnSampleDateChanged();
+                this.OnPropertyChanged("SampleDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _SampleDate;
+        partial void OnSampleDateChanging(global::System.DateTimeOffset value);
+        partial void OnSampleDateChanged();
+        /// <summary>
+        /// There are no comments for Property FinexCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FinexCode")]
+        public string FinexCode
+        {
+            get
+            {
+                return this._FinexCode;
+            }
+            set
+            {
+                this.OnFinexCodeChanging(value);
+                this._FinexCode = value;
+                this.OnFinexCodeChanged();
+                this.OnPropertyChanged("FinexCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FinexCode;
+        partial void OnFinexCodeChanging(string value);
+        partial void OnFinexCodeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for LipperIndexedPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("LipperIndexedPerformanceData")]
+    public partial class LipperIndexedPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new LipperIndexedPerformanceData object.
+        /// </summary>
+        /// <param name="sampleDate">Initial value of SampleDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static LipperIndexedPerformanceData CreateLipperIndexedPerformanceData(global::System.DateTimeOffset sampleDate)
+        {
+            LipperIndexedPerformanceData lipperIndexedPerformanceData = new LipperIndexedPerformanceData();
+            lipperIndexedPerformanceData.SampleDate = sampleDate;
+            return lipperIndexedPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property SampleDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SampleDate")]
+        public global::System.DateTimeOffset SampleDate
+        {
+            get
+            {
+                return this._SampleDate;
+            }
+            set
+            {
+                this.OnSampleDateChanging(value);
+                this._SampleDate = value;
+                this.OnSampleDateChanged();
+                this.OnPropertyChanged("SampleDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _SampleDate;
+        partial void OnSampleDateChanging(global::System.DateTimeOffset value);
+        partial void OnSampleDateChanged();
+        /// <summary>
+        /// There are no comments for Property GbpUknet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GbpUknet")]
+        public global::System.Nullable<decimal> GbpUknet
+        {
+            get
+            {
+                return this._GbpUknet;
+            }
+            set
+            {
+                this.OnGbpUknetChanging(value);
+                this._GbpUknet = value;
+                this.OnGbpUknetChanged();
+                this.OnPropertyChanged("GbpUknet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _GbpUknet;
+        partial void OnGbpUknetChanging(global::System.Nullable<decimal> value);
+        partial void OnGbpUknetChanged();
+        /// <summary>
+        /// There are no comments for Property GbpGross in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GbpGross")]
+        public global::System.Nullable<decimal> GbpGross
+        {
+            get
+            {
+                return this._GbpGross;
+            }
+            set
+            {
+                this.OnGbpGrossChanging(value);
+                this._GbpGross = value;
+                this.OnGbpGrossChanged();
+                this.OnPropertyChanged("GbpGross");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _GbpGross;
+        partial void OnGbpGrossChanging(global::System.Nullable<decimal> value);
+        partial void OnGbpGrossChanged();
+        /// <summary>
+        /// There are no comments for Property LocalCurrencyUknet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LocalCurrencyUknet")]
+        public global::System.Nullable<decimal> LocalCurrencyUknet
+        {
+            get
+            {
+                return this._LocalCurrencyUknet;
+            }
+            set
+            {
+                this.OnLocalCurrencyUknetChanging(value);
+                this._LocalCurrencyUknet = value;
+                this.OnLocalCurrencyUknetChanged();
+                this.OnPropertyChanged("LocalCurrencyUknet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _LocalCurrencyUknet;
+        partial void OnLocalCurrencyUknetChanging(global::System.Nullable<decimal> value);
+        partial void OnLocalCurrencyUknetChanged();
+        /// <summary>
+        /// There are no comments for Property LocalCurrencyGross in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LocalCurrencyGross")]
+        public global::System.Nullable<decimal> LocalCurrencyGross
+        {
+            get
+            {
+                return this._LocalCurrencyGross;
+            }
+            set
+            {
+                this.OnLocalCurrencyGrossChanging(value);
+                this._LocalCurrencyGross = value;
+                this.OnLocalCurrencyGrossChanged();
+                this.OnPropertyChanged("LocalCurrencyGross");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _LocalCurrencyGross;
+        partial void OnLocalCurrencyGrossChanging(global::System.Nullable<decimal> value);
+        partial void OnLocalCurrencyGrossChanged();
+        /// <summary>
+        /// There are no comments for Property LipperId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LipperId")]
+        public string LipperId
+        {
+            get
+            {
+                return this._LipperId;
+            }
+            set
+            {
+                this.OnLipperIdChanging(value);
+                this._LipperId = value;
+                this.OnLipperIdChanged();
+                this.OnPropertyChanged("LipperId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _LipperId;
+        partial void OnLipperIdChanging(string value);
+        partial void OnLipperIdChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MorningstarIndexedPerformanceData in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarIndexedPerformanceData")]
+    public partial class MorningstarIndexedPerformanceData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new MorningstarIndexedPerformanceData object.
+        /// </summary>
+        /// <param name="priceDate">Initial value of PriceDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MorningstarIndexedPerformanceData CreateMorningstarIndexedPerformanceData(global::System.DateTimeOffset priceDate)
+        {
+            MorningstarIndexedPerformanceData morningstarIndexedPerformanceData = new MorningstarIndexedPerformanceData();
+            morningstarIndexedPerformanceData.PriceDate = priceDate;
+            return morningstarIndexedPerformanceData;
+        }
+        /// <summary>
+        /// There are no comments for Property MorningstarId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarId")]
+        public string MorningstarId
+        {
+            get
+            {
+                return this._MorningstarId;
+            }
+            set
+            {
+                this.OnMorningstarIdChanging(value);
+                this._MorningstarId = value;
+                this.OnMorningstarIdChanged();
+                this.OnPropertyChanged("MorningstarId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _MorningstarId;
+        partial void OnMorningstarIdChanging(string value);
+        partial void OnMorningstarIdChanged();
+        /// <summary>
+        /// There are no comments for Property PriceDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceDate")]
+        public global::System.DateTimeOffset PriceDate
+        {
+            get
+            {
+                return this._PriceDate;
+            }
+            set
+            {
+                this.OnPriceDateChanging(value);
+                this._PriceDate = value;
+                this.OnPriceDateChanged();
+                this.OnPropertyChanged("PriceDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _PriceDate;
+        partial void OnPriceDateChanging(global::System.DateTimeOffset value);
+        partial void OnPriceDateChanged();
+        /// <summary>
+        /// There are no comments for Property PriceNet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceNet")]
+        public global::System.Nullable<decimal> PriceNet
+        {
+            get
+            {
+                return this._PriceNet;
+            }
+            set
+            {
+                this.OnPriceNetChanging(value);
+                this._PriceNet = value;
+                this.OnPriceNetChanged();
+                this.OnPropertyChanged("PriceNet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _PriceNet;
+        partial void OnPriceNetChanging(global::System.Nullable<decimal> value);
+        partial void OnPriceNetChanged();
+        /// <summary>
+        /// There are no comments for Property PriceNav in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceNav")]
+        public global::System.Nullable<decimal> PriceNav
+        {
+            get
+            {
+                return this._PriceNav;
+            }
+            set
+            {
+                this.OnPriceNavChanging(value);
+                this._PriceNav = value;
+                this.OnPriceNavChanged();
+                this.OnPropertyChanged("PriceNav");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _PriceNav;
+        partial void OnPriceNavChanging(global::System.Nullable<decimal> value);
+        partial void OnPriceNavChanged();
+        /// <summary>
+        /// There are no comments for Property PriceGross in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PriceGross")]
+        public global::System.Nullable<decimal> PriceGross
+        {
+            get
+            {
+                return this._PriceGross;
+            }
+            set
+            {
+                this.OnPriceGrossChanging(value);
+                this._PriceGross = value;
+                this.OnPriceGrossChanged();
+                this.OnPropertyChanged("PriceGross");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _PriceGross;
+        partial void OnPriceGrossChanging(global::System.Nullable<decimal> value);
+        partial void OnPriceGrossChanged();
+        /// <summary>
+        /// There are no comments for Property Currency in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Currency")]
+        public string Currency
+        {
+            get
+            {
+                return this._Currency;
+            }
+            set
+            {
+                this.OnCurrencyChanging(value);
+                this._Currency = value;
+                this.OnCurrencyChanged();
+                this.OnPropertyChanged("Currency");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Currency;
+        partial void OnCurrencyChanging(string value);
+        partial void OnCurrencyChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -17393,7 +20329,32 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -17403,7 +20364,22 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
             {
                 return resolvedType;
             }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
             resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -17414,6 +20390,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.PerformanceDataGroupings", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.BenchmarkDataGroupings", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -17464,6 +20445,38 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         protected string ResolveNameFromType(global::System.Type clientType)
         {
             global::Microsoft.OData.Client.OriginalNameAttribute originalNameAttribute = (global::Microsoft.OData.Client.OriginalNameAttribute)global::System.Linq.Enumerable.SingleOrDefault(global::Microsoft.OData.Client.Utility.GetCustomAttributes(clientType, typeof(global::Microsoft.OData.Client.OriginalNameAttribute), true));
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -17471,6 +20484,14 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
                     return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.", originalNameAttribute.OriginalName);
                 }
                 return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.", clientType.Name);
             }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper", global::System.StringComparison.Ordinal))
             {
@@ -17480,6 +20501,14 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
                 }
                 return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.", clientType.Name);
             }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -17487,6 +20516,22 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
                     return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.", originalNameAttribute.OriginalName);
                 }
                 return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.", clientType.Name);
             }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping", global::System.StringComparison.Ordinal))
             {
@@ -17503,6 +20548,14 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
                     return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.", originalNameAttribute.OriginalName);
                 }
                 return string.Concat("FundsLibrary.DataApi.Domain.PerformanceDataGroupings.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.BenchmarkDataGroupings", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.", clientType.Name);
             }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PortfolioDataGroupings", global::System.StringComparison.Ordinal))
             {
@@ -17581,12 +20634,116 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security> _Securities;
         /// <summary>
+        /// There are no comments for Benchmarks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Benchmarks")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> Benchmarks
+        {
+            get
+            {
+                if ((this._Benchmarks == null))
+                {
+                    this._Benchmarks = base.CreateQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark>("Benchmarks");
+                }
+                return this._Benchmarks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> _Benchmarks;
+        /// <summary>
+        /// There are no comments for FinexIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FinexIndexedPerformance")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> FinexIndexedPerformance
+        {
+            get
+            {
+                if ((this._FinexIndexedPerformance == null))
+                {
+                    this._FinexIndexedPerformance = base.CreateQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance>("FinexIndexedPerformance");
+                }
+                return this._FinexIndexedPerformance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> _FinexIndexedPerformance;
+        /// <summary>
+        /// There are no comments for LipperIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LipperIndexedPerformance")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> LipperIndexedPerformance
+        {
+            get
+            {
+                if ((this._LipperIndexedPerformance == null))
+                {
+                    this._LipperIndexedPerformance = base.CreateQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance>("LipperIndexedPerformance");
+                }
+                return this._LipperIndexedPerformance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> _LipperIndexedPerformance;
+        /// <summary>
+        /// There are no comments for MorningstarIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarIndexedPerformance")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> MorningstarIndexedPerformance
+        {
+            get
+            {
+                if ((this._MorningstarIndexedPerformance == null))
+                {
+                    this._MorningstarIndexedPerformance = base.CreateQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance>("MorningstarIndexedPerformance");
+                }
+                return this._MorningstarIndexedPerformance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> _MorningstarIndexedPerformance;
+        /// <summary>
         /// There are no comments for Securities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         public void AddToSecurities(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security security)
         {
             base.AddObject("Securities", security);
+        }
+        /// <summary>
+        /// There are no comments for Benchmarks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public void AddToBenchmarks(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark benchmark)
+        {
+            base.AddObject("Benchmarks", benchmark);
+        }
+        /// <summary>
+        /// There are no comments for FinexIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public void AddToFinexIndexedPerformance(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance finexIndexedPerformance)
+        {
+            base.AddObject("FinexIndexedPerformance", finexIndexedPerformance);
+        }
+        /// <summary>
+        /// There are no comments for LipperIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public void AddToLipperIndexedPerformance(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance lipperIndexedPerformance)
+        {
+            base.AddObject("LipperIndexedPerformance", lipperIndexedPerformance);
+        }
+        /// <summary>
+        /// There are no comments for MorningstarIndexedPerformance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public void AddToMorningstarIndexedPerformance(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance morningstarIndexedPerformance)
+        {
+            base.AddObject("MorningstarIndexedPerformance", morningstarIndexedPerformance);
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private abstract class GeneratedEdmModel
@@ -17609,7 +20766,35 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""IncomeData"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeData"" />
         <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.PerformanceData"" />
       </EntityType>
-      <ComplexType Name=""Date"">
+      <EntityType Name=""Benchmark"">
+        <Key>
+          <PropertyRef Name=""Id"" />
+        </Key>
+        <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.BenchmarkPerformanceData"" />
+      </EntityType>
+      <EntityType Name=""FinexIndexedPerformance"">
+        <Key>
+          <PropertyRef Name=""Id"" />
+        </Key>
+        <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.FinexIndexedPerformanceData"" />
+      </EntityType>
+      <EntityType Name=""LipperIndexedPerformance"">
+        <Key>
+          <PropertyRef Name=""Id"" />
+        </Key>
+        <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.LipperIndexedPerformanceData"" />
+      </EntityType>
+      <EntityType Name=""MorningstarIndexedPerformance"">
+        <Key>
+          <PropertyRef Name=""Id"" />
+        </Key>
+        <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping.MorningstarIndexedPerformanceData"" />
+      </EntityType>
+      <ComplexType Name=""DayAndMonth"">
         <Property Name=""Day"" Type=""Edm.Int32"" Nullable=""false"" />
         <Property Name=""Month"" Type=""Edm.Int32"" Nullable=""false"" />
       </ComplexType>
@@ -17619,21 +20804,25 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""Factsheets"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.Factsheets"" />
         <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.KIIDDocuments"" />
         <Property Name=""Prospectus"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.Prospectus"" />
-        <Property Name=""Reports"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.Reports"" />
+        <Property Name=""ReportsAndAccounts"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.ReportsAndAccounts"" />
         <Property Name=""LatestPointOfSaleDocument"" Type=""Edm.String"" />
+        <Property Name=""LatestPointOfSaleAccurateDate"" Type=""Edm.DateTimeOffset"" />
       </ComplexType>
       <ComplexType Name=""Factsheets"">
-        <Property Name=""ProfessionalClassCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""ProfessionalClassAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""ProfessionalClass"" Type=""Edm.String"" />
-        <Property Name=""PrivateClassCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""PrivateClassAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""PrivateClass"" Type=""Edm.String"" />
-        <Property Name=""ProfessionalUnitCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""ProfessionalUnitAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""ProfessionalUnit"" Type=""Edm.String"" />
-        <Property Name=""PrivateUnitCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""PrivateUnitAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""PrivateUnit"" Type=""Edm.String"" />
         <Property Name=""PostSale"" Type=""Edm.String"" />
+        <Property Name=""PostSaleAccurateDate"" Type=""Edm.String"" />
         <Property Name=""LatestPrivate"" Type=""Edm.String"" />
+        <Property Name=""LatestPrivateAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""LatestProfessional"" Type=""Edm.String"" />
+        <Property Name=""LatestProfessionalAccurateDate"" Type=""Edm.DateTimeOffset"" />
       </ComplexType>
       <ComplexType Name=""KIIDDocuments"">
         <Property Name=""FundUnit"" Type=""Edm.String"" />
@@ -17641,16 +20830,18 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""FundUnitAccurateDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""Prospectus"">
-        <Property Name=""ClassSimplifiedCreationDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""ClassSimplified"" Type=""Edm.String"" />
+        <Property Name=""SimplifiedProspectusAccurateDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""SimplifiedProspectus"" Type=""Edm.String"" />
         <Property Name=""FullProspectus"" Type=""Edm.String"" />
+        <Property Name=""FullProspectusAccurateDate"" Type=""Edm.String"" />
       </ComplexType>
-      <ComplexType Name=""Reports"">
-        <Property Name=""FundAccountCreationDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""FundAccount"" Type=""Edm.String"" />
-        <Property Name=""FundAccountInterimCreationDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""FundAccountInterim"" Type=""Edm.String"" />
-        <Property Name=""LatestFundAccount"" Type=""Edm.String"" />
+      <ComplexType Name=""ReportsAndAccounts"">
+        <Property Name=""AnnualReportAccurateDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""AnnualReport"" Type=""Edm.String"" />
+        <Property Name=""InterimReportAccurateDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""InterimReport"" Type=""Edm.String"" />
+        <Property Name=""LatestReport"" Type=""Edm.String"" />
+        <Property Name=""LatestReportAccurateDate"" Type=""Edm.DateTimeOffset"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -17662,7 +20853,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""DebtQuality"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.DebtQuality"" />
         <Property Name=""Duration"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Duration"" />
         <Property Name=""Holdings"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Holdings"" />
-        <Property Name=""IcbBreakdown"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.IcbBreakdown"" />
+        <Property Name=""Icb"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Icb"" />
         <Property Name=""IaSector"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.IaSectorDetails)"" />
         <Property Name=""MarketCap"" Type=""FundsLibrary.DataApi.Domain.PortfolioDataGroupings.MarketCap"" />
         <Property Name=""Regions"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.RegionDetails)"" />
@@ -17707,16 +20898,18 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""PropertyPercentage"" Type=""Edm.Decimal"" />
       </ComplexType>
       <ComplexType Name=""CountryDetails"">
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Name"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""DebtCurrency"">
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Name"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""DebtMaturity"">
-        <Property Name=""TenToFifteenYrsPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""OverFifteenYrsPercentage"" Type=""Edm.Decimal"" />
+        <Property Name=""TenToFifteenYrsPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""FivetoTenYrsPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""UnderFiveYrsPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""CashEquivalentPercentage"" Type=""Edm.Decimal"" />
@@ -17755,26 +20948,30 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""Issuers"">
         <Property Name=""NumberIssuers"" Type=""Edm.Int32"" />
       </ComplexType>
-      <ComplexType Name=""IcbBreakdown"">
-        <Property Name=""Industry"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry)"" />
-        <Property Name=""Sector"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector)"" />
-        <Property Name=""Subsector"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector)"" />
-        <Property Name=""Supersector"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector)"" />
+      <ComplexType Name=""Icb"">
+        <Property Name=""IndustryCode"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Industry)"" />
+        <Property Name=""SectorCode"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Sector)"" />
+        <Property Name=""SubsectorCode"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Subsector)"" />
+        <Property Name=""SupersectorCode"" Type=""Collection(FundsLibrary.DataApi.Domain.PortfolioDataGroupings.Supersector)"" />
       </ComplexType>
       <ComplexType Name=""Industry"">
         <Property Name=""Name"" Type=""Edm.String"" />
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""Sector"">
         <Property Name=""Name"" Type=""Edm.String"" />
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""Subsector"">
         <Property Name=""Name"" Type=""Edm.String"" />
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""Supersector"">
         <Property Name=""Name"" Type=""Edm.String"" />
+        <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""Percentage"" Type=""Edm.Decimal"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""IaSectorDetails"">
@@ -17802,6 +20999,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""FundSize"">
         <Property Name=""NavOfFund"" Type=""Edm.Decimal"" />
         <Property Name=""NavCurrency"" Type=""Edm.String"" />
+        <Property Name=""NavCurrencyCode"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""AssetTypesExtensive"">
         <Property Name=""AlternativeTradingStrategies"" Type=""Edm.Decimal"" />
@@ -17882,6 +21080,16 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""SecurityName"" Type=""Edm.String"" />
         <Property Name=""SecuritySedol"" Type=""Edm.String"" />
         <Property Name=""ExposureTotalAssetsPercentage"" Type=""Edm.Decimal"" Nullable=""false"" />
+        <Property Name=""NumberOfSharesHeld"" Type=""Edm.Decimal"" />
+        <Property Name=""SecurityCountry"" Type=""Edm.String"" />
+        <Property Name=""SecurityCountryCode"" Type=""Edm.String"" />
+        <Property Name=""IcbIndustryCode"" Type=""Edm.String"" />
+        <Property Name=""IcbSuperSectorCode"" Type=""Edm.String"" />
+        <Property Name=""IcbSectorCode"" Type=""Edm.String"" />
+        <Property Name=""IcbSubSectorCode"" Type=""Edm.String"" />
+        <Property Name=""BondCurrency"" Type=""Edm.String"" />
+        <Property Name=""BondCurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""FlAssetType"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.RatingsDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -17910,11 +21118,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""NonClassifiedPercentage"" Type=""Edm.Decimal"" />
       </ComplexType>
       <ComplexType Name=""Morningstar"">
-        <Property Name=""Rating"" Type=""Edm.Int32"" />
-        <Property Name=""AnalystRatingCreationDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""AnalystRating"" Type=""Edm.String"" />
-        <Property Name=""QualitativeRatingDocument"" Type=""Edm.String"" />
-        <Property Name=""AnalystRatingDocument"" Type=""Edm.String"" />
+        <Property Name=""MorningstarAnalyst"" Type=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst"" />
+        <Property Name=""MorningstarStar"" Type=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar"" />
       </ComplexType>
       <ComplexType Name=""PureResearch"">
         <Property Name=""Rating"" Type=""Edm.Int32"" />
@@ -17931,17 +21136,30 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""Rating"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""MorningstarAnalyst"">
+        <Property Name=""AnalystRatingCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""AnalystRating"" Type=""Edm.String"" />
+        <Property Name=""AnalystRatingDocument"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""MorningstarStar"">
+        <Property Name=""StarRating"" Type=""Edm.Int32"" />
+        <Property Name=""StarRatingDocument"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""StaticData"">
         <Property Name=""Charges"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Charges"" />
         <Property Name=""Essentials"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Essentials"" />
+        <Property Name=""Attributes"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping.AttributesDetails"" />
+        <Property Name=""LaunchDetails"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping.LaunchDetails"" />
         <Property Name=""Identification"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Identification"" />
         <Property Name=""Management"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Management"" />
         <Property Name=""Regulatory"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Regulatory"" />
         <Property Name=""Risks"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Risks"" />
+        <Property Name=""KiidExtraction"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtraction"" />
       </ComplexType>
       <ComplexType Name=""Charges"">
-        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KIIDCharges"" />
         <Property Name=""AmcPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""AdditionalExpenses"" Type=""Edm.Decimal"" />
         <Property Name=""AnnualFundPercentage"" Type=""Edm.Decimal"" />
@@ -17962,15 +21180,9 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""CashRebateAvailable"" Type=""Edm.Boolean"" />
         <Property Name=""TrailCommission"" Type=""Edm.Decimal"" />
       </ComplexType>
-      <ComplexType Name=""KIIDCharges"">
-        <Property Name=""ExitCharge"" Type=""Edm.Decimal"" />
-        <Property Name=""InitialCharge"" Type=""Edm.Decimal"" />
-        <Property Name=""OngoingCharge"" Type=""Edm.Decimal"" />
-      </ComplexType>
       <ComplexType Name=""Essentials"">
         <Property Name=""BenchmarkDescription"" Type=""Edm.String"" />
         <Property Name=""ClassCleanValue"" Type=""Edm.Boolean"" />
-        <Property Name=""ClassLaunchDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""IaSector"" Type=""Edm.String"" />
         <Property Name=""AbiSector"" Type=""Edm.String"" />
         <Property Name=""Objectives"" Type=""Edm.String"" />
@@ -17978,24 +21190,15 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""FundDomicile"" Type=""Edm.String"" />
         <Property Name=""FundType"" Type=""Edm.String"" />
         <Property Name=""IsaQualifying"" Type=""Edm.Boolean"" />
-        <Property Name=""LaunchCurrency"" Type=""Edm.String"" />
-        <Property Name=""LaunchDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""LaunchPrice"" Type=""Edm.Decimal"" />
-        <Property Name=""EstimatedOrdinaryShareLaunchNav"" Type=""Edm.Decimal"" />
         <Property Name=""SippQualifying"" Type=""Edm.Boolean"" />
         <Property Name=""ValuationFrequency"" Type=""Edm.String"" />
         <Property Name=""ValuationPoint"" Type=""Edm.Duration"" />
-        <Property Name=""UnitLaunchCurrency"" Type=""Edm.String"" />
         <Property Name=""AicSector"" Type=""Edm.String"" />
         <Property Name=""AicMember"" Type=""Edm.Boolean"" />
         <Property Name=""AicAssetType"" Type=""Edm.String"" />
         <Property Name=""PortfolioAssetTypePercentage"" Type=""Edm.Decimal"" />
         <Property Name=""CompanyIndex"" Type=""Edm.String"" />
         <Property Name=""DealingDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""AmountRaised"" Type=""Edm.Int32"" />
-        <Property Name=""AmountRaisedAsAtDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""MaximumNumberOfOrdinarySharesOffered"" Type=""Edm.Int32"" />
-        <Property Name=""MaximumNumberOfOrdinarySharesInIssue"" Type=""Edm.Int32"" />
         <Property Name=""ShareBuybackPolicy"" Type=""Edm.Boolean"" />
         <Property Name=""ShareBuybackPolicyDescription"" Type=""Edm.String"" />
         <Property Name=""MinimumInvestment"" Type=""Edm.Int32"" />
@@ -18014,34 +21217,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""ApplicationsAcceptDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""SubscriptionExtension"" Type=""Edm.Boolean"" />
         <Property Name=""SubscriptionExtensionCloseDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""UnitLaunchDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""UnitLaunchPrice"" Type=""Edm.Decimal"" />
         <Property Name=""StockListingCurrency"" Type=""Edm.String"" />
-        <Property Name=""MultiManager"" Type=""Edm.Boolean"" />
-        <Property Name=""IndexTracker"" Type=""Edm.Boolean"" />
-        <Property Name=""Property"" Type=""Edm.Boolean"" />
-        <Property Name=""Commodity"" Type=""Edm.Boolean"" />
-        <Property Name=""ProtectedAbsoluteReturn"" Type=""Edm.Boolean"" />
-        <Property Name=""Bric"" Type=""Edm.Boolean"" />
-        <Property Name=""FundCommentaryRequired"" Type=""Edm.Boolean"" />
-        <Property Name=""Bond"" Type=""Edm.Boolean"" />
-        <Property Name=""GenericBreakdown"" Type=""Edm.Boolean"" />
-        <Property Name=""Leverage"" Type=""Edm.Decimal"" />
-        <Property Name=""Cash"" Type=""Edm.Boolean"" />
-        <Property Name=""SingleAssetClass"" Type=""Edm.Boolean"" />
-        <Property Name=""HigherVolatility"" Type=""Edm.Boolean"" />
-        <Property Name=""InternallyManaged"" Type=""Edm.Boolean"" />
-        <Property Name=""WithProfits"" Type=""Edm.Boolean"" />
-        <Property Name=""AssetType"" Type=""Edm.String"" />
-        <Property Name=""ManagementStyle"" Type=""Edm.String"" />
-        <Property Name=""GlobalBond"" Type=""Edm.Boolean"" />
-        <Property Name=""CorporateBonds"" Type=""Edm.Boolean"" />
-        <Property Name=""Equities"" Type=""Edm.Boolean"" />
-        <Property Name=""Gilts"" Type=""Edm.Boolean"" />
-        <Property Name=""GuaranteedFunds"" Type=""Edm.Boolean"" />
-        <Property Name=""MixedAsset"" Type=""Edm.Boolean"" />
-        <Property Name=""SpecialistOther"" Type=""Edm.Boolean"" />
-        <Property Name=""LifeStyle"" Type=""Edm.Boolean"" />
+        <Property Name=""StockListingCurrencyCode"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""Identification"">
         <Property Name=""ClassName"" Type=""Edm.String"" />
@@ -18050,7 +21227,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""BaseCurrency"" Type=""Edm.String"" />
         <Property Name=""BloombergCode"" Type=""Edm.String"" />
         <Property Name=""UnitType"" Type=""Edm.String"" />
-        <Property Name=""VctType"" Type=""Edm.String"" />
         <Property Name=""InternalCode"" Type=""Edm.String"" />
         <Property Name=""IsinCode"" Type=""Edm.String"" />
         <Property Name=""MexCode"" Type=""Edm.String"" />
@@ -18088,6 +21264,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""TeamMember"">
         <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
         <Property Name=""Name"" Type=""Edm.String"" />
+        <Property Name=""Photo"" Type=""Edm.String"" />
         <Property Name=""PositionWithinTeam"" Type=""Edm.Int32"" />
         <Property Name=""StartDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""Role"" Type=""Edm.String"" />
@@ -18102,7 +21279,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""RegulatoryStatus"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""Risks"">
-        <Property Name=""Srri"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.SrriRisk"" />
         <Property Name=""ChargesToCapital"" Type=""Edm.Boolean"" />
         <Property Name=""ConcentratedPortfolio"" Type=""Edm.Boolean"" />
         <Property Name=""DepositorySolvency"" Type=""Edm.Boolean"" />
@@ -18129,8 +21305,9 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""UmbrellaLiabilities"" Type=""Edm.Boolean"" />
         <Property Name=""ValueOfInvestments"" Type=""Edm.Boolean"" />
       </ComplexType>
-      <ComplexType Name=""SrriRisk"">
-        <Property Name=""ValidatedSrri"" Type=""Edm.Int32"" />
+      <ComplexType Name=""KiidExtraction"">
+        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges"" />
+        <Property Name=""Srri"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.SrriRisk"" />
       </ComplexType>
       <ComplexType Name=""Bond"">
         <Property Name=""DistributionYield"" Type=""Edm.Decimal"" />
@@ -18146,6 +21323,64 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""CapitalChargesDistributionIncrease"" Type=""Edm.Decimal"" />
       </ComplexType>
     </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings.AttributesGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""AttributesDetails"">
+        <Property Name=""MultiManager"" Type=""Edm.Boolean"" />
+        <Property Name=""IndexTracker"" Type=""Edm.Boolean"" />
+        <Property Name=""Property"" Type=""Edm.Boolean"" />
+        <Property Name=""Commodity"" Type=""Edm.Boolean"" />
+        <Property Name=""ProtectedAbsoluteReturn"" Type=""Edm.Boolean"" />
+        <Property Name=""Bric"" Type=""Edm.Boolean"" />
+        <Property Name=""Bond"" Type=""Edm.Boolean"" />
+        <Property Name=""Leverage"" Type=""Edm.Decimal"" />
+        <Property Name=""Cash"" Type=""Edm.Boolean"" />
+        <Property Name=""SingleAssetClass"" Type=""Edm.Boolean"" />
+        <Property Name=""HigherVolatility"" Type=""Edm.Boolean"" />
+        <Property Name=""InternallyManaged"" Type=""Edm.Boolean"" />
+        <Property Name=""WithProfits"" Type=""Edm.Boolean"" />
+        <Property Name=""AssetType"" Type=""Edm.String"" />
+        <Property Name=""ManagementStyle"" Type=""Edm.String"" />
+        <Property Name=""GlobalBond"" Type=""Edm.Boolean"" />
+        <Property Name=""CorporateBonds"" Type=""Edm.Boolean"" />
+        <Property Name=""Equities"" Type=""Edm.Boolean"" />
+        <Property Name=""Gilts"" Type=""Edm.Boolean"" />
+        <Property Name=""GuaranteedFunds"" Type=""Edm.Boolean"" />
+        <Property Name=""MixedAsset"" Type=""Edm.Boolean"" />
+        <Property Name=""SpecialistOther"" Type=""Edm.Boolean"" />
+        <Property Name=""LifeStyle"" Type=""Edm.Boolean"" />
+        <Property Name=""VctType"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings.LaunchDetailsGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""LaunchDetails"">
+        <Property Name=""ClassLaunchDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""FundLaunchDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""FundLaunchPrice"" Type=""Edm.Decimal"" />
+        <Property Name=""FundLaunchCurrency"" Type=""Edm.String"" />
+        <Property Name=""FundLaunchCurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""UnitLaunchCurrency"" Type=""Edm.String"" />
+        <Property Name=""UnitLaunchCurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""UnitLaunchDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""UnitLaunchPrice"" Type=""Edm.Decimal"" />
+        <Property Name=""PriceCurrency"" Type=""Edm.String"" />
+        <Property Name=""PriceCurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""EstimatedOrdinaryShareLaunchNav"" Type=""Edm.Decimal"" />
+        <Property Name=""AmountRaised"" Type=""Edm.Int32"" />
+        <Property Name=""AmountRaisedAsAtDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""MaximumNumberOfOrdinarySharesOffered"" Type=""Edm.Int32"" />
+        <Property Name=""MaximumNumberOfOrdinarySharesInIssue"" Type=""Edm.Int32"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""KIIDCharges"">
+        <Property Name=""ExitCharge"" Type=""Edm.Decimal"" />
+        <Property Name=""InitialCharge"" Type=""Edm.Decimal"" />
+        <Property Name=""OngoingCharge"" Type=""Edm.Decimal"" />
+      </ComplexType>
+      <ComplexType Name=""SrriRisk"">
+        <Property Name=""ValidatedSrri"" Type=""Edm.Int32"" />
+      </ComplexType>
+    </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.IncomeDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""IncomeData"">
         <Property Name=""IncomeDates"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDates"" />
@@ -18159,12 +21394,12 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""VctDates"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails)"" />
         <Property Name=""ClassFirstIncomePaymentDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""FundFirstIncomePaymentDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""LatestIncomePaymentDate"" Type=""FundsLibrary.DataApi.Domain.Date"" />
+        <Property Name=""NextIncomePaymentDate"" Type=""FundsLibrary.DataApi.Domain.DayAndMonth"" />
       </ComplexType>
       <ComplexType Name=""IncomeDateDetails"">
-        <Property Name=""AccountEndDate"" Type=""FundsLibrary.DataApi.Domain.Date"" />
-        <Property Name=""ExDividendDate"" Type=""FundsLibrary.DataApi.Domain.Date"" />
-        <Property Name=""IncomePaymentDate"" Type=""FundsLibrary.DataApi.Domain.Date"" />
+        <Property Name=""AccountEndDate"" Type=""FundsLibrary.DataApi.Domain.DayAndMonth"" />
+        <Property Name=""ExDividendDate"" Type=""FundsLibrary.DataApi.Domain.DayAndMonth"" />
+        <Property Name=""IncomePaymentDate"" Type=""FundsLibrary.DataApi.Domain.DayAndMonth"" />
         <Property Name=""FinalPayment"" Type=""Edm.Boolean"" />
       </ComplexType>
       <ComplexType Name=""IncomeDetails"">
@@ -18209,35 +21444,36 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""LipperPerformance"">
         <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperDetailsData"" />
         <Property Name=""Prices"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPriceData"" />
-        <Property Name=""CumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""DiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""MonthEndCumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""MonthEndDiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""QuarterEndCumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""QuarterEndDiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData"" />
-        <Property Name=""Benchmark"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""Sector"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""Benchmark"" Type=""Edm.Guid"" />
+        <Property Name=""CumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
+        <Property Name=""DiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
+        <Property Name=""MonthEndCumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
+        <Property Name=""MonthEndDiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
+        <Property Name=""QuarterEndCumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
+        <Property Name=""QuarterEndDiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Lipper.LipperPerformanceData)"" />
       </ComplexType>
       <ComplexType Name=""LipperDetailsData"">
-        <Property Name=""Id"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""Code"" Type=""Edm.String"" />
-        <Property Name=""UnitCode"" Type=""Edm.String"" />
+        <Property Name=""BenchmarkId"" Type=""Edm.Guid"" />
+        <Property Name=""LipperCode"" Type=""Edm.String"" />
+        <Property Name=""PrimaryUnitLipperCode"" Type=""Edm.String"" />
         <Property Name=""Currency"" Type=""Edm.String"" />
-        <Property Name=""IaSector"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""GlobalSector"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""UkOffshoreSector"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""AbiSector"" Type=""Edm.String"" />
+        <Property Name=""CurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""IaSectorId"" Type=""Edm.Guid"" />
+        <Property Name=""GlobalSectorId"" Type=""Edm.Guid"" />
+        <Property Name=""UkOffshoreSectorId"" Type=""Edm.Guid"" />
+        <Property Name=""AbiSectorId"" Type=""Edm.Guid"" />
       </ComplexType>
       <ComplexType Name=""LipperPriceData"">
-        <Property Name=""Date"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""Date"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""Currency"" Type=""Edm.String"" />
-        <Property Name=""NetAssetValue"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""Bid"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""Offer"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""PreviousDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
-        <Property Name=""NetAssetValueChange"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""BidChange"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""OfferChange"" Type=""Edm.Decimal"" Nullable=""false"" />
+        <Property Name=""CurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""NetAssetValue"" Type=""Edm.Decimal"" />
+        <Property Name=""Bid"" Type=""Edm.Decimal"" />
+        <Property Name=""Offer"" Type=""Edm.Decimal"" />
+        <Property Name=""PreviousDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""NetAssetValueChange"" Type=""Edm.Decimal"" />
+        <Property Name=""BidChange"" Type=""Edm.Decimal"" />
+        <Property Name=""OfferChange"" Type=""Edm.Decimal"" />
       </ComplexType>
       <ComplexType Name=""LipperPerformanceData"">
         <Property Name=""TimeSpan"" Type=""Edm.String"" />
@@ -18259,29 +21495,33 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""MorningStarPerformance"">
         <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDetailsData"" />
         <Property Name=""Prices"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarPriceData"" />
-        <Property Name=""DiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData"" />
-        <Property Name=""CumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData"" />
-        <Property Name=""MonthEndDiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData"" />
-        <Property Name=""MonthEndCumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData"" />
-        <Property Name=""QuarterEndDiscretePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData"" />
-        <Property Name=""QuarterEndCumulativePerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData"" />
-        <Property Name=""Benchmark"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""Sector"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""Benchmark"" Type=""Edm.Guid"" />
+        <Property Name=""DiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData)"" />
+        <Property Name=""CumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData)"" />
+        <Property Name=""MonthEndDiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData)"" />
+        <Property Name=""MonthEndCumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData)"" />
+        <Property Name=""QuarterEndDiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarDiscretePerformanceData)"" />
+        <Property Name=""QuarterEndCumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.PerformanceDataGroupings.MorningStar.MorningStarCumulativePerformanceData)"" />
       </ComplexType>
       <ComplexType Name=""MorningStarDetailsData"">
-        <Property Name=""Id"" Type=""Edm.String"" />
-        <Property Name=""Code"" Type=""Edm.String"" />
-        <Property Name=""IaSector"" Type=""Edm.String"" />
-        <Property Name=""UnitCode"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""BenchmarkId"" Type=""Edm.Guid"" />
+        <Property Name=""MsCode"" Type=""Edm.String"" />
+        <Property Name=""PrimaryUnitMsCode"" Type=""Edm.Guid"" />
+        <Property Name=""Currency"" Type=""Edm.String"" />
+        <Property Name=""CurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""IaSectorId"" Type=""Edm.String"" />
+        <Property Name=""FundIaSectorId"" Type=""Edm.Guid"" />
+        <Property Name=""AbiSectorId"" Type=""Edm.Guid"" />
       </ComplexType>
       <ComplexType Name=""MorningStarPriceData"">
-        <Property Name=""Date"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""Date"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""Currency"" Type=""Edm.String"" />
-        <Property Name=""NetAssetValue"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""Bid"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""Offer"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""Mid"" Type=""Edm.Decimal"" Nullable=""false"" />
-        <Property Name=""LastUpdate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""CurrencyCode"" Type=""Edm.String"" />
+        <Property Name=""NetAssetValue"" Type=""Edm.Decimal"" />
+        <Property Name=""Bid"" Type=""Edm.Decimal"" />
+        <Property Name=""Offer"" Type=""Edm.Decimal"" />
+        <Property Name=""Mid"" Type=""Edm.Decimal"" />
+        <Property Name=""LastUpdate"" Type=""Edm.DateTimeOffset"" />
       </ComplexType>
       <ComplexType Name=""MorningStarDiscretePerformanceData"">
         <Property Name=""TimeSpan"" Type=""Edm.String"" />
@@ -18326,25 +21566,31 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""FinexPerformance"">
         <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexDetailsData"" />
         <Property Name=""Price"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPriceData"" />
+        <Property Name=""Benchmark"" Type=""Edm.Guid"" />
+        <Property Name=""Performance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData"" />
         <Property Name=""MonthEndPerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData"" />
         <Property Name=""QuarterEndPerformance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData"" />
-        <Property Name=""Performance"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.Finex.FinexPerformanceData"" />
-        <Property Name=""Benchmark"" Type=""Edm.Guid"" Nullable=""false"" />
-        <Property Name=""Sector"" Type=""Edm.Guid"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""FinexDetailsData"">
-        <Property Name=""Code"" Type=""Edm.String"" />
+        <Property Name=""Citicode"" Type=""Edm.String"" />
+        <Property Name=""TrackingError"" Type=""Edm.Decimal"" />
+        <Property Name=""ForSaleIn"" Type=""Edm.String"" />
+        <Property Name=""LegalStructure"" Type=""Edm.String"" />
+        <Property Name=""NameOfSector"" Type=""Edm.String"" />
+        <Property Name=""CrownRating"" Type=""Edm.String"" />
+        <Property Name=""AbiSector"" Type=""Edm.Guid"" />
       </ComplexType>
       <ComplexType Name=""FinexPriceData"">
         <Property Name=""BidPrice"" Type=""Edm.Decimal"" />
         <Property Name=""OfferPrice"" Type=""Edm.Decimal"" />
         <Property Name=""MidPrice"" Type=""Edm.Decimal"" />
         <Property Name=""Yield"" Type=""Edm.Decimal"" />
-        <Property Name=""PriceDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""PriceDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""Alpha"" Type=""Edm.Decimal"" />
         <Property Name=""Beta"" Type=""Edm.Decimal"" />
         <Property Name=""Sharpe"" Type=""Edm.Decimal"" />
         <Property Name=""Volatility"" Type=""Edm.Decimal"" />
+        <Property Name=""InformationRatio"" Type=""Edm.Decimal"" />
       </ComplexType>
       <ComplexType Name=""FinexPerformanceData"">
         <Property Name=""UnitMonthEnd3Month"" Type=""Edm.Decimal"" />
@@ -18420,12 +21666,93 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""UnitQuartile36To48Month"" Type=""Edm.Int32"" />
         <Property Name=""UnitQuartile48To60Month"" Type=""Edm.Int32"" />
         <Property Name=""UnitQuartile0To12Month"" Type=""Edm.Int32"" />
-        <Property Name=""InformationRatio"" Type=""Edm.Decimal"" />
-        <Property Name=""TrackingError"" Type=""Edm.Decimal"" />
-        <Property Name=""ForSaleIn"" Type=""Edm.String"" />
-        <Property Name=""LegalStructure"" Type=""Edm.String"" />
-        <Property Name=""NameOfSector"" Type=""Edm.String"" />
-        <Property Name=""CrownRating"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""BenchmarkPerformanceData"">
+        <Property Name=""Lipper"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformance"" />
+        <Property Name=""Finex"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformance"" />
+        <Property Name=""Morningstar"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkPerformance"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""LipperBenchmarkPerformance"">
+        <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkDetailsData"" />
+        <Property Name=""DiscretePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData)"" />
+        <Property Name=""CumulativePerformance"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Lipper.LipperBenchmarkPerformanceData)"" />
+      </ComplexType>
+      <ComplexType Name=""LipperBenchmarkDetailsData"">
+        <Property Name=""Id"" Type=""Edm.Guid"" />
+        <Property Name=""Code"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""LipperBenchmarkPerformanceData"">
+        <Property Name=""TimeSpan"" Type=""Edm.String"" />
+        <Property Name=""PeriodStartDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""PeriodEndDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""NetLocalCurrency"" Type=""Edm.Decimal"" />
+        <Property Name=""NetGbp"" Type=""Edm.Decimal"" />
+        <Property Name=""GrossLocalCurrency"" Type=""Edm.Decimal"" />
+        <Property Name=""GrossGbp"" Type=""Edm.Decimal"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""FinexBenchmarkPerformance"">
+        <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkDetailsData"" />
+        <Property Name=""DiscretePerformanceData"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData)"" />
+        <Property Name=""CumulativePerformanceData"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Finex.FinexBenchmarkPerformanceData)"" />
+      </ComplexType>
+      <ComplexType Name=""FinexBenchmarkDetailsData"">
+        <Property Name=""Code"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""FinexBenchmarkPerformanceData"">
+        <Property Name=""TimeSpan"" Type=""Edm.String"" />
+        <Property Name=""Date"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""ValueNetLocalCurrency"" Type=""Edm.Decimal"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""MorningstarBenchmarkPerformance"">
+        <Property Name=""Details"" Type=""FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarBenchmarkDetailsData"" />
+        <Property Name=""DiscretePerformanceData"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarDiscreteBenchmarkPerformanceData)"" />
+        <Property Name=""CumulativePerformanceData"" Type=""Collection(FundsLibrary.DataApi.Domain.BenchmarkDataGroupings.Morningstar.MorningstarCumulativeBenchmarkPerformanceData)"" />
+      </ComplexType>
+      <ComplexType Name=""MorningstarBenchmarkDetailsData"">
+        <Property Name=""Code"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""MorningstarDiscreteBenchmarkPerformanceData"">
+        <Property Name=""TimeSpan"" Type=""Edm.String"" />
+        <Property Name=""PerformanceDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""Currency"" Type=""Edm.String"" />
+        <Property Name=""DiscreteTotalReturn"" Type=""Edm.Decimal"" />
+      </ComplexType>
+      <ComplexType Name=""MorningstarCumulativeBenchmarkPerformanceData"">
+        <Property Name=""TimeSpan"" Type=""Edm.String"" />
+        <Property Name=""PerformanceDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""Currency"" Type=""Edm.String"" />
+        <Property Name=""CumulativeTotalReturn"" Type=""Edm.Decimal"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""FundsLibrary.DataApi.Domain.IndexedPerformanceDataGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""FinexIndexedPerformanceData"">
+        <Property Name=""Value"" Type=""Edm.Decimal"" />
+        <Property Name=""SampleDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""FinexCode"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""LipperIndexedPerformanceData"">
+        <Property Name=""SampleDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""GbpUknet"" Type=""Edm.Decimal"" />
+        <Property Name=""GbpGross"" Type=""Edm.Decimal"" />
+        <Property Name=""LocalCurrencyUknet"" Type=""Edm.Decimal"" />
+        <Property Name=""LocalCurrencyGross"" Type=""Edm.Decimal"" />
+        <Property Name=""LipperId"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""MorningstarIndexedPerformanceData"">
+        <Property Name=""MorningstarId"" Type=""Edm.String"" />
+        <Property Name=""PriceDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""PriceNet"" Type=""Edm.Decimal"" />
+        <Property Name=""PriceNav"" Type=""Edm.Decimal"" />
+        <Property Name=""PriceGross"" Type=""Edm.Decimal"" />
+        <Property Name=""Currency"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""FL"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -18434,8 +21761,57 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Parameter Name=""Sedols"" Type=""Collection(Edm.String)"" Unicode=""false"" />
         <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
       </Function>
+      <Function Name=""GetSedolsWithString"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
+        <Parameter Name=""Sedols"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
+      </Function>
+      <Function Name=""GetBenchmarks"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.Benchmark)"" />
+        <Parameter Name=""ids"" Type=""Collection(Edm.String)"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Benchmark)"" />
+      </Function>
+      <Function Name=""GetBenchmarksWithString"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.Benchmark)"" />
+        <Parameter Name=""ids"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Benchmark)"" />
+      </Function>
+      <Function Name=""GetFinexIndexedPerformance"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.FinexIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Collection(Edm.String)"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.FinexIndexedPerformance)"" />
+      </Function>
+      <Function Name=""GetFinexIndexedPerformanceWithString"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.FinexIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.FinexIndexedPerformance)"" />
+      </Function>
+      <Function Name=""GetLipperIndexedPerformance"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.LipperIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Collection(Edm.String)"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.LipperIndexedPerformance)"" />
+      </Function>
+      <Function Name=""GetLipperIndexedPerformanceWithString"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.LipperIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.LipperIndexedPerformance)"" />
+      </Function>
+      <Function Name=""GetMorningstarIndexedPerformance"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Collection(Edm.String)"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance)"" />
+      </Function>
+      <Function Name=""GetMorningstarIndexedPerformanceWithString"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance)"" />
+        <Parameter Name=""ids"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance)"" />
+      </Function>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Securities"" EntityType=""FundsLibrary.DataApi.Domain.Security"" />
+        <EntitySet Name=""Benchmarks"" EntityType=""FundsLibrary.DataApi.Domain.Benchmark"" />
+        <EntitySet Name=""FinexIndexedPerformance"" EntityType=""FundsLibrary.DataApi.Domain.FinexIndexedPerformance"" />
+        <EntitySet Name=""LipperIndexedPerformance"" EntityType=""FundsLibrary.DataApi.Domain.LipperIndexedPerformance"" />
+        <EntitySet Name=""MorningstarIndexedPerformance"" EntityType=""FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance"" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>
@@ -18482,6 +21858,123 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
             }
 
             return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security>("FL.GetSedols", false, new global::Microsoft.OData.Client.UriOperationParameter("Sedols", Sedols));
+        }
+        /// <summary>
+        /// There are no comments for GetSedolsWithString in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetSedolsWithString")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security> GetSedolsWithString(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security> source, string Sedols)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security>("FL.GetSedolsWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("Sedols", Sedols));
+        }
+        /// <summary>
+        /// There are no comments for GetBenchmarks in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetBenchmarks")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> GetBenchmarks(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> source, global::System.Collections.Generic.ICollection<string> ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark>("FL.GetBenchmarks", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetBenchmarksWithString in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetBenchmarksWithString")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> GetBenchmarksWithString(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark> source, string ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Benchmark>("FL.GetBenchmarksWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetFinexIndexedPerformance in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetFinexIndexedPerformance")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> GetFinexIndexedPerformance(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> source, global::System.Collections.Generic.ICollection<string> ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance>("FL.GetFinexIndexedPerformance", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetFinexIndexedPerformanceWithString in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetFinexIndexedPerformanceWithString")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> GetFinexIndexedPerformanceWithString(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance> source, string ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.FinexIndexedPerformance>("FL.GetFinexIndexedPerformanceWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetLipperIndexedPerformance in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetLipperIndexedPerformance")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> GetLipperIndexedPerformance(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> source, global::System.Collections.Generic.ICollection<string> ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance>("FL.GetLipperIndexedPerformance", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetLipperIndexedPerformanceWithString in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetLipperIndexedPerformanceWithString")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> GetLipperIndexedPerformanceWithString(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance> source, string ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.LipperIndexedPerformance>("FL.GetLipperIndexedPerformanceWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetMorningstarIndexedPerformance in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetMorningstarIndexedPerformance")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> GetMorningstarIndexedPerformance(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> source, global::System.Collections.Generic.ICollection<string> ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance>("FL.GetMorningstarIndexedPerformance", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for GetMorningstarIndexedPerformanceWithString in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("GetMorningstarIndexedPerformanceWithString")]
+        public static global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> GetMorningstarIndexedPerformanceWithString(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance> source, string ids)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance>("FL.GetMorningstarIndexedPerformanceWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
         }
     }
 }
