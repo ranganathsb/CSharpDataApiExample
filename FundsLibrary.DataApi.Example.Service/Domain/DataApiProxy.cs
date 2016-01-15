@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 14/12/2015 10:49:20
+// Generation date: 15/01/2016 14:18:15
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain
 {
     /// <summary>
@@ -7424,51 +7424,120 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
     public partial class Morningstar : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// There are no comments for Property MorningstarAnalyst in the schema.
+        /// There are no comments for Property AnalystRatingCreationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarAnalyst")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst MorningstarAnalyst
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingCreationDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> AnalystRatingCreationDate
         {
             get
             {
-                return this._MorningstarAnalyst;
+                return this._AnalystRatingCreationDate;
             }
             set
             {
-                this.OnMorningstarAnalystChanging(value);
-                this._MorningstarAnalyst = value;
-                this.OnMorningstarAnalystChanged();
-                this.OnPropertyChanged("MorningstarAnalyst");
+                this.OnAnalystRatingCreationDateChanging(value);
+                this._AnalystRatingCreationDate = value;
+                this.OnAnalystRatingCreationDateChanged();
+                this.OnPropertyChanged("AnalystRatingCreationDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst _MorningstarAnalyst;
-        partial void OnMorningstarAnalystChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst value);
-        partial void OnMorningstarAnalystChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _AnalystRatingCreationDate;
+        partial void OnAnalystRatingCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnAnalystRatingCreationDateChanged();
         /// <summary>
-        /// There are no comments for Property MorningstarStar in the schema.
+        /// There are no comments for Property AnalystRating in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarStar")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar MorningstarStar
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRating")]
+        public string AnalystRating
         {
             get
             {
-                return this._MorningstarStar;
+                return this._AnalystRating;
             }
             set
             {
-                this.OnMorningstarStarChanging(value);
-                this._MorningstarStar = value;
-                this.OnMorningstarStarChanged();
-                this.OnPropertyChanged("MorningstarStar");
+                this.OnAnalystRatingChanging(value);
+                this._AnalystRating = value;
+                this.OnAnalystRatingChanged();
+                this.OnPropertyChanged("AnalystRating");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar _MorningstarStar;
-        partial void OnMorningstarStarChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar value);
-        partial void OnMorningstarStarChanged();
+        private string _AnalystRating;
+        partial void OnAnalystRatingChanging(string value);
+        partial void OnAnalystRatingChanged();
+        /// <summary>
+        /// There are no comments for Property AnalystRatingDocument in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingDocument")]
+        public string AnalystRatingDocument
+        {
+            get
+            {
+                return this._AnalystRatingDocument;
+            }
+            set
+            {
+                this.OnAnalystRatingDocumentChanging(value);
+                this._AnalystRatingDocument = value;
+                this.OnAnalystRatingDocumentChanged();
+                this.OnPropertyChanged("AnalystRatingDocument");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AnalystRatingDocument;
+        partial void OnAnalystRatingDocumentChanging(string value);
+        partial void OnAnalystRatingDocumentChanged();
+        /// <summary>
+        /// There are no comments for Property StarRating in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRating")]
+        public global::System.Nullable<int> StarRating
+        {
+            get
+            {
+                return this._StarRating;
+            }
+            set
+            {
+                this.OnStarRatingChanging(value);
+                this._StarRating = value;
+                this.OnStarRatingChanged();
+                this.OnPropertyChanged("StarRating");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<int> _StarRating;
+        partial void OnStarRatingChanging(global::System.Nullable<int> value);
+        partial void OnStarRatingChanged();
+        /// <summary>
+        /// There are no comments for Property StarRatingDocument in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRatingDocument")]
+        public string StarRatingDocument
+        {
+            get
+            {
+                return this._StarRatingDocument;
+            }
+            set
+            {
+                this.OnStarRatingDocumentChanging(value);
+                this._StarRatingDocument = value;
+                this.OnStarRatingDocumentChanged();
+                this.OnPropertyChanged("StarRatingDocument");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _StarRatingDocument;
+        partial void OnStarRatingDocumentChanging(string value);
+        partial void OnStarRatingDocumentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -7703,172 +7772,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _Rating;
         partial void OnRatingChanging(string value);
         partial void OnRatingChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-}
-namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings
-{
-    /// <summary>
-    /// There are no comments for MorningstarAnalyst in the schema.
-    /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarAnalyst")]
-    public partial class MorningstarAnalyst : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property AnalystRatingCreationDate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingCreationDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> AnalystRatingCreationDate
-        {
-            get
-            {
-                return this._AnalystRatingCreationDate;
-            }
-            set
-            {
-                this.OnAnalystRatingCreationDateChanging(value);
-                this._AnalystRatingCreationDate = value;
-                this.OnAnalystRatingCreationDateChanged();
-                this.OnPropertyChanged("AnalystRatingCreationDate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _AnalystRatingCreationDate;
-        partial void OnAnalystRatingCreationDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnAnalystRatingCreationDateChanged();
-        /// <summary>
-        /// There are no comments for Property AnalystRating in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRating")]
-        public string AnalystRating
-        {
-            get
-            {
-                return this._AnalystRating;
-            }
-            set
-            {
-                this.OnAnalystRatingChanging(value);
-                this._AnalystRating = value;
-                this.OnAnalystRatingChanged();
-                this.OnPropertyChanged("AnalystRating");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AnalystRating;
-        partial void OnAnalystRatingChanging(string value);
-        partial void OnAnalystRatingChanged();
-        /// <summary>
-        /// There are no comments for Property AnalystRatingDocument in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("AnalystRatingDocument")]
-        public string AnalystRatingDocument
-        {
-            get
-            {
-                return this._AnalystRatingDocument;
-            }
-            set
-            {
-                this.OnAnalystRatingDocumentChanging(value);
-                this._AnalystRatingDocument = value;
-                this.OnAnalystRatingDocumentChanged();
-                this.OnPropertyChanged("AnalystRatingDocument");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AnalystRatingDocument;
-        partial void OnAnalystRatingDocumentChanging(string value);
-        partial void OnAnalystRatingDocumentChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for MorningstarStar in the schema.
-    /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("MorningstarStar")]
-    public partial class MorningstarStar : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property StarRating in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRating")]
-        public global::System.Nullable<int> StarRating
-        {
-            get
-            {
-                return this._StarRating;
-            }
-            set
-            {
-                this.OnStarRatingChanging(value);
-                this._StarRating = value;
-                this.OnStarRatingChanged();
-                this.OnPropertyChanged("StarRating");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _StarRating;
-        partial void OnStarRatingChanging(global::System.Nullable<int> value);
-        partial void OnStarRatingChanged();
-        /// <summary>
-        /// There are no comments for Property StarRatingDocument in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("StarRatingDocument")]
-        public string StarRatingDocument
-        {
-            get
-            {
-                return this._StarRatingDocument;
-            }
-            set
-            {
-                this.OnStarRatingDocumentChanging(value);
-                this._StarRatingDocument = value;
-                this.OnStarRatingDocumentChanged();
-                this.OnPropertyChanged("StarRatingDocument");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _StarRatingDocument;
-        partial void OnStarRatingDocumentChanging(string value);
-        partial void OnStarRatingDocumentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -9302,28 +9205,28 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnSubscriptionCloseForTaxYearChanging(global::System.Nullable<bool> value);
         partial void OnSubscriptionCloseForTaxYearChanged();
         /// <summary>
-        /// There are no comments for Property SubscriptionsCloseDate in the schema.
+        /// There are no comments for Property SubscriptionCloseDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("SubscriptionsCloseDate")]
-        public global::System.Nullable<global::System.DateTimeOffset> SubscriptionsCloseDate
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SubscriptionCloseDate")]
+        public global::System.Nullable<global::System.DateTimeOffset> SubscriptionCloseDate
         {
             get
             {
-                return this._SubscriptionsCloseDate;
+                return this._SubscriptionCloseDate;
             }
             set
             {
-                this.OnSubscriptionsCloseDateChanging(value);
-                this._SubscriptionsCloseDate = value;
-                this.OnSubscriptionsCloseDateChanged();
-                this.OnPropertyChanged("SubscriptionsCloseDate");
+                this.OnSubscriptionCloseDateChanging(value);
+                this._SubscriptionCloseDate = value;
+                this.OnSubscriptionCloseDateChanged();
+                this.OnPropertyChanged("SubscriptionCloseDate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _SubscriptionsCloseDate;
-        partial void OnSubscriptionsCloseDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnSubscriptionsCloseDateChanged();
+        private global::System.Nullable<global::System.DateTimeOffset> _SubscriptionCloseDate;
+        partial void OnSubscriptionCloseDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnSubscriptionCloseDateChanged();
         /// <summary>
         /// There are no comments for Property FinalDateForReceiptOfApplications in the schema.
         /// </summary>
@@ -20329,12 +20232,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping", "FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -20445,14 +20343,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         protected string ResolveNameFromType(global::System.Type clientType)
         {
             global::Microsoft.OData.Client.OriginalNameAttribute originalNameAttribute = (global::Microsoft.OData.Client.OriginalNameAttribute)global::System.Linq.Enumerable.SingleOrDefault(global::Microsoft.OData.Client.Utility.GetCustomAttributes(clientType, typeof(global::Microsoft.OData.Client.OriginalNameAttribute), true));
-            if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings", global::System.StringComparison.Ordinal))
-            {
-                if (originalNameAttribute != null)
-                {
-                    return string.Concat("FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.", originalNameAttribute.OriginalName);
-                }
-                return string.Concat("FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.", clientType.Name);
-            }
             if (clientType.Namespace.Equals("FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -21118,8 +21008,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""NonClassifiedPercentage"" Type=""Edm.Decimal"" />
       </ComplexType>
       <ComplexType Name=""Morningstar"">
-        <Property Name=""MorningstarAnalyst"" Type=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarAnalyst"" />
-        <Property Name=""MorningstarStar"" Type=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings.MorningstarStar"" />
+        <Property Name=""AnalystRatingCreationDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""AnalystRating"" Type=""Edm.String"" />
+        <Property Name=""AnalystRatingDocument"" Type=""Edm.String"" />
+        <Property Name=""StarRating"" Type=""Edm.Int32"" />
+        <Property Name=""StarRatingDocument"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""PureResearch"">
         <Property Name=""Rating"" Type=""Edm.Int32"" />
@@ -21134,17 +21027,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       </ComplexType>
       <ComplexType Name=""SquareMile"">
         <Property Name=""Rating"" Type=""Edm.String"" />
-      </ComplexType>
-    </Schema>
-    <Schema Namespace=""FundsLibrary.DataApi.Domain.RatingsDataGroupings.MorningStarDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""MorningstarAnalyst"">
-        <Property Name=""AnalystRatingCreationDate"" Type=""Edm.DateTimeOffset"" />
-        <Property Name=""AnalystRating"" Type=""Edm.String"" />
-        <Property Name=""AnalystRatingDocument"" Type=""Edm.String"" />
-      </ComplexType>
-      <ComplexType Name=""MorningstarStar"">
-        <Property Name=""StarRating"" Type=""Edm.Int32"" />
-        <Property Name=""StarRatingDocument"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -21212,7 +21094,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""SubscriptionOpen"" Type=""Edm.Boolean"" />
         <Property Name=""SubscriptionOpenDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""SubscriptionCloseForTaxYear"" Type=""Edm.Boolean"" />
-        <Property Name=""SubscriptionsCloseDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""SubscriptionCloseDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""FinalDateForReceiptOfApplications"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""ApplicationsAcceptDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""SubscriptionExtension"" Type=""Edm.Boolean"" />
