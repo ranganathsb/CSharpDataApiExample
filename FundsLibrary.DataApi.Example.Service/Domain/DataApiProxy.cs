@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 15/01/2016 14:18:15
+// Generation date: 22/03/2016 13:20:41
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain
 {
     /// <summary>

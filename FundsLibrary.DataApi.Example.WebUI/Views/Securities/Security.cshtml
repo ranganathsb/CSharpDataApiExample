@@ -29,60 +29,74 @@
 				<div class="col-lg-6">
 					Sedol: @Model.StaticData.Identification.SedolCode
 				</div>
-				<div class="col-lg-6">
-					Exit Charge: @Model.StaticData.Charges.Exit
-				</div>
+				@if (Model.StaticData != null && Model.StaticData.Charges != null)
+				{
+					<div class="col-lg-6">
+						Exit Charge: @Model.StaticData.Charges.Exit
+					</div>
+				}
 			</div>
 		</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-lg-6">
-		<div class="well">
-			<h4>
-				Documents
-			</h4>
-			<h5>Factsheets</h5>
-			<ul>
-				<li><a href="@Model.Documents.Factsheets.PrivateClass">Private Class Factsheet</a></li>
-				<li><a href="@Model.Documents.Factsheets.ProfessionalClass">Professional Class Factsheet</a></li>
-				<li><a href="@Model.Documents.Factsheets.PrivateUnit">Private Unit Factsheet</a></li>
-				<li><a href="@Model.Documents.Factsheets.ProfessionalUnit">Professional Unit Factsheet</a></li>
-			</ul>
-		</div>
-
-		<div class="well">
-			<h4>
-				Charges
-			</h4>
-			<ul>
-				<li>Initial: @Model.StaticData.Charges.Initial</li>
-			</ul>
-		</div>
+		@if (Model.Documents != null && Model.Documents.Factsheets != null)
+		{
+			<div class="well">
+				<h4>
+					Documents
+				</h4>
+				<h5>Factsheets</h5>
+				<ul>
+					<li><a href="@Model.Documents.Factsheets.PrivateClass">Private Class Factsheet</a></li>
+					<li><a href="@Model.Documents.Factsheets.ProfessionalClass">Professional Class Factsheet</a></li>
+					<li><a href="@Model.Documents.Factsheets.PrivateUnit">Private Unit Factsheet</a></li>
+					<li><a href="@Model.Documents.Factsheets.ProfessionalUnit">Professional Unit Factsheet</a></li>
+				</ul>
+			</div>
+		}
+		@if (Model.StaticData != null && Model.StaticData.Charges != null)
+		{
+			<div class="well">
+				<h4>
+					Charges
+				</h4>
+				<ul>
+					<li>Initial: @Model.StaticData.Charges.Initial</li>
+				</ul>
+			</div>
+		}
 	</div>
 	<div class="col-lg-6">
-		<div class="well">
-			<h4>
-				Ratings
-			</h4>
-			<ul>
-				<li>Defeqto: @Model.RatingsData.Defaqto.DiamondRating</li>
-				<li>Fund Calibre: @Model.RatingsData.FundCalibre.EliteRating</li>
-				<li>James Brearley: @Model.RatingsData.JamesBrearley.Overall</li>
-				<li>Morningstar: @Model.RatingsData.Morningstar.StarRating</li>
-				<li>Pure Research: @Model.RatingsData.PureResearch.Rating</li>
-				<li>Rayner Spencer Mills: @Model.RatingsData.RaynerSpencerMills.Rating</li>
-				<li>Scopic: @Model.RatingsData.Scopic.Rating</li>
-				<li>Square Mile: @Model.RatingsData.SquareMile.Rating</li>
-			</ul>
-		</div>
-		<div class="well">
-			<h4>
-				Essentials
-			</h4>
-			<ul>
-				<li>Sector: @Model.StaticData.Essentials.IaSector</li>
-			</ul>
-		</div>
+		@if (Model.RatingsData != null)
+		{
+			<div class="well">
+				<h4>
+					Ratings
+				</h4>
+				<ul>
+					@if (Model.RatingsData.Defaqto != null) { <li>Defeqto: @Model.RatingsData.Defaqto.DiamondRating</li> }
+					@if (Model.RatingsData.FundCalibre != null) { <li>Fund Calibre: @Model.RatingsData.FundCalibre.EliteRating</li> }
+					@if (Model.RatingsData.JamesBrearley != null) { <li>James Brearley: @Model.RatingsData.JamesBrearley.Overall</li> }
+					@if (Model.RatingsData.Morningstar != null) { <li>Morningstar: @Model.RatingsData.Morningstar.StarRating</li> }
+					@if (Model.RatingsData.PureResearch != null) { <li>Pure Research: @Model.RatingsData.PureResearch.Rating</li> }
+					@if (Model.RatingsData.RaynerSpencerMills != null) { <li>Rayner Spencer Mills: @Model.RatingsData.RaynerSpencerMills.Rating</li> }
+					@if (Model.RatingsData.Scopic != null) { <li>Scopic: @Model.RatingsData.Scopic.Rating</li> }
+					@if (Model.RatingsData.SquareMile != null) { <li>Square Mile: @Model.RatingsData.SquareMile.Rating</li> }
+				</ul>
+			</div>
+		}
+		@if (Model.StaticData != null && Model.StaticData.Essentials != null && Model.StaticData.Essentials.IaSector != null)
+		{
+			<div class="well">
+				<h4>
+					Essentials
+				</h4>
+				<ul>
+					<li>Sector: @Model.StaticData.Essentials.IaSector</li>
+				</ul>
+			</div>
+		}
 	</div>
 </div>
