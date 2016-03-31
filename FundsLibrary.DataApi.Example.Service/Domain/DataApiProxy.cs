@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 22/03/2016 13:20:41
+// Generation date: 31/03/2016 11:35:47
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain
 {
     /// <summary>
@@ -218,6 +218,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.PerformanceData _PerformanceData;
         partial void OnPerformanceDataChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.PerformanceDataGroupings.PerformanceData value);
         partial void OnPerformanceDataChanged();
+        /// <summary>
+        /// There are no comments for Property Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Type")]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                this.OnTypeChanging(value);
+                this._Type = value;
+                this.OnTypeChanged();
+                this.OnPropertyChanged("Type");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Type;
+        partial void OnTypeChanging(string value);
+        partial void OnTypeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -917,7 +940,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Kiids")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KIIDDocuments Kiids
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KiidDocuments Kiids
         {
             get
             {
@@ -932,8 +955,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KIIDDocuments _Kiids;
-        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KIIDDocuments value);
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KiidDocuments _Kiids;
+        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.DocumentsGroupings.KiidDocuments value);
         partial void OnKiidsChanged();
         /// <summary>
         /// There are no comments for Property Prospectus in the schema.
@@ -1263,7 +1286,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("PostSaleAccurateDate")]
-        public string PostSaleAccurateDate
+        public global::System.Nullable<global::System.DateTimeOffset> PostSaleAccurateDate
         {
             get
             {
@@ -1278,8 +1301,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _PostSaleAccurateDate;
-        partial void OnPostSaleAccurateDateChanging(string value);
+        private global::System.Nullable<global::System.DateTimeOffset> _PostSaleAccurateDate;
+        partial void OnPostSaleAccurateDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnPostSaleAccurateDateChanged();
         /// <summary>
         /// There are no comments for Property LatestPrivate in the schema.
@@ -1392,21 +1415,21 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         }
     }
     /// <summary>
-    /// There are no comments for KIIDDocuments in the schema.
+    /// There are no comments for KiidDocuments in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("KIIDDocuments")]
-    public partial class KIIDDocuments : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("KiidDocuments")]
+    public partial class KiidDocuments : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new KIIDDocuments object.
+        /// Create a new KiidDocuments object.
         /// </summary>
         /// <param name="fundUnitAccurateDate">Initial value of FundUnitAccurateDate.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static KIIDDocuments CreateKIIDDocuments(global::System.DateTimeOffset fundUnitAccurateDate)
+        public static KiidDocuments CreateKiidDocuments(global::System.DateTimeOffset fundUnitAccurateDate)
         {
-            KIIDDocuments kIIDDocuments = new KIIDDocuments();
-            kIIDDocuments.FundUnitAccurateDate = fundUnitAccurateDate;
-            return kIIDDocuments;
+            KiidDocuments kiidDocuments = new KiidDocuments();
+            kiidDocuments.FundUnitAccurateDate = fundUnitAccurateDate;
+            return kiidDocuments;
         }
         /// <summary>
         /// There are no comments for Property FundUnit in the schema.
@@ -8077,6 +8100,52 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnAdditionalExpensesChanging(global::System.Nullable<decimal> value);
         partial void OnAdditionalExpensesChanged();
         /// <summary>
+        /// There are no comments for Property AnnualChargeType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnnualChargeType")]
+        public string AnnualChargeType
+        {
+            get
+            {
+                return this._AnnualChargeType;
+            }
+            set
+            {
+                this.OnAnnualChargeTypeChanging(value);
+                this._AnnualChargeType = value;
+                this.OnAnnualChargeTypeChanged();
+                this.OnPropertyChanged("AnnualChargeType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AnnualChargeType;
+        partial void OnAnnualChargeTypeChanging(string value);
+        partial void OnAnnualChargeTypeChanged();
+        /// <summary>
+        /// There are no comments for Property AnnualChargePercentage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AnnualChargePercentage")]
+        public global::System.Nullable<decimal> AnnualChargePercentage
+        {
+            get
+            {
+                return this._AnnualChargePercentage;
+            }
+            set
+            {
+                this.OnAnnualChargePercentageChanging(value);
+                this._AnnualChargePercentage = value;
+                this.OnAnnualChargePercentageChanged();
+                this.OnPropertyChanged("AnnualChargePercentage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Nullable<decimal> _AnnualChargePercentage;
+        partial void OnAnnualChargePercentageChanging(global::System.Nullable<decimal> value);
+        partial void OnAnnualChargePercentageChanged();
+        /// <summary>
         /// There are no comments for Property AnnualFundPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -9804,6 +9873,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnLocalMarketCodeChanging(string value);
         partial void OnLocalMarketCodeChanged();
         /// <summary>
+        /// There are no comments for Property FullName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FullName")]
+        public string FullName
+        {
+            get
+            {
+                return this._FullName;
+            }
+            set
+            {
+                this.OnFullNameChanging(value);
+                this._FullName = value;
+                this.OnFullNameChanged();
+                this.OnPropertyChanged("FullName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FullName;
+        partial void OnFullNameChanging(string value);
+        partial void OnFullNameChanged();
+        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -11250,7 +11342,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Kiids")]
-        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges Kiids
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KiidCharges Kiids
         {
             get
             {
@@ -11265,8 +11357,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges _Kiids;
-        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges value);
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KiidCharges _Kiids;
+        partial void OnKiidsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KiidCharges value);
         partial void OnKiidsChanged();
         /// <summary>
         /// There are no comments for Property Srri in the schema.
@@ -12542,10 +12634,10 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
 namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping
 {
     /// <summary>
-    /// There are no comments for KIIDCharges in the schema.
+    /// There are no comments for KiidCharges in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("KIIDCharges")]
-    public partial class KIIDCharges : global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("KiidCharges")]
+    public partial class KiidCharges : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
         /// There are no comments for Property ExitCharge in the schema.
@@ -12760,6 +12852,29 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         partial void OnYieldsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.Yields value);
         partial void OnYieldsChanged();
         /// <summary>
+        /// There are no comments for Property IncomeDistributions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IncomeDistributions")]
+        public global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDistributions IncomeDistributions
+        {
+            get
+            {
+                return this._IncomeDistributions;
+            }
+            set
+            {
+                this.OnIncomeDistributionsChanging(value);
+                this._IncomeDistributions = value;
+                this.OnIncomeDistributionsChanged();
+                this.OnPropertyChanged("IncomeDistributions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDistributions _IncomeDistributions;
+        partial void OnIncomeDistributionsChanging(global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDistributions value);
+        partial void OnIncomeDistributionsChanged();
+        /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -12829,29 +12944,6 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails> _Fund = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails>();
         partial void OnFundChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails> value);
         partial void OnFundChanged();
-        /// <summary>
-        /// There are no comments for Property Unit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Unit")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> Unit
-        {
-            get
-            {
-                return this._Unit;
-            }
-            set
-            {
-                this.OnUnitChanging(value);
-                this._Unit = value;
-                this.OnUnitChanged();
-                this.OnPropertyChanged("Unit");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> _Unit = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution>();
-        partial void OnUnitChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> value);
-        partial void OnUnitChanged();
         /// <summary>
         /// There are no comments for Property VctDates in the schema.
         /// </summary>
@@ -13407,6 +13499,53 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domai
         private string _Type;
         partial void OnTypeChanging(string value);
         partial void OnTypeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IncomeDistributions in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IncomeDistributions")]
+    public partial class IncomeDistributions : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property IncomeDistribution in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IncomeDistribution")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> IncomeDistribution
+        {
+            get
+            {
+                return this._IncomeDistribution;
+            }
+            set
+            {
+                this.OnIncomeDistributionChanging(value);
+                this._IncomeDistribution = value;
+                this.OnIncomeDistributionChanged();
+                this.OnPropertyChanged("IncomeDistribution");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> _IncomeDistribution = new global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution>();
+        partial void OnIncomeDistributionChanging(global::System.Collections.ObjectModel.ObservableCollection<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution> value);
+        partial void OnIncomeDistributionChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -20655,6 +20794,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""StaticData"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.StaticData"" />
         <Property Name=""IncomeData"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeData"" />
         <Property Name=""PerformanceData"" Type=""FundsLibrary.DataApi.Domain.PerformanceDataGroupings.PerformanceData"" />
+        <Property Name=""Type"" Type=""Edm.String"" />
       </EntityType>
       <EntityType Name=""Benchmark"">
         <Key>
@@ -20692,7 +20832,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
     <Schema Namespace=""FundsLibrary.DataApi.Domain.DocumentsGroupings"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""Documents"">
         <Property Name=""Factsheets"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.Factsheets"" />
-        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.KIIDDocuments"" />
+        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.KiidDocuments"" />
         <Property Name=""Prospectus"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.Prospectus"" />
         <Property Name=""ReportsAndAccounts"" Type=""FundsLibrary.DataApi.Domain.DocumentsGroupings.ReportsAndAccounts"" />
         <Property Name=""LatestPointOfSaleDocument"" Type=""Edm.String"" />
@@ -20708,13 +20848,13 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""PrivateUnitAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""PrivateUnit"" Type=""Edm.String"" />
         <Property Name=""PostSale"" Type=""Edm.String"" />
-        <Property Name=""PostSaleAccurateDate"" Type=""Edm.String"" />
+        <Property Name=""PostSaleAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""LatestPrivate"" Type=""Edm.String"" />
         <Property Name=""LatestPrivateAccurateDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""LatestProfessional"" Type=""Edm.String"" />
         <Property Name=""LatestProfessionalAccurateDate"" Type=""Edm.DateTimeOffset"" />
       </ComplexType>
-      <ComplexType Name=""KIIDDocuments"">
+      <ComplexType Name=""KiidDocuments"">
         <Property Name=""FundUnit"" Type=""Edm.String"" />
         <Property Name=""FundUnitSource"" Type=""Edm.String"" />
         <Property Name=""FundUnitAccurateDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
@@ -21044,6 +21184,8 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       <ComplexType Name=""Charges"">
         <Property Name=""AmcPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""AdditionalExpenses"" Type=""Edm.Decimal"" />
+        <Property Name=""AnnualChargeType"" Type=""Edm.String"" />
+        <Property Name=""AnnualChargePercentage"" Type=""Edm.Decimal"" />
         <Property Name=""AnnualFundPercentage"" Type=""Edm.Decimal"" />
         <Property Name=""Exit"" Type=""Edm.String"" />
         <Property Name=""Initial"" Type=""Edm.Decimal"" />
@@ -21121,6 +21263,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""UnitName"" Type=""Edm.String"" />
         <Property Name=""CompanyRegistrationNumber"" Type=""Edm.String"" />
         <Property Name=""LocalMarketCode"" Type=""Edm.String"" />
+        <Property Name=""FullName"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""Management"">
         <Property Name=""Team"" Type=""Collection(FundsLibrary.DataApi.Domain.StaticDataGroupings.TeamMember)"" />
@@ -21188,7 +21331,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""ValueOfInvestments"" Type=""Edm.Boolean"" />
       </ComplexType>
       <ComplexType Name=""KiidExtraction"">
-        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KIIDCharges"" />
+        <Property Name=""Kiids"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.KiidCharges"" />
         <Property Name=""Srri"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping.SrriRisk"" />
       </ComplexType>
       <ComplexType Name=""Bond"">
@@ -21254,7 +21397,7 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
       </ComplexType>
     </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.StaticDataGroupings.KiidExtractionGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""KIIDCharges"">
+      <ComplexType Name=""KiidCharges"">
         <Property Name=""ExitCharge"" Type=""Edm.Decimal"" />
         <Property Name=""InitialCharge"" Type=""Edm.Decimal"" />
         <Property Name=""OngoingCharge"" Type=""Edm.Decimal"" />
@@ -21268,11 +21411,11 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""IncomeDates"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDates"" />
         <Property Name=""IncomeDetails"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDetails"" />
         <Property Name=""Yields"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.Yields"" />
+        <Property Name=""IncomeDistributions"" Type=""FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDistributions"" />
       </ComplexType>
       <ComplexType Name=""IncomeDates"">
         <Property Name=""Class"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails)"" />
         <Property Name=""Fund"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails)"" />
-        <Property Name=""Unit"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution)"" />
         <Property Name=""VctDates"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDataGroupings.IncomeDateDetails)"" />
         <Property Name=""ClassFirstIncomePaymentDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""FundFirstIncomePaymentDate"" Type=""Edm.DateTimeOffset"" />
@@ -21300,6 +21443,9 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Property Name=""Bond"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Bond"" />
         <Property Name=""Equity"" Type=""FundsLibrary.DataApi.Domain.StaticDataGroupings.Equity"" />
         <Property Name=""Type"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""IncomeDistributions"">
+        <Property Name=""IncomeDistribution"" Type=""Collection(FundsLibrary.DataApi.Domain.IncomeDistributionGrouping.IncomeDistribution)"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""FundsLibrary.DataApi.Domain.IncomeDistributionGrouping"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -21648,6 +21794,12 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
         <Parameter Name=""Sedols"" Type=""Edm.String"" Unicode=""false"" />
         <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
       </Function>
+      <Action Name=""AdvancedSearch"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
+        <Parameter Name=""Query"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""Terms"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Collection(FundsLibrary.DataApi.Domain.Security)"" />
+      </Action>
       <Function Name=""GetBenchmarks"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(FundsLibrary.DataApi.Domain.Benchmark)"" />
         <Parameter Name=""ids"" Type=""Collection(Edm.String)"" Unicode=""false"" />
@@ -21857,6 +22009,20 @@ namespace FundsLibrary.DataApi.Example.Service.Domain.FL
             }
 
             return source.CreateFunctionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.MorningstarIndexedPerformance>("FL.GetMorningstarIndexedPerformanceWithString", false, new global::Microsoft.OData.Client.UriOperationParameter("ids", ids));
+        }
+        /// <summary>
+        /// There are no comments for AdvancedSearch in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AdvancedSearch")]
+        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security> AdvancedSearch(this global::Microsoft.OData.Client.DataServiceQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security> source, string Query, string Terms)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security>(source.Context, source.AppendRequestUri("FL.AdvancedSearch"), new global::Microsoft.OData.Client.BodyOperationParameter("Query", Query),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("Terms", Terms));
         }
     }
 }

@@ -1,10 +1,7 @@
 ﻿@model FundsLibrary.DataApi.Example.Service.Domain.FundsLibrary.DataApi.Domain.Security
 
 @{
-	ViewBag.Title = string.Format("{0} {1} {2}",
-									 Model.StaticData.Management.GroupShortName,
-									 Model.StaticData.Identification.ClassName,
-									 Model.StaticData.Identification.Name);
+	ViewBag.Title = Model.StaticData.Identification.FullName;
 }
 
 <div class="row">
@@ -13,10 +10,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h2>
-						@string.Format("{0} {1} {2}",
-							Model.StaticData.Management.GroupShortName,
-							Model.StaticData.Identification.ClassName,
-							Model.StaticData.Identification.Name)
+						@Model.StaticData.Identification.FullName
 					</h2>
 				</div>
 			</div>

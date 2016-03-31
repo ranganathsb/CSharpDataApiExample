@@ -17,10 +17,8 @@
 				{
 					<tr>
 						<td>
-							@Html.ActionLink(string.Format("{0} {1} {2}",
-								unit.StaticData.Management.GroupShortName,
-								unit.StaticData.Identification.ClassName,
-								unit.StaticData.Identification.Name),
+							@Html.ActionLink(
+								unit.StaticData.Identification.FullName,
 								"Security",
 								new { sedol = unit.StaticData.Identification.SedolCode })
 						</td>
